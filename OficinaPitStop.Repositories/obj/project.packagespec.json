@@ -41,6 +41,10 @@
           "target": "Package",
           "version": "[3.5.0-alpha0046, )"
         },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.2.4, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
