@@ -2,6 +2,20 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaPitStop.Api", "OficinaPitStop.Api\OficinaPitStop.Api.csproj", "{CD4E8D90-F67C-4C11-952E-20D9A40B5D0D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E19E4FFF-4A38-44D1-A451-BF10959957A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0EAB9249-5ADB-4912-8041-BA96B93E57CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaPitStop.Services", "OficinaPitStop.Services\OficinaPitStop.Services.csproj", "{8469EF0A-EB69-45F8-8BEB-3435B8359475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaPitStop.Services.Abstractions", "OficinaPitStop.Services.Abstractions\OficinaPitStop.Services.Abstractions.csproj", "{C16D79D0-E0BE-4AED-8425-028758174AF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaPitStop.Repositories", "OficinaPitStop.Repositories\OficinaPitStop.Repositories.csproj", "{25C7A57A-DB5D-479E-A835-C42F04C103BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaPitStop.Repositories.Abstractions", "OficinaPitStop.Repositories.Abstractions\OficinaPitStop.Repositories.Abstractions.csproj", "{542FB915-C7E4-4BF8-BBE4-88A80286CED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaPitStop.Entities", "OficinaPitStop.Entities\OficinaPitStop.Entities.csproj", "{5157DABE-EF13-45AD-BE4D-4A037AD6E2B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +26,33 @@ Global
 		{CD4E8D90-F67C-4C11-952E-20D9A40B5D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD4E8D90-F67C-4C11-952E-20D9A40B5D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD4E8D90-F67C-4C11-952E-20D9A40B5D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8469EF0A-EB69-45F8-8BEB-3435B8359475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8469EF0A-EB69-45F8-8BEB-3435B8359475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8469EF0A-EB69-45F8-8BEB-3435B8359475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8469EF0A-EB69-45F8-8BEB-3435B8359475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16D79D0-E0BE-4AED-8425-028758174AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16D79D0-E0BE-4AED-8425-028758174AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16D79D0-E0BE-4AED-8425-028758174AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16D79D0-E0BE-4AED-8425-028758174AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C7A57A-DB5D-479E-A835-C42F04C103BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C7A57A-DB5D-479E-A835-C42F04C103BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C7A57A-DB5D-479E-A835-C42F04C103BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C7A57A-DB5D-479E-A835-C42F04C103BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542FB915-C7E4-4BF8-BBE4-88A80286CED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542FB915-C7E4-4BF8-BBE4-88A80286CED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542FB915-C7E4-4BF8-BBE4-88A80286CED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542FB915-C7E4-4BF8-BBE4-88A80286CED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5157DABE-EF13-45AD-BE4D-4A037AD6E2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5157DABE-EF13-45AD-BE4D-4A037AD6E2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5157DABE-EF13-45AD-BE4D-4A037AD6E2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5157DABE-EF13-45AD-BE4D-4A037AD6E2B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD4E8D90-F67C-4C11-952E-20D9A40B5D0D} = {E19E4FFF-4A38-44D1-A451-BF10959957A5}
+		{8469EF0A-EB69-45F8-8BEB-3435B8359475} = {E19E4FFF-4A38-44D1-A451-BF10959957A5}
+		{C16D79D0-E0BE-4AED-8425-028758174AF7} = {E19E4FFF-4A38-44D1-A451-BF10959957A5}
+		{25C7A57A-DB5D-479E-A835-C42F04C103BF} = {E19E4FFF-4A38-44D1-A451-BF10959957A5}
+		{542FB915-C7E4-4BF8-BBE4-88A80286CED3} = {E19E4FFF-4A38-44D1-A451-BF10959957A5}
+		{5157DABE-EF13-45AD-BE4D-4A037AD6E2B8} = {E19E4FFF-4A38-44D1-A451-BF10959957A5}
 	EndGlobalSection
 EndGlobal
