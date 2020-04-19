@@ -29,18 +29,6 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
-        "GraphQL": {
-          "target": "Package",
-          "version": "[3.0.0-preview-1490, )"
-        },
-        "GraphQL.Server.Transports.AspNetCore": {
-          "target": "Package",
-          "version": "[3.5.0-alpha0046, )"
-        },
-        "GraphQL.Server.Ui.Playground": {
-          "target": "Package",
-          "version": "[3.5.0-alpha0046, )"
-        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

@@ -2,133 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "GraphQL/3.0.0-preview-1490": {
-        "type": "package",
-        "dependencies": {
-          "GraphQL-Parser": "5.0.1",
-          "Microsoft.CSharp": "4.5.0",
-          "System.Buffers": "4.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
-          "System.Reactive.Core": "4.0.0",
-          "System.Reactive.Linq": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/GraphQL.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/GraphQL.dll": {}
-        }
-      },
-      "GraphQL-Parser/5.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/GraphQL-Parser.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/GraphQL-Parser.dll": {}
-        }
-      },
-      "GraphQL.Server.Core/3.5.0-alpha0046": {
-        "type": "package",
-        "dependencies": {
-          "GraphQL": "3.0.0-preview-1490",
-          "Microsoft.Extensions.Options": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/GraphQL.Server.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/GraphQL.Server.Core.dll": {}
-        }
-      },
-      "GraphQL.Server.Transports.AspNetCore/3.5.0-alpha0046": {
-        "type": "package",
-        "dependencies": {
-          "GraphQL.Server.Core": "3.5.0-alpha0046",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Options": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/GraphQL.Server.Transports.AspNetCore.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/GraphQL.Server.Transports.AspNetCore.dll": {}
-        }
-      },
-      "GraphQL.Server.Ui.Playground/3.5.0-alpha0046": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
-          "System.Text.Encodings.Web": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
-        }
-      },
-      "Microsoft.CSharp/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore/2.2.4": {
         "type": "package",
         "dependencies": {
@@ -243,33 +116,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/2.2.0": {
@@ -529,15 +375,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -558,15 +395,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
-        }
-      },
-      "System.Buffers/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Collections/4.0.11": {
@@ -739,42 +567,6 @@
           "lib/netstandard1.3/System.ObjectModel.dll": {}
         }
       },
-      "System.Reactive/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Reactive.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Reactive.dll": {}
-        }
-      },
-      "System.Reactive.Core/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reactive": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Reactive.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Reactive.Core.dll": {}
-        }
-      },
-      "System.Reactive.Linq/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reactive": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Reactive.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Reactive.Linq.dll": {}
-        }
-      },
       "System.Reflection/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -882,11 +674,11 @@
           "ref/netstandard1.0/_._": {}
         }
       },
-      "System.Runtime/4.3.0": {
+      "System.Runtime/4.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1"
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
@@ -912,18 +704,6 @@
           "ref/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
-      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll": {}
-        }
-      },
       "System.Text.Encoding/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -933,15 +713,6 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Text.Encoding.dll": {}
-        }
-      },
-      "System.Text.Encodings.Web/4.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
       "System.Threading/4.0.11": {
@@ -971,11 +742,6 @@
       "OficinaPitStop.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "GraphQL": "3.0.0-preview-1490",
-          "GraphQL.Server.Transports.AspNetCore": "3.5.0-alpha0046",
-          "GraphQL.Server.Ui.Playground": "3.5.0-alpha0046"
-        },
         "compile": {
           "bin/placeholder/OficinaPitStop.Entities.dll": {}
         },
@@ -986,192 +752,6 @@
     }
   },
   "libraries": {
-    "GraphQL/3.0.0-preview-1490": {
-      "sha512": "zL45Jv5F9NY2Vl2UfaqXEF34lEOBLxUg7DYt1UeXsIE2PPTTVBv7fdQOU/kureUD68N2NUjdAx2/UZQ6kUJHaA==",
-      "type": "package",
-      "path": "graphql/3.0.0-preview-1490",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "graphql.3.0.0-preview-1490.nupkg.sha512",
-        "graphql.nuspec",
-        "lib/netstandard2.0/GraphQL.dll",
-        "logo.64x64.png"
-      ]
-    },
-    "GraphQL-Parser/5.1.0": {
-      "sha512": "stOIR0K6X6iog+GMxRMdKF5TQbMcqRnTKTeFtuy0oKKudXWSu/Do4WxQ7b2fZ9e040NnQoXsG00YlD3bH/zIug==",
-      "type": "package",
-      "path": "graphql-parser/5.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "graphql-parser.5.1.0.nupkg.sha512",
-        "graphql-parser.nuspec",
-        "lib/netstandard2.0/GraphQL-Parser.dll",
-        "logo.64x64.png"
-      ]
-    },
-    "GraphQL.Server.Core/3.5.0-alpha0046": {
-      "sha512": "85nf5H59ACofZfDYAYfuHT08+u8PYOmgYMUg7IzS4w9ASnJIg0S3roN2zQojrU+Q5ZXU6FbnpeSGqruXbvhhnA==",
-      "type": "package",
-      "path": "graphql.server.core/3.5.0-alpha0046",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "graphql.server.core.3.5.0-alpha0046.nupkg.sha512",
-        "graphql.server.core.nuspec",
-        "lib/netstandard2.0/GraphQL.Server.Core.dll"
-      ]
-    },
-    "GraphQL.Server.Transports.AspNetCore/3.5.0-alpha0046": {
-      "sha512": "f7hOTW0unNzEdU5V1Sb0OQLakzlM6l/V2FUHqtcDvNM4jYnS7ccbMtJRzsGYDJ0oZirndYeF2/xUp+6kh3NYpw==",
-      "type": "package",
-      "path": "graphql.server.transports.aspnetcore/3.5.0-alpha0046",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "graphql.server.transports.aspnetcore.3.5.0-alpha0046.nupkg.sha512",
-        "graphql.server.transports.aspnetcore.nuspec",
-        "lib/netcoreapp3.0/GraphQL.Server.Transports.AspNetCore.dll",
-        "lib/netcoreapp3.1/GraphQL.Server.Transports.AspNetCore.dll",
-        "lib/netstandard2.0/GraphQL.Server.Transports.AspNetCore.dll"
-      ]
-    },
-    "GraphQL.Server.Ui.Playground/3.5.0-alpha0046": {
-      "sha512": "NmRf2DQwqm5LMRSIbVF0B7Wo0YVkFEPVHUvECQQbDgQRHjfEYs8ae+m91OCQ0+PEGSTmRZQ/I8HH+E6jxQMThw==",
-      "type": "package",
-      "path": "graphql.server.ui.playground/3.5.0-alpha0046",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "graphql.server.ui.playground.3.5.0-alpha0046.nupkg.sha512",
-        "graphql.server.ui.playground.nuspec",
-        "lib/netcoreapp3.0/GraphQL.Server.Ui.Playground.dll",
-        "lib/netcoreapp3.1/GraphQL.Server.Ui.Playground.dll",
-        "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll"
-      ]
-    },
-    "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
-      "sha512": "ubycklv+ZY7Kutdwuy1W4upWcZ6VFR8WUXU7l7B2+mvbDBBPAcfpi+E+Y5GFe+Q157YfA3C49D2GCjAZc7Mobw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.hosting.abstractions/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.xml",
-        "microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
-        "microsoft.aspnetcore.hosting.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
-      "sha512": "1PMijw8RMtuQF60SsD/JlKtVfvh4NORAhF4wjysdABhlhTrYmtgssqyncR0Stq5vqtjplZcj6kbT4LRTglt9IQ==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.hosting.server.abstractions/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml",
-        "microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
-        "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
-      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
-        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
-        "microsoft.aspnetcore.http.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
-      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
-        "microsoft.aspnetcore.http.features.nuspec"
-      ]
-    },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "type": "package",
-      "path": "microsoft.csharp/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/Microsoft.CSharp.dll",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.3/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/uap10.0.16299/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
-        "microsoft.csharp.nuspec",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/Microsoft.CSharp.dll",
-        "ref/netcore50/Microsoft.CSharp.xml",
-        "ref/netcore50/de/Microsoft.CSharp.xml",
-        "ref/netcore50/es/Microsoft.CSharp.xml",
-        "ref/netcore50/fr/Microsoft.CSharp.xml",
-        "ref/netcore50/it/Microsoft.CSharp.xml",
-        "ref/netcore50/ja/Microsoft.CSharp.xml",
-        "ref/netcore50/ko/Microsoft.CSharp.xml",
-        "ref/netcore50/ru/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/Microsoft.CSharp.dll",
-        "ref/netstandard1.0/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
-        "ref/netstandard2.0/Microsoft.CSharp.dll",
-        "ref/netstandard2.0/Microsoft.CSharp.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/uap10.0.16299/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Microsoft.EntityFrameworkCore/2.2.4": {
       "sha512": "UgvhCfj2e0B1p83f4+juEhkvOP/8vRDZ3HEo2tkX9/wS6uWTPu2WBf5kudXI74ur0AJvHu5phLBIJ1Ob+kMXww==",
       "type": "package",
@@ -1303,32 +883,6 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
-      "sha512": "EcnaSsPTqx2MGnHrmWOD0ugbuuqVT8iICqSqPzi45V5/MA1LjUNb0kwgcxBGqizV1R+WeBK7/Gw25Jzkyk9bIw==",
-      "type": "package",
-      "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
-        "microsoft.extensions.fileproviders.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
-      "sha512": "+k4AEn68HOJat5gj1TWa6X28WlirNQO9sPIIeQbia+91n03esEtMSSoekSTpMjUzjqtJWQN3McVx0GvSPFHF/Q==",
-      "type": "package",
-      "path": "microsoft.extensions.hosting.abstractions/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.xml",
-        "microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
-        "microsoft.extensions.hosting.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/2.2.0": {
@@ -1851,37 +1405,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "aTRmXwR5xYu+mWxE8r8W1DWnL02SeV8LwdQMsLwTWP8OZgrCCyTqvOAe5hRb1VNQYXjln7qr0PKpSyO/pcc19Q==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
     "Remotion.Linq/2.2.0": {
       "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
@@ -1901,35 +1424,6 @@
         "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
         "remotion.linq.2.2.0.nupkg.sha512",
         "remotion.linq.nuspec"
-      ]
-    },
-    "System.Buffers/4.5.0": {
-      "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
-      "type": "package",
-      "path": "system.buffers/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.1/System.Buffers.dll",
-        "lib/netstandard1.1/System.Buffers.xml",
-        "lib/netstandard2.0/System.Buffers.dll",
-        "lib/netstandard2.0/System.Buffers.xml",
-        "lib/uap10.0.16299/_._",
-        "ref/net45/System.Buffers.dll",
-        "ref/net45/System.Buffers.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.1/System.Buffers.dll",
-        "ref/netstandard1.1/System.Buffers.xml",
-        "ref/netstandard2.0/System.Buffers.dll",
-        "ref/netstandard2.0/System.Buffers.xml",
-        "ref/uap10.0.16299/_._",
-        "system.buffers.4.5.0.nupkg.sha512",
-        "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Collections/4.0.11": {
@@ -2677,63 +2171,6 @@
         "system.objectmodel.nuspec"
       ]
     },
-    "System.Reactive/4.0.0": {
-      "sha512": "l7AZOWqr++qiIppQxNvUsy24u73Qm81vIv6buMSv+KSesatxoi5mVBmgkYjFMhGAfz2C7fh+QdlskKOAVvrL0A==",
-      "type": "package",
-      "path": "system.reactive/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/System.Reactive.dll",
-        "lib/net46/System.Reactive.xml",
-        "lib/netstandard2.0/System.Reactive.dll",
-        "lib/netstandard2.0/System.Reactive.xml",
-        "lib/uap10.0.16299/System.Reactive.dll",
-        "lib/uap10.0.16299/System.Reactive.pri",
-        "lib/uap10.0.16299/System.Reactive.xml",
-        "lib/uap10.0/System.Reactive.dll",
-        "lib/uap10.0/System.Reactive.pri",
-        "lib/uap10.0/System.Reactive.xml",
-        "system.reactive.4.0.0.nupkg.sha512",
-        "system.reactive.nuspec"
-      ]
-    },
-    "System.Reactive.Core/4.0.0": {
-      "sha512": "sw6GWr9QtfL3GaVf32Pf4x4/eweAcPnAL4JbbVJFYDKQ4Vw9VFzVNNlTlz4rN4l0+BmlBeQTA0KOT8nlCPscjw==",
-      "type": "package",
-      "path": "system.reactive.core/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/System.Reactive.Core.dll",
-        "lib/net46/System.Reactive.Core.xml",
-        "lib/netstandard2.0/System.Reactive.Core.dll",
-        "lib/netstandard2.0/System.Reactive.Core.xml",
-        "lib/uap10.0/System.Reactive.Core.dll",
-        "lib/uap10.0/System.Reactive.Core.pri",
-        "lib/uap10.0/System.Reactive.Core.xml",
-        "system.reactive.core.4.0.0.nupkg.sha512",
-        "system.reactive.core.nuspec"
-      ]
-    },
-    "System.Reactive.Linq/4.0.0": {
-      "sha512": "toUcxc6H6OsECYypNgIXKyfOlk7AhlGUUhXxA+ouC70Szw/8U+JRiikK8GJiNN8FPl8V/fQfKzJ2ng9avy+XyA==",
-      "type": "package",
-      "path": "system.reactive.linq/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/System.Reactive.Linq.dll",
-        "lib/net46/System.Reactive.Linq.xml",
-        "lib/netstandard2.0/System.Reactive.Linq.dll",
-        "lib/netstandard2.0/System.Reactive.Linq.xml",
-        "lib/uap10.0/System.Reactive.Linq.dll",
-        "lib/uap10.0/System.Reactive.Linq.pri",
-        "lib/uap10.0/System.Reactive.Linq.xml",
-        "system.reactive.linq.4.0.0.nupkg.sha512",
-        "system.reactive.linq.nuspec"
-      ]
-    },
     "System.Reflection/4.1.0": {
       "sha512": "JCKANJ0TI7kzoQzuwB/OoJANy1Lg338B6+JVacPl4TpUwi3cReg3nMLplMq2uqYfHFQpKIlHAUVAJlImZz/4ng==",
       "type": "package",
@@ -3131,10 +2568,10 @@
         "system.resources.resourcemanager.nuspec"
       ]
     },
-    "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+    "System.Runtime/4.1.0": {
+      "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
       "type": "package",
-      "path": "system.runtime/4.3.0",
+      "path": "system.runtime/4.1.0",
       "files": [
         ".nupkg.metadata",
         "ThirdPartyNotices.txt",
@@ -3218,7 +2655,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.4.1.0.nupkg.sha512",
         "system.runtime.nuspec"
       ]
     },
@@ -3327,67 +2764,6 @@
         "system.runtime.extensions.nuspec"
       ]
     },
-    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
-      "sha512": "BB4Y4G5QH6jPlnI4l8gpD0QxbaUFUUz5478TB2fxLB4pgZbJSKDLQfDaReCbopPPJB5LkwskLo86mXBq2KzpHg==",
-      "type": "package",
-      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
-        "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios1/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
-        "ref/netcore50/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/de/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/es/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/fr/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/it/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/ja/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/ko/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/ru/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/zh-hans/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netcore50/zh-hant/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.dll",
-        "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/de/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/es/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/fr/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/it/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/ja/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/ko/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/ru/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.InteropServices.WindowsRuntime.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
-        "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
-        "system.runtime.interopservices.windowsruntime.nuspec"
-      ]
-    },
     "System.Text.Encoding/4.0.11": {
       "sha512": "U3gGeMlDZXxCEiY4DwVLSacg+DFWCvoiX+JThA/rvw37Sqrku7sEFeVBBBMBnfB6FeZHsyDx85HlKL19x0HtZA==",
       "type": "package",
@@ -3453,25 +2829,6 @@
         "ref/xamarinwatchos10/_._",
         "system.text.encoding.4.0.11.nupkg.sha512",
         "system.text.encoding.nuspec"
-      ]
-    },
-    "System.Text.Encodings.Web/4.5.0": {
-      "sha512": "Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
-      "type": "package",
-      "path": "system.text.encodings.web/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.4.5.0.nupkg.sha512",
-        "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Threading/4.0.11": {
@@ -3619,9 +2976,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "GraphQL >= 3.0.0-preview-1490",
-      "GraphQL.Server.Transports.AspNetCore >= 3.5.0-alpha0046",
-      "GraphQL.Server.Ui.Playground >= 3.5.0-alpha0046",
       "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.NETCore.App >= 2.2.0",
       "OficinaPitStop.Entities >= 1.0.0"
@@ -3670,18 +3024,6 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
-          "GraphQL": {
-            "target": "Package",
-            "version": "[3.0.0-preview-1490, )"
-          },
-          "GraphQL.Server.Transports.AspNetCore": {
-            "target": "Package",
-            "version": "[3.5.0-alpha0046, )"
-          },
-          "GraphQL.Server.Ui.Playground": {
-            "target": "Package",
-            "version": "[3.5.0-alpha0046, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[2.2.4, )"
@@ -3700,17 +3042,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "GraphQL 3.0.0-preview-1490 depends on GraphQL-Parser (>= 5.0.1) but GraphQL-Parser 5.0.1 was not found. An approximate best match of GraphQL-Parser 5.1.0 was resolved.",
-      "libraryId": "GraphQL-Parser",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.2"
-      ]
-    }
-  ]
+  }
 }

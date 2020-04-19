@@ -61,7 +61,7 @@
         </e>
         <e p="GraphQl" t="Include">
           <e p="Produtos" t="Include">
-            <e p="Schema" t="Include">
+            <e p="Schemas" t="Include">
               <e p="ProdutoSchema.cs" t="Include" />
             </e>
             <e p="Types" t="Include">
