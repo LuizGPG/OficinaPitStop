@@ -1,0 +1,9 @@
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.csprojAssemblyReference.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.csproj.CoreCompileInputs.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.AssemblyInfoInputs.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.AssemblyInfo.cs
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\bin\Debug\netcoreapp2.2\OficinaPitStop.Services.deps.json
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\bin\Debug\netcoreapp2.2\OficinaPitStop.Services.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\bin\Debug\netcoreapp2.2\OficinaPitStop.Services.pdb
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.pdb

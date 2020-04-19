@@ -21,6 +21,7 @@
         <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -31,11 +32,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\OficinaPitStop.Repositories\OficinaPitStop.Repositories.csproj" />
       <ProjectReference Include="..\OficinaPitStop.Services\OficinaPitStop.Services.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="GraphQl" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

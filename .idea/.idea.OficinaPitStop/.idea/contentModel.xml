@@ -59,7 +59,17 @@
         <e p="Controllers" t="Include">
           <e p="SampleDataController.cs" t="Include" />
         </e>
-        <e p="GraphQl" t="Include" />
+        <e p="GraphQl" t="Include">
+          <e p="Produtos" t="Include">
+            <e p="Schema" t="Include">
+              <e p="ProdutoSchema.cs" t="Include" />
+            </e>
+            <e p="Types" t="Include">
+              <e p="ProdutoConsultaType.cs" t="Include" />
+              <e p="ProdutoType.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -112,6 +122,10 @@
           </e>
         </e>
         <e p="OficinaPitStop.Repositories.csproj" t="IncludeRecursive" />
+        <e p="OficinaPitStopContext.cs" t="Include" />
+        <e p="Repository" t="Include">
+          <e p="ProdutoRepository.cs" t="Include" />
+        </e>
       </e>
       <e p="OficinaPitStop.Repositories.Abstractions" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

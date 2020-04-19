@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Entities\\OficinaPitStop.Entities.csproj": {
+            "projectPath": "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Entities\\OficinaPitStop.Entities.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
