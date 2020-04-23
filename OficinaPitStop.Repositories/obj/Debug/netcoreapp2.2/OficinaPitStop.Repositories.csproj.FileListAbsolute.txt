@@ -10,3 +10,5 @@ C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repo
 C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.dll
 C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.pdb
 C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.csproj.CopyComplete
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories\bin\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories\bin\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.pdb

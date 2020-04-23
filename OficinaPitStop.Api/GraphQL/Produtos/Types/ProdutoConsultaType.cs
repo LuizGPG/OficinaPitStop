@@ -1,15 +1,19 @@
 using GraphQL.Types;
+using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Repository;
 
 namespace OficinaPitStop.Api.GraphQL.Produtos.Types
 {
     public class ProdutoConsultaType : ObjectGraphType
     {
-        public ProdutoConsultaType(ProdutoRepository repository)
+        private readonly IProdutoRepository _repository;
+            
+        public ProdutoConsultaType(IProdutoRepository repository)
         {
+            _repository = repository;
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
-                resolve: context => repository.ObtemTodosProdutos());
+                resolve: context => _repository.ObtemTodosProdutos());
         }
     }
 }

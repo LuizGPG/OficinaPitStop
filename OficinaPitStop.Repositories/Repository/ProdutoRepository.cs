@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using OficinaPitStop.Entities.Produtos;
+using OficinaPitStop.Repositories.Abstractions.Repository;
 
 namespace OficinaPitStop.Repositories.Repository
 {
-    public class ProdutoRepository
+    public class ProdutoRepository : IProdutoRepository
     {
         private readonly OficinaPitStopContext _context;
 

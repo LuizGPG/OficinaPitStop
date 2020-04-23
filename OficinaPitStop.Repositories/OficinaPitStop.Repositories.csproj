@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\OficinaPitStop.Entities\OficinaPitStop.Entities.csproj" />
+      <ProjectReference Include="..\OficinaPitStop.Repositories.Abstractions\OficinaPitStop.Repositories.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>

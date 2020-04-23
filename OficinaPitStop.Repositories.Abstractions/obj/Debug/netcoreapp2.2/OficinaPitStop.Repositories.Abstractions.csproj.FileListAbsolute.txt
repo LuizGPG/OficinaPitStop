@@ -1,0 +1,12 @@
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.deps.json
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.pdb
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.csprojAssemblyReference.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.AssemblyInfoInputs.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.AssemblyInfo.cs
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.pdb
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.pdb
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Repositories.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Repositories.Abstractions.csproj.CopyComplete

@@ -748,6 +748,19 @@
         "runtime": {
           "bin/placeholder/OficinaPitStop.Entities.dll": {}
         }
+      },
+      "OficinaPitStop.Repositories.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "OficinaPitStop.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OficinaPitStop.Repositories.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OficinaPitStop.Repositories.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -2972,13 +2985,19 @@
       "type": "project",
       "path": "../OficinaPitStop.Entities/OficinaPitStop.Entities.csproj",
       "msbuildProject": "../OficinaPitStop.Entities/OficinaPitStop.Entities.csproj"
+    },
+    "OficinaPitStop.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../OficinaPitStop.Repositories.Abstractions/OficinaPitStop.Repositories.Abstractions.csproj",
+      "msbuildProject": "../OficinaPitStop.Repositories.Abstractions/OficinaPitStop.Repositories.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.NETCore.App >= 2.2.0",
-      "OficinaPitStop.Entities >= 1.0.0"
+      "OficinaPitStop.Entities >= 1.0.0",
+      "OficinaPitStop.Repositories.Abstractions >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3011,6 +3030,9 @@
           "projectReferences": {
             "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Entities\\OficinaPitStop.Entities.csproj": {
               "projectPath": "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Entities\\OficinaPitStop.Entities.csproj"
+            },
+            "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Repositories.Abstractions\\OficinaPitStop.Repositories.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Repositories.Abstractions\\OficinaPitStop.Repositories.Abstractions.csproj"
             }
           }
         }

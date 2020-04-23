@@ -1,3 +1,6 @@
+using GraphQL;
+using GraphQL.Server;
+using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -6,7 +9,10 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OficinaPitStop.Api.GraphQL.Produtos.Schemas;
 using OficinaPitStop.Repositories;
+using OficinaPitStop.Repositories.Abstractions.Repository;
+using OficinaPitStop.Repositories.Repository;
 
 namespace OficinaPitStop.Api
 {
@@ -25,6 +31,16 @@ namespace OficinaPitStop.Api
             services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/build"; });
             services.AddDbContext<OficinaPitStopContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<ProdutoSchema>();
+            services.AddGraphQL(options =>
+                {
+                    options.ExposeExceptions = true;
+                }).
+                AddGraphTypes(ServiceLifetime.Scoped).
+                AddDataLoader();
+            services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -37,8 +53,11 @@ namespace OficinaPitStop.Api
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
+            
+            app.UseGraphQL<ProdutoSchema>();
+            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
 
-            app.UseHttpsRedirection();
+            /*app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
@@ -48,8 +67,8 @@ namespace OficinaPitStop.Api
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
-
-            app.UseSpa(spa =>
+            */
+            /*app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";
 
@@ -57,7 +76,7 @@ namespace OficinaPitStop.Api
                 {
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
-            });
+            });*/
         }
     }
 }

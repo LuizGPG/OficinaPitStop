@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "OficinaPitStop.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/OficinaPitStop.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OficinaPitStop.Entities.dll": {}
+        }
       }
     }
   },
@@ -678,11 +688,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "OficinaPitStop.Entities/1.0.0": {
+      "type": "project",
+      "path": "../OficinaPitStop.Entities/OficinaPitStop.Entities.csproj",
+      "msbuildProject": "../OficinaPitStop.Entities/OficinaPitStop.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "OficinaPitStop.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -712,7 +728,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Entities\\OficinaPitStop.Entities.csproj": {
+              "projectPath": "C:\\Users\\luiz.guimaraes\\Desktop\\Luiz\\Projetos\\OficinaPitStop\\OficinaPitStop.Entities\\OficinaPitStop.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
