@@ -8,7 +8,7 @@ namespace OficinaPitStop.Repositories.Mapping.Produto
     {
         public void Configure(EntityTypeBuilder<ProdutoModel> builder)
         {
-            builder.HasKey(e => e.Codigo);
+            builder.HasKey(e => e.id);
             
         }
     }

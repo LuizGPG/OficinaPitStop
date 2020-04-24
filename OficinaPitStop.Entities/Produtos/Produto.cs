@@ -5,10 +5,11 @@ namespace OficinaPitStop.Entities.Produtos
     public class Produto
     {
         [Key]
-        public int Codigo { get; set; }
+        public int id { get; set; }
         
-        public string Descricao { get; set; }
+        public string descricao { get; set; }
 
-        public double Quantidade { get; set; }
+        public double quantidade { get; set; }
+        public double preco { get; set; }
     }
 }

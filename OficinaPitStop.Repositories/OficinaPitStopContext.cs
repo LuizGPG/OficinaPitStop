@@ -17,11 +17,11 @@ namespace OficinaPitStop.Repositories
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<ProdutoModel>(
+            modelBuilder.Entity<Produto>(
                 entity =>
                 {
                     entity
-                        .HasKey(e => e.Codigo)
+                        .HasKey(e => e.id)
                         .HasName("id");
                 });
         }
