@@ -13,17 +13,18 @@ namespace OficinaPitStop.Repositories
         
         public DbSet<Produto> Produtos { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
+            
             modelBuilder.Entity<Produto>(
                 entity =>
                 {
                     entity
-                        .HasKey(e => e.id)
-                        .HasName("id");
+                        .HasKey(e => e.Codigo)
+                        .HasName("idlo");
                 });
-        }
+            
+            base.OnModelCreating(modelBuilder);
+        }*/
     }
 }

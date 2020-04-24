@@ -8,9 +8,10 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
     {
         public ProdutoType()
         {
-            Field(p => p.id);
-            Field(p => p.descricao);
-            Field(p => p.quantidade);
+            Field(p => p.Codigo);
+            Field(p => p.Descricao);
+            Field(p => p.Quantidade);
+            Field(p => p.Preco);
         }
     }
 }

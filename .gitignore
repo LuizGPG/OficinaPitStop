@@ -33,3 +33,14 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 *.xml
+*.cache
+.idea/.idea.OficinaPitStop/.idea/contentModel.xml
+.idea/.idea.OficinaPitStop/.idea/workspace.xml
+OficinaPitStop.Entities/bin/Debug/netcoreapp2.2/OficinaPitStop.Entities.dll
+OficinaPitStop.Entities/bin/Debug/netcoreapp2.2/OficinaPitStop.Entities.pdb
+OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.dll
+OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.pdb
+OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.csproj.CoreCompileInputs.cache
+OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.csprojAssemblyReference.cache
+OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.dll
+OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.pdb

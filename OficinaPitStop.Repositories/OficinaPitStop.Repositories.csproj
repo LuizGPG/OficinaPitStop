@@ -5,8 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Mapping\Fornecedores" />
-      <Folder Include="Mapping\Funcionarios" />
       <Folder Include="Models\Fornecedores" />
       <Folder Include="Models\Funcionarios" />
     </ItemGroup>
