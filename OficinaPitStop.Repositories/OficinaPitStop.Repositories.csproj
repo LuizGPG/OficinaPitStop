@@ -5,12 +5,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="Mapping\Fornecedores" />
+      <Folder Include="Mapping\Funcionarios" />
       <Folder Include="Models\Fornecedores" />
       <Folder Include="Models\Funcionarios" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+      <PackageReference Include="MySql.Data" Version="8.0.19" />
+      <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="6.10.9" />
     </ItemGroup>
 
     <ItemGroup>
