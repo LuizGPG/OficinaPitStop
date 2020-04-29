@@ -9,10 +9,14 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Schemas;
 using OficinaPitStop.Api.GraphQL.Produtos.Schemas;
 using OficinaPitStop.Repositories;
 using OficinaPitStop.Repositories.Abstractions.Repository;
+using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Repositories.Repository;
+using OficinaPitStop.Repositories.Repository.Produtos;
+using OficinaPitStop.Repositories.Repository.Produtos.Marcas;
 
 namespace OficinaPitStop.Api
 {
@@ -32,8 +36,9 @@ namespace OficinaPitStop.Api
             services.AddDbContext<OficinaPitStopContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             
-            services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            services.AddScoped<ProdutoSchema>();
+            DependencyInjectorRepository(services);
+            AddSchemaToScope(services);
+
             services.AddGraphQL(options =>
                 {
                     options.ExposeExceptions = true;
@@ -42,6 +47,7 @@ namespace OficinaPitStop.Api
                 AddDataLoader();
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
         }
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -55,6 +61,7 @@ namespace OficinaPitStop.Api
             }
             
             app.UseGraphQL<ProdutoSchema>();
+            app.UseGraphQL<MarcaSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
 
             /*app.UseHttpsRedirection();
@@ -77,6 +84,19 @@ namespace OficinaPitStop.Api
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });*/
+        }
+        
+        
+        private static void AddSchemaToScope(IServiceCollection services)
+        {
+            services.AddScoped<ProdutoSchema>();
+            services.AddScoped<MarcaSchema>();
+        }
+
+        private static void DependencyInjectorRepository(IServiceCollection services)
+        {
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IMarcaRepository, MarcaRepository>();
         }
     }
 }

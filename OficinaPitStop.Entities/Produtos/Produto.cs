@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using OficinaPitStop.Entities.Produtos.Marcas;
 
 namespace OficinaPitStop.Entities.Produtos
 {
@@ -9,5 +11,6 @@ namespace OficinaPitStop.Entities.Produtos
         public string Descricao { get; set; }
         public double Quantidade { get; set; }
         public double Preco { get; set; }
+        public int CodigoMarca { get; set; }
     }
 }

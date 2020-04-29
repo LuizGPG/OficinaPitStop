@@ -61,6 +61,15 @@
         </e>
         <e p="GraphQl" t="Include">
           <e p="Produtos" t="Include">
+            <e p="Marcas" t="Include">
+              <e p="Schemas" t="Include">
+                <e p="MarcaSchema.cs" t="Include" />
+              </e>
+              <e p="Types" t="Include">
+                <e p="MarcaConsultaType.cs" t="Include" />
+                <e p="MarcaType.cs" t="Include" />
+              </e>
+            </e>
             <e p="Schemas" t="Include">
               <e p="ProdutoSchema.cs" t="Include" />
             </e>
@@ -102,6 +111,9 @@
         </e>
         <e p="OficinaPitStop.Entities.csproj" t="IncludeRecursive" />
         <e p="Produtos" t="Include">
+          <e p="Marcas" t="Include">
+            <e p="Marca.cs" t="Include" />
+          </e>
           <e p="Produto.cs" t="Include" />
         </e>
       </e>
@@ -111,6 +123,9 @@
           <e p="Fornecedores" t="Include" />
           <e p="Funcionarios" t="Include" />
           <e p="Produtos" t="Include">
+            <e p="Marcas" t="Include">
+              <e p="MarcaModel.cs" t="Include" />
+            </e>
             <e p="ProdutoModel.cs" t="Include" />
           </e>
         </e>
@@ -124,7 +139,12 @@
         <e p="OficinaPitStop.Repositories.csproj" t="IncludeRecursive" />
         <e p="OficinaPitStopContext.cs" t="Include" />
         <e p="Repository" t="Include">
-          <e p="ProdutoRepository.cs" t="Include" />
+          <e p="Produtos" t="Include">
+            <e p="Marcas" t="Include">
+              <e p="MarcaRepository.cs" t="Include" />
+            </e>
+            <e p="ProdutoRepository.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="OficinaPitStop.Repositories.Abstractions" t="IncludeRecursive">
@@ -139,6 +159,11 @@
         <e p="OficinaPitStop.Repositories.Abstractions.csproj" t="IncludeRecursive" />
         <e p="Repository" t="Include">
           <e p="IProdutoRepository.cs" t="Include" />
+          <e p="Produtos" t="Include">
+            <e p="Marcas" t="Include">
+              <e p="IMarcaRepository.cs" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="OficinaPitStop.Services" t="IncludeRecursive">

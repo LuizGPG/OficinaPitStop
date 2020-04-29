@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using OficinaPitStop.Entities.Produtos;
+using OficinaPitStop.Entities.Produtos.Marcas;
 using OficinaPitStop.Repositories.Models.Produtos;
 
 namespace OficinaPitStop.Repositories
@@ -12,6 +13,7 @@ namespace OficinaPitStop.Repositories
         }
         
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Marca> Marca { get; set; }
 
         /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

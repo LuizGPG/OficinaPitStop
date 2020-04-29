@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using OficinaPitStop.Repositories.Models.Produtos.Marcas;
 
 namespace OficinaPitStop.Repositories.Models.Produtos
 {
@@ -10,5 +12,7 @@ namespace OficinaPitStop.Repositories.Models.Produtos
         public string Descricao { get; set; }
         public double Quantidade { get; set; }
         public double Preco { get; set; }
+        
+        public int CodigoMarca { get; set; }
     }
 }

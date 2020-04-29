@@ -3,7 +3,7 @@ using System.Linq;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 
-namespace OficinaPitStop.Repositories.Repository
+namespace OficinaPitStop.Repositories.Repository.Produtos
 {
     public class ProdutoRepository : IProdutoRepository
     {
