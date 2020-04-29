@@ -35,16 +35,17 @@ namespace OficinaPitStop.Api
             services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/build"; });
             services.AddDbContext<OficinaPitStopContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-            
+
             DependencyInjectorRepository(services);
             AddSchemaToScope(services);
 
             services.AddGraphQL(options =>
                 {
                     options.ExposeExceptions = true;
-                }).
-                AddGraphTypes(ServiceLifetime.Scoped).
-                AddDataLoader();
+                })
+                .AddGraphTypes(ServiceLifetime.Scoped)
+                .AddDataLoader();
+            
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
         }
 
@@ -59,7 +60,7 @@ namespace OficinaPitStop.Api
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-            
+
             app.UseGraphQL<ProdutoSchema>();
             app.UseGraphQL<MarcaSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
@@ -85,8 +86,8 @@ namespace OficinaPitStop.Api
                 }
             });*/
         }
-        
-        
+
+
         private static void AddSchemaToScope(IServiceCollection services)
         {
             services.AddScoped<ProdutoSchema>();

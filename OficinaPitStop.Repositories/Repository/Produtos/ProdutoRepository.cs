@@ -18,5 +18,10 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
         {
             return _context.Produtos.ToList();
         }
+
+        public IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto)
+        {
+            return _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToList();
+        }
     }
 }
