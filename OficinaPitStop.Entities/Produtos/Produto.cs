@@ -12,5 +12,8 @@ namespace OficinaPitStop.Entities.Produtos
         public double Quantidade { get; set; }
         public double Preco { get; set; }
         public int CodigoMarca { get; set; }
+        
+        [NotMapped]
+        public Marca Marca { get; set; }
     }
 }

@@ -11,21 +11,36 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
     {
         private readonly IProdutoRepository _repository;
         private const string FiltroNomeProduto = "nome_produto";
+        private const string FiltroNomeMarcaProduto = "marca_produto";
         public ProdutoConsultaType(IProdutoRepository repository)
         {
             _repository = repository;
-            
+
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
                 resolve: context => _repository.ObtemTodosProdutos());
             
             Field<ListGraphType<ProdutoType>>(
                 "produto",
-                arguments: new QueryArguments(new QueryArgument<NonNullGraphType<IdGraphType>>{Name = FiltroNomeProduto}),
+                arguments: new QueryArguments(
+                    new QueryArgument<IdGraphType>{Name = FiltroNomeProduto},
+                    new QueryArgument<IdGraphType>{Name = FiltroNomeMarcaProduto}
+                    ),
                 resolve: context =>
                 {
                     var nomeProduto = context.GetArgument<string>(FiltroNomeProduto);
-                    return _repository.ObtemProdutosPorNome(nomeProduto);
+                    var marcaProduto = context.GetArgument<string>(FiltroNomeMarcaProduto);
+
+                    if (nomeProduto != null && marcaProduto != null)
+                        return null;// implementar metodo filtrando por dois
+                    
+                    if(nomeProduto != null)
+                        return _repository.ObtemProdutosPorNome(nomeProduto);
+
+                    if (marcaProduto != null)
+                        return _repository.ObterProdutosPorMarca(marcaProduto);
+        
+                    return null;
                 });
         }
     }

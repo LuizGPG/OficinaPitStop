@@ -5,7 +5,7 @@ using OficinaPitStop.Repositories.Models.Produtos.Marcas;
 
 namespace OficinaPitStop.Repositories.Models.Produtos
 {
-    public class ProdutoModel
+    /*public class ProdutoModel
     {
         [Key]
         public int Codigo { get; set; }
@@ -14,5 +14,5 @@ namespace OficinaPitStop.Repositories.Models.Produtos
         public double Preco { get; set; }
         
         public int CodigoMarca { get; set; }
-    }
+    }*/
 }
