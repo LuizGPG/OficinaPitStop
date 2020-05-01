@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using OficinaPitStop.Entities.Produtos;
@@ -14,20 +15,13 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             _context = context;
         }
 
-        public IEnumerable<Produto> ObtemTodosProdutos()
-        {
-            return _context.Produtos.ToList();
-        }
+        public IEnumerable<Produto> ObtemTodosProdutos() =>
+            _context.Produtos.ToList();
 
-        public IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto)
-        {
-            return _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToList();
-        }
+        public IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto) =>
+            _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToList();
 
-        public IEnumerable<Produto> ObterProdutosPorMarca(string marcaProduto)
-        {
-            var marcas = _context.Marca.Where(m => m.Descricao.Contains(marcaProduto)).Select(x => x.CodigoMarca);
-            return _context.Produtos.Where(p => marcas.Contains(p.CodigoMarca)).ToList();
-        }
+        public IEnumerable<Produto> ObterProdutoPorCodigoMarca(IEnumerable<int> codigosMarcas) =>
+            _context.Produtos.Where(p => codigosMarcas.Contains(p.CodigoMarca)).ToList();
     }
 }

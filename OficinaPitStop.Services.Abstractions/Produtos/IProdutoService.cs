@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using OficinaPitStop.Entities.Produtos;
 
-namespace OficinaPitStop.Repositories.Abstractions.Repository
+namespace OficinaPitStop.Services.Abstractions.Produtos
 {
-    public interface IProdutoRepository
+    public interface IProdutoService
     {
         IEnumerable<Produto> ObtemTodosProdutos();
         IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto);
-        IEnumerable<Produto> ObterProdutoPorCodigoMarca(IEnumerable<int> codigosMarcas);
+        IEnumerable<Produto> ObterProdutosPorMarca(string marcaProduto);
     }
 }

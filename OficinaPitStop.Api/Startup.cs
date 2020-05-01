@@ -17,6 +17,10 @@ using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Repositories.Repository;
 using OficinaPitStop.Repositories.Repository.Produtos;
 using OficinaPitStop.Repositories.Repository.Produtos.Marcas;
+using OficinaPitStop.Services.Abstractions.Produtos;
+using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
+using OficinaPitStop.Services.Produtos;
+using OficinaPitStop.Services.Produtos.Marcas;
 
 namespace OficinaPitStop.Api
 {
@@ -36,6 +40,7 @@ namespace OficinaPitStop.Api
             services.AddDbContext<OficinaPitStopContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
+            DependencyInjectorService(services);
             DependencyInjectorRepository(services);
             AddSchemaToScope(services);
 
@@ -48,6 +53,7 @@ namespace OficinaPitStop.Api
             
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
         }
+
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -94,6 +100,11 @@ namespace OficinaPitStop.Api
             services.AddScoped<MarcaSchema>();
         }
 
+        private static void DependencyInjectorService(IServiceCollection services)
+        {
+            services.AddScoped<IProdutoService, ProdutoService>();
+            services.AddScoped<IMarcaService, MarcaService>();
+        }
         private static void DependencyInjectorRepository(IServiceCollection services)
         {
             services.AddScoped<IProdutoRepository, ProdutoRepository>();

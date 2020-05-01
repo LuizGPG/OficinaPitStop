@@ -176,6 +176,12 @@
           </e>
         </e>
         <e p="OficinaPitStop.Services.csproj" t="IncludeRecursive" />
+        <e p="Produtos" t="Include">
+          <e p="Marcas" t="Include">
+            <e p="MarcaService.cs" t="Include" />
+          </e>
+          <e p="ProdutoService.cs" t="Include" />
+        </e>
       </e>
       <e p="OficinaPitStop.Services.Abstractions" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -187,6 +193,12 @@
           </e>
         </e>
         <e p="OficinaPitStop.Services.Abstractions.csproj" t="IncludeRecursive" />
+        <e p="Produtos" t="Include">
+          <e p="IProdutoService.cs" t="Include" />
+          <e p="Marcas" t="Include">
+            <e p="iMarcaService.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="OficinaPitStop.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

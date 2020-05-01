@@ -24,13 +24,45 @@
     ".NETCoreApp,Version=v2.2": {
       "OficinaPitStop.Services/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "OficinaPitStop.Repositories.Abstractions": "1.0.0",
+          "OficinaPitStop.Services.Abstractions": "1.0.0"
         },
         "runtime": {
           "OficinaPitStop.Services.dll": {}
         },
         "compile": {
           "OficinaPitStop.Services.dll": {}
+        }
+      },
+      "OficinaPitStop.Entities/1.0.0": {
+        "runtime": {
+          "OficinaPitStop.Entities.dll": {}
+        },
+        "compile": {
+          "OficinaPitStop.Entities.dll": {}
+        }
+      },
+      "OficinaPitStop.Repositories.Abstractions/1.0.0": {
+        "dependencies": {
+          "OficinaPitStop.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OficinaPitStop.Repositories.Abstractions.dll": {}
+        },
+        "compile": {
+          "OficinaPitStop.Repositories.Abstractions.dll": {}
+        }
+      },
+      "OficinaPitStop.Services.Abstractions/1.0.0": {
+        "dependencies": {
+          "OficinaPitStop.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OficinaPitStop.Services.Abstractions.dll": {}
+        },
+        "compile": {
+          "OficinaPitStop.Services.Abstractions.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.2.0": {
@@ -218,6 +250,21 @@
   },
   "libraries": {
     "OficinaPitStop.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OficinaPitStop.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OficinaPitStop.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OficinaPitStop.Services.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

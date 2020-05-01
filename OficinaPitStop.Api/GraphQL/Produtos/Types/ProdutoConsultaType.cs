@@ -4,21 +4,22 @@ using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Repositories.Repository;
+using OficinaPitStop.Services.Abstractions.Produtos;
 
 namespace OficinaPitStop.Api.GraphQL.Produtos.Types
 {
     public class ProdutoConsultaType : ObjectGraphType
     {
-        private readonly IProdutoRepository _repository;
+        private readonly IProdutoService _produtoService;
         private const string FiltroNomeProduto = "nome_produto";
         private const string FiltroNomeMarcaProduto = "marca_produto";
-        public ProdutoConsultaType(IProdutoRepository repository)
+        public ProdutoConsultaType(IProdutoService produtoService)
         {
-            _repository = repository;
+            _produtoService = produtoService;
 
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
-                resolve: context => _repository.ObtemTodosProdutos());
+                resolve: context => _produtoService.ObtemTodosProdutos());
             
             Field<ListGraphType<ProdutoType>>(
                 "produto",
@@ -35,10 +36,10 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
                         return null;// implementar metodo filtrando por dois
                     
                     if(nomeProduto != null)
-                        return _repository.ObtemProdutosPorNome(nomeProduto);
+                        return _produtoService.ObtemProdutosPorNome(nomeProduto);
 
                     if (marcaProduto != null)
-                        return _repository.ObterProdutosPorMarca(marcaProduto);
+                        return _produtoService.ObterProdutosPorMarca(marcaProduto);
         
                     return null;
                 });
