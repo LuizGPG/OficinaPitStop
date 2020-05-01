@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using OficinaPitStop.Entities;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
@@ -16,6 +17,23 @@ namespace OficinaPitStop.Services.Produtos
         {
             _produtoRepository = produtoRepository;
             _marcaRepository = marcaRepository;
+        }
+
+        public IEnumerable<Produto> ObterProdutosPorFitlro(FiltrosProduto filtros)
+        {
+            if (filtros.NomeProduto != default && filtros.NomeMarcaProduto != default)
+            {
+                var produtos = ObterProdutosPorMarca(filtros.NomeMarcaProduto);
+                return produtos.Where(p => p.Descricao.Contains(filtros.NomeProduto)).ToList();
+            }
+
+            if (filtros.NomeProduto != default)
+                return ObtemProdutosPorNome(filtros.NomeProduto);
+
+            if (filtros.NomeMarcaProduto != default)
+                return ObterProdutosPorMarca(filtros.NomeMarcaProduto);
+
+            return ObtemTodosProdutos();
         }
 
         public IEnumerable<Produto> ObtemTodosProdutos() =>

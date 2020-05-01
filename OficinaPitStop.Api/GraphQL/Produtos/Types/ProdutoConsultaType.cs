@@ -1,6 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using GraphQL;
 using GraphQL.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
+using OficinaPitStop.Entities;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Repositories.Repository;
@@ -11,38 +14,37 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
     public class ProdutoConsultaType : ObjectGraphType
     {
         private readonly IProdutoService _produtoService;
-        private const string FiltroNomeProduto = "nome_produto";
-        private const string FiltroNomeMarcaProduto = "marca_produto";
+
         public ProdutoConsultaType(IProdutoService produtoService)
         {
             _produtoService = produtoService;
-
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
                 resolve: context => _produtoService.ObtemTodosProdutos());
-            
+
             Field<ListGraphType<ProdutoType>>(
                 "produto",
-                arguments: new QueryArguments(
-                    new QueryArgument<IdGraphType>{Name = FiltroNomeProduto},
-                    new QueryArgument<IdGraphType>{Name = FiltroNomeMarcaProduto}
-                    ),
+                arguments: new QueryArguments(MontaListaDeQueryArguments()),
                 resolve: context =>
                 {
-                    var nomeProduto = context.GetArgument<string>(FiltroNomeProduto);
-                    var marcaProduto = context.GetArgument<string>(FiltroNomeMarcaProduto);
+                    var filtros = new FiltrosProduto();
+                    filtros.NomeProduto = context.GetArgument<string>(FiltrosProduto.FiltroNomeProduto);
+                    filtros.NomeMarcaProduto = context.GetArgument<string>(FiltrosProduto.FiltroNomeMarcaProduto);
 
-                    if (nomeProduto != null && marcaProduto != null)
-                        return null;// implementar metodo filtrando por dois
+                    return _produtoService.ObterProdutosPorFitlro(filtros);
                     
-                    if(nomeProduto != null)
-                        return _produtoService.ObtemProdutosPorNome(nomeProduto);
-
-                    if (marcaProduto != null)
-                        return _produtoService.ObterProdutosPorMarca(marcaProduto);
-        
-                    return null;
                 });
+        }
+
+        private static List<QueryArgument> MontaListaDeQueryArguments()
+        {
+            List<string> filtros = FiltrosProduto.Filtros;
+            List<QueryArgument> listaDeQuery = new List<QueryArgument>();
+            
+            foreach (var filtro in filtros)
+                listaDeQuery.Add(new QueryArgument<IdGraphType> {Name = filtro});
+
+            return listaDeQuery;
         }
     }
 }

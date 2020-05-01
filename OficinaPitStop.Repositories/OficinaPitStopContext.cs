@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Entities.Produtos.Marcas;
-using OficinaPitStop.Repositories.Models.Produtos;
 
 namespace OficinaPitStop.Repositories
 {
