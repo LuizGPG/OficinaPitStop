@@ -3,9 +3,7 @@ using GraphQL.Server;
 using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +12,6 @@ using OficinaPitStop.Api.GraphQL.Produtos.Schemas;
 using OficinaPitStop.Repositories;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
-using OficinaPitStop.Repositories.Repository;
 using OficinaPitStop.Repositories.Repository.Produtos;
 using OficinaPitStop.Repositories.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;
@@ -52,6 +49,7 @@ namespace OficinaPitStop.Api
                 .AddDataLoader();
             
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
+            services.AddCors();
         }
 
 
@@ -67,6 +65,9 @@ namespace OficinaPitStop.Api
                 app.UseHsts();
             }
 
+            app.UseCors(builder =>
+                builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            
             app.UseGraphQL<ProdutoSchema>();
             app.UseGraphQL<MarcaSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());

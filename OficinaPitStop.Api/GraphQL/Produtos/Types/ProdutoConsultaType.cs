@@ -1,12 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using GraphQL;
 using GraphQL.Types;
-using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
 using OficinaPitStop.Entities;
-using OficinaPitStop.Repositories.Abstractions.Repository;
-using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
-using OficinaPitStop.Repositories.Repository;
 using OficinaPitStop.Services.Abstractions.Produtos;
 
 namespace OficinaPitStop.Api.GraphQL.Produtos.Types
