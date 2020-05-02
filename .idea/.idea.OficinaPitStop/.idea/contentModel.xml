@@ -60,21 +60,16 @@
           <e p="SampleDataController.cs" t="Include" />
         </e>
         <e p="GraphQl" t="Include">
+          <e p="ConsultasTypes.cs" t="Include" />
+          <e p="OficinaPitStopSchema.cs" t="Include" />
           <e p="Produtos" t="Include">
             <e p="Marcas" t="Include">
-              <e p="Schemas" t="Include">
-                <e p="MarcaSchema.cs" t="Include" />
-              </e>
               <e p="Types" t="Include">
                 <e p="MarcaConsultaType.cs" t="Include" />
                 <e p="MarcaType.cs" t="Include" />
               </e>
             </e>
-            <e p="Schemas" t="Include">
-              <e p="ProdutoSchema.cs" t="Include" />
-            </e>
             <e p="Types" t="Include">
-              <e p="ProdutoConsultaType.cs" t="Include" />
               <e p="ProdutoType.cs" t="Include" />
             </e>
           </e>

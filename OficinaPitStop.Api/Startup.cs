@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Schemas;
-using OficinaPitStop.Api.GraphQL.Produtos.Schemas;
+using OficinaPitStop.Api.GraphQL;
 using OficinaPitStop.Repositories;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
@@ -52,7 +51,6 @@ namespace OficinaPitStop.Api
             services.AddCors();
         }
 
-
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -67,9 +65,9 @@ namespace OficinaPitStop.Api
 
             app.UseCors(builder =>
                 builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-            
-            app.UseGraphQL<ProdutoSchema>();
-            app.UseGraphQL<MarcaSchema>();
+
+
+            app.UseGraphQL<OficinaPitStopSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
 
             /*app.UseHttpsRedirection();
@@ -97,8 +95,7 @@ namespace OficinaPitStop.Api
 
         private static void AddSchemaToScope(IServiceCollection services)
         {
-            services.AddScoped<ProdutoSchema>();
-            services.AddScoped<MarcaSchema>();
+            services.AddScoped<OficinaPitStopSchema>();
         }
 
         private static void DependencyInjectorService(IServiceCollection services)

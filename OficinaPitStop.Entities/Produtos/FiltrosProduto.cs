@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace OficinaPitStop.Entities
+namespace OficinaPitStop.Entities.Produtos
 {
     public class FiltrosProduto 
     {

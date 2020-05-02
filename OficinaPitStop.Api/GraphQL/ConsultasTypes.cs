@@ -1,17 +1,42 @@
 using System.Collections.Generic;
 using GraphQL.Types;
-using OficinaPitStop.Entities;
+using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
+using OficinaPitStop.Api.GraphQL.Produtos.Types;
+using OficinaPitStop.Entities.Produtos;
+using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;
 
-namespace OficinaPitStop.Api.GraphQL.Produtos.Types
+namespace OficinaPitStop.Api.GraphQL
 {
-    public class ProdutoConsultaType : ObjectGraphType
+    public class ConsultasTypes : ObjectGraphType
     {
         private readonly IProdutoService _produtoService;
+        private readonly IMarcaRepository _marcaRepository;
 
-        public ProdutoConsultaType(IProdutoService produtoService)
+        public ConsultasTypes(IProdutoService produtoService, IMarcaRepository marcaRepository)
         {
             _produtoService = produtoService;
+            _marcaRepository = marcaRepository;
+            
+            ConsultasType();
+        }
+
+        private void ConsultasType()
+        {
+            ConsultaProdutosType();
+            ConsultaMarcasTyoe();
+        }
+
+        private void ConsultaMarcasTyoe()
+        {
+            Field<ListGraphType<MarcaType>>(
+                "marcas",
+                resolve: context => _marcaRepository.ObtemTodasAsMarcas());
+        }
+
+        private void ConsultaProdutosType()
+        {
+            ProdutoType x = new ProdutoType(_marcaRepository);
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
                 resolve: context => _produtoService.ObtemTodosProdutos());
@@ -26,7 +51,6 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
                     filtros.NomeMarcaProduto = context.GetArgument<string>(FiltrosProduto.FiltroNomeMarcaProduto);
 
                     return _produtoService.ObterProdutosPorFitlro(filtros);
-                    
                 });
         }
 

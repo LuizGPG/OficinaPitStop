@@ -10,6 +10,7 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types
         public MarcaConsultaType(IMarcaRepository repository)
         {
             _repository = repository;
+            
             Field<ListGraphType<MarcaType>>(
                 "marcas",
                 resolve: context => _repository.ObtemTodasAsMarcas());
