@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Entities.Produtos.Marcas;
 
-namespace OficinaPitStop.UnitTest.Mock
+namespace OficinaPitStop.UnitTest.Mock.Produtos
 {
     public class ProdutoFixture
     {
@@ -14,19 +15,30 @@ namespace OficinaPitStop.UnitTest.Mock
                 {
                     Codigo = 1,
                     Descricao = "Produto Teste Descricao",
-                    Marca = MarcaMock(),
+                    Marca = MarcasMock().First(),
                     Preco = 1.22,
                     Quantidade = 3.0,
                     CodigoMarca = 1
                 }
             };
         }
-
-        public Marca MarcaMock() =>
-            new Marca()
+        
+        public IEnumerable<Marca> MarcasMock()
+        {
+            return new List<Marca>()
             {
-                CodigoMarca = 1,
-                Descricao = "Marca Teste Descricao"
+                new Marca()
+                {
+                    CodigoMarca = 1,
+                    Descricao = "Marca Teste Descricao 1"
+                },
+                new Marca()
+                {
+                    CodigoMarca = 2,
+                    Descricao = "Marca Teste Descricao 2"
+                }
             };
+        } 
+        
     }
 }

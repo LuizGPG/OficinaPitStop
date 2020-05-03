@@ -7,5 +7,6 @@ namespace OficinaPitStop.Services.Abstractions.Produtos.Marcas
     {
         IEnumerable<Marca> ObtemTodasAsMarcas();
         Marca ObtemMarcaPorId(int codigoMarca);
+        IEnumerable<Marca> ObterMarcasPorNome(string descricao);
     }
 }

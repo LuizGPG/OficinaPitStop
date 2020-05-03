@@ -1,6 +1,5 @@
 using GraphQL;
 using GraphQL.Types;
-using OficinaPitStop.Api.GraphQL.Produtos.Types;
 
 namespace OficinaPitStop.Api.GraphQL
 {

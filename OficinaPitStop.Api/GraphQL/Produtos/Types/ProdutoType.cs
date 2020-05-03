@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using GraphQL.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
-using OficinaPitStop.Entities;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;

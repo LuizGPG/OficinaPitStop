@@ -196,7 +196,12 @@
       <e p="OficinaPitStop.UnitTest" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Mock" t="Include">
-          <e p="ProdutoFixture.cs" t="Include" />
+          <e p="Produtos" t="Include">
+            <e p="Marcas" t="Include">
+              <e p="MarcaFixture.cs" t="Include" />
+            </e>
+            <e p="ProdutoFixture.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -207,7 +212,12 @@
           </e>
         </e>
         <e p="OficinaPitStop.UnitTest.csproj" t="IncludeRecursive" />
-        <e p="ProdutosTests.cs" t="Include" />
+        <e p="Produtos" t="Include">
+          <e p="Marcas" t="Include">
+            <e p="MarcaTests.cs" t="Include" />
+          </e>
+          <e p="ProdutoTests.cs" t="Include" />
+        </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include" />

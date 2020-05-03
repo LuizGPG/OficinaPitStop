@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using OficinaPitStop.Entities;
 using OficinaPitStop.Entities.Produtos;
 
 namespace OficinaPitStop.Services.Abstractions.Produtos

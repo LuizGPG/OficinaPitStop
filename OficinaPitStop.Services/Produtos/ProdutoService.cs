@@ -1,22 +1,21 @@
 using System.Collections.Generic;
 using System.Linq;
-using OficinaPitStop.Entities;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
-using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;
+using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
 
 namespace OficinaPitStop.Services.Produtos
 {
     public class ProdutoService : IProdutoService
     {
         private readonly IProdutoRepository _produtoRepository;
-        private readonly IMarcaRepository _marcaRepository;
+        private readonly IMarcaService _marcaService;
 
-        public ProdutoService(IProdutoRepository produtoRepository, IMarcaRepository marcaRepository)
+        public ProdutoService(IProdutoRepository produtoRepository, IMarcaService marcaService)
         {
             _produtoRepository = produtoRepository;
-            _marcaRepository = marcaRepository;
+            _marcaService = marcaService;
         }
 
         public IEnumerable<Produto> ObterProdutosPorFitlro(FiltrosProduto filtros)
@@ -44,12 +43,10 @@ namespace OficinaPitStop.Services.Produtos
 
         public IEnumerable<Produto> ObterProdutosPorMarca(string marcaProduto)
         {
-            var marcas = _marcaRepository.ObterMarcasPorNome(marcaProduto);
-            var listaDeDescricao = marcas.Select(m => m.CodigoMarca);
+            var marcas = _marcaService.ObterMarcasPorNome(marcaProduto);
+            var codigosMarcas = marcas.Select(m => m.CodigoMarca);
 
-            var retorno = _produtoRepository.ObterProdutoPorCodigoMarca(listaDeDescricao);
-            
-            return retorno;
+            return _produtoRepository.ObterProdutoPorCodigoMarca(codigosMarcas);
         }
     }
 }

@@ -19,5 +19,8 @@ namespace OficinaPitStop.Services.Produtos.Marcas
 
         public Marca ObtemMarcaPorId(int codigoMarca) =>
             _marcaRepository.ObtemMarcaPorId(codigoMarca);
+
+        public IEnumerable<Marca> ObterMarcasPorNome(string descricao) =>
+            _marcaRepository.ObterMarcasPorNome(descricao);
     }
 }
