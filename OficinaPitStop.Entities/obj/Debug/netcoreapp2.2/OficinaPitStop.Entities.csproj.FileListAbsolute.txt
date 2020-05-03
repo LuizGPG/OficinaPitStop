@@ -1,9 +1,0 @@
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.deps.json
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.dll
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.pdb
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\obj\Debug\netcoreapp2.2\OficinaPitStop.Entities.csprojAssemblyReference.cache
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\obj\Debug\netcoreapp2.2\OficinaPitStop.Entities.csproj.CoreCompileInputs.cache
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\obj\Debug\netcoreapp2.2\OficinaPitStop.Entities.AssemblyInfoInputs.cache
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\obj\Debug\netcoreapp2.2\OficinaPitStop.Entities.AssemblyInfo.cs
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\obj\Debug\netcoreapp2.2\OficinaPitStop.Entities.dll
-C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Entities\obj\Debug\netcoreapp2.2\OficinaPitStop.Entities.pdb

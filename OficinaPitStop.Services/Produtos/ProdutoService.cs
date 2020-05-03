@@ -46,8 +46,10 @@ namespace OficinaPitStop.Services.Produtos
         {
             var marcas = _marcaRepository.ObterMarcasPorNome(marcaProduto);
             var listaDeDescricao = marcas.Select(m => m.CodigoMarca);
+
+            var retorno = _produtoRepository.ObterProdutoPorCodigoMarca(listaDeDescricao);
             
-            return _produtoRepository.ObterProdutoPorCodigoMarca(listaDeDescricao);
+            return retorno;
         }
     }
 }

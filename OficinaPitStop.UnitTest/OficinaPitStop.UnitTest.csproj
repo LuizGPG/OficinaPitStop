@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GraphQL" Version="3.0.0-preview-1490" />
+        <PackageReference Include="GraphQL.Client" Version="3.1.0" />
+        <PackageReference Include="GraphQL.Common" Version="2.0.0-alpha.3" />
+        <PackageReference Include="Moq" Version="4.14.1" />
+        <PackageReference Include="nunit" Version="3.11.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OficinaPitStop.Api\OficinaPitStop.Api.csproj" />
+      <ProjectReference Include="..\OficinaPitStop.Repositories.Abstractions\OficinaPitStop.Repositories.Abstractions.csproj" />
+      <ProjectReference Include="..\OficinaPitStop.Repositories\OficinaPitStop.Repositories.csproj" />
+      <ProjectReference Include="..\OficinaPitStop.Services.Abstractions\OficinaPitStop.Services.Abstractions.csproj" />
+      <ProjectReference Include="..\OficinaPitStop.Services\OficinaPitStop.Services.csproj" />
+    </ItemGroup>
+
+</Project>
