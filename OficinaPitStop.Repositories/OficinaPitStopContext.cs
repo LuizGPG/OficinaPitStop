@@ -16,13 +16,13 @@ namespace OficinaPitStop.Repositories
 
         /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            https://www.entityframeworktutorial.net/efcore/fluent-api-in-entity-framework-core.aspx
             modelBuilder.Entity<Produto>(
                 entity =>
                 {
                     entity
                         .HasKey(e => e.Codigo)
-                        .HasName("idlo");
+                        .HasColumn
                 });
             
             base.OnModelCreating(modelBuilder);

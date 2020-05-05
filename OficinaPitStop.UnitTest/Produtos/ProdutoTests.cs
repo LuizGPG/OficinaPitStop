@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Moq;
 using OficinaPitStop.Entities.Produtos;
@@ -56,7 +57,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             Assert.Equal(produtosRetorno, produtosMock);
         }
 
-        [Fact(Skip = "Nao funciona esse caralho")]
+        [Fact]
         public void Deve_Buscar_Produto_Por_Marca()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
@@ -68,7 +69,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             marcaService.Setup(m => m.ObterMarcasPorNome(It.IsAny<string>()))
                 .Returns(marcasMock);
 
-            produtoRespository.Setup(x => x.ObterProdutoPorCodigoMarca(It.IsAny<int[]>()))
+            produtoRespository.Setup(x => x.ObterProdutoPorCodigoMarca(It.IsAny<IEnumerable<int>>()))
                 .Returns(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
@@ -96,7 +97,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             Assert.Equal(produtosRetorno, produtosMock);
         }
 
-        [Fact(Skip = "Resolver aquele problema")]
+        [Fact]
         public void Deve_Retornar_Produto_Usando_Filtro_De_Marca()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
@@ -109,7 +110,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             marcaService.Setup(m => m.ObterMarcasPorNome(It.IsAny<string>()))
                 .Returns(marcasMock);
 
-            produtoRespository.Setup(x => x.ObterProdutoPorCodigoMarca(It.IsAny<int[]>()))
+            produtoRespository.Setup(x => x.ObterProdutoPorCodigoMarca(It.IsAny<IEnumerable<int>>()))
                 .Returns(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
@@ -118,7 +119,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             Assert.Equal(produtosRetorno, produtosMock);
         }
 
-        [Fact(Skip = "Resolver aquele problema")]
+        [Fact]
         public void Deve_Retornar_Produto_Usando_Filtro_De_Produto_E_Marca()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
@@ -132,7 +133,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             marcaService.Setup(m => m.ObterMarcasPorNome(It.IsAny<string>()))
                 .Returns(marcasMock);
 
-            produtoRespository.Setup(x => x.ObterProdutoPorCodigoMarca(It.IsAny<int[]>()))
+            produtoRespository.Setup(x => x.ObterProdutoPorCodigoMarca(It.IsAny<IEnumerable<int>>()))
                 .Returns(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
