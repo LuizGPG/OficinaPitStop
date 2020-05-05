@@ -67,6 +67,7 @@
         </e>
         <e p="GraphQl" t="Include">
           <e p="ConsultasTypes.cs" t="Include" />
+          <e p="MutationsType.cs" t="Include" />
           <e p="OficinaPitStopSchema.cs" t="Include" />
           <e p="Produtos" t="Include">
             <e p="Marcas" t="Include">
@@ -76,6 +77,7 @@
               </e>
             </e>
             <e p="Types" t="Include">
+              <e p="MutationProdutoType.cs" t="Include" />
               <e p="ProdutoType.cs" t="Include" />
             </e>
           </e>

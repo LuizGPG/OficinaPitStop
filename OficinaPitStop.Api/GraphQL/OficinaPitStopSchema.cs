@@ -8,6 +8,7 @@ namespace OficinaPitStop.Api.GraphQL
         public OficinaPitStopSchema(IDependencyResolver resolver) : base(resolver)
         {
             Query = resolver.Resolve<ConsultasTypes>();
+            Mutation = resolver.Resolve<MutationsType>();
         }
     }
 }

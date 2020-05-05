@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using OficinaPitStop.Entities.Produtos;
 
@@ -8,6 +9,7 @@ namespace OficinaPitStop.Services.Abstractions.Produtos
         IEnumerable<Produto> ObterProdutosPorFitlro(FiltrosProduto filtros);
         IEnumerable<Produto> ObtemTodosProdutos();
         IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto);
-        IEnumerable<Produto> ObterProdutosPorMarca(string marcaProduto);
+
+        bool AdicionaProduto(Produto produto);
     }
 }

@@ -5,18 +5,19 @@ using OficinaPitStop.Api.GraphQL.Produtos.Types;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;
+using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
 
 namespace OficinaPitStop.Api.GraphQL
 {
     public class ConsultasTypes : ObjectGraphType
     {
         private readonly IProdutoService _produtoService;
-        private readonly IMarcaRepository _marcaRepository;
+        private readonly IMarcaService _marcaService;
 
-        public ConsultasTypes(IProdutoService produtoService, IMarcaRepository marcaRepository)
+        public ConsultasTypes(IProdutoService produtoService, IMarcaService marcaService)
         {
             _produtoService = produtoService;
-            _marcaRepository = marcaRepository;
+            _marcaService = marcaService;
             
             ConsultasType();
         }
@@ -31,12 +32,13 @@ namespace OficinaPitStop.Api.GraphQL
         {
             Field<ListGraphType<MarcaType>>(
                 "marcas",
-                resolve: context => _marcaRepository.ObtemTodasAsMarcas());
+                resolve: context => _marcaService.ObtemTodasAsMarcas());
+            
+            //todo Implementar busca de marcas por id e por nome e criar testes
         }
 
         private void ConsultaProdutosType()
         {
-            ProdutoType x = new ProdutoType(_marcaRepository);
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
                 resolve: context => _produtoService.ObtemTodosProdutos());

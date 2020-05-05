@@ -48,5 +48,9 @@ namespace OficinaPitStop.Services.Produtos
             
             return _produtoRepository.ObterProdutoPorCodigoMarca(codigosMarcas);
         }
+
+        public bool AdicionaProduto(Produto produto) =>
+            _produtoRepository.AdicionaProduto(produto);
+
     }
 }
