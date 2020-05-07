@@ -1,9 +1,6 @@
-using System.Collections.Generic;
 using GraphQL.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
 using OficinaPitStop.Entities.Produtos;
-using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
-using OficinaPitStop.Services.Abstractions.Produtos;
 using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
 
 namespace OficinaPitStop.Api.GraphQL.Produtos.Types
@@ -18,7 +15,7 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
             Field(p => p.Preco).Description("Preco produto.");
             Field<MarcaType>(
                 "marca",
-                resolve: context => marcaService.ObtemMarcaPorId(context.Source.CodigoMarca));
+                resolve: context => marcaService.ObterPorId(context.Source.CodigoMarca));
         }
 
     }

@@ -5,10 +5,11 @@ namespace OficinaPitStop.Repositories.Abstractions.Repository
 {
     public interface IProdutoRepository
     {
-        IEnumerable<Produto> ObtemTodosProdutos();
-        IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto);
-        IEnumerable<Produto> ObterProdutoPorCodigoMarca(IEnumerable<int> codigosMarcas);
-        bool AdicionaProduto(Produto produto);
-        bool AtualizaProduto(Produto produto);
+        IEnumerable<Produto> ObterTodos();
+        IEnumerable<Produto> ObterPorNome(string nomeProduto);
+        IEnumerable<Produto> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas);
+        bool Adiciona(Produto produto);
+        bool Atualiza(Produto produto);
+        bool Deleta(Produto produto);
     }
 }

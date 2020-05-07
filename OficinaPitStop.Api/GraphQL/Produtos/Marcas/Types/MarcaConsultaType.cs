@@ -13,7 +13,7 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types
             
             Field<ListGraphType<MarcaType>>(
                 "marcas",
-                resolve: context => _repository.ObtemTodasAsMarcas());
+                resolve: context => _repository.ObterTodos());
         }
     }
 }

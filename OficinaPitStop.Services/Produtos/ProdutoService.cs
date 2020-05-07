@@ -19,7 +19,7 @@ namespace OficinaPitStop.Services.Produtos
             _marcaService = marcaService;
         }
 
-        public IEnumerable<Produto> ObterProdutosPorFitlro(FiltrosProduto filtros)
+        public IEnumerable<Produto> ObterPorFitlro(FiltrosProduto filtros)
         {
             if (filtros.NomeProduto != default && filtros.NomeMarcaProduto != default)
             {
@@ -28,32 +28,35 @@ namespace OficinaPitStop.Services.Produtos
             }
 
             if (filtros.NomeProduto != default)
-                return ObtemProdutosPorNome(filtros.NomeProduto);
+                return ObterPorNome(filtros.NomeProduto);
 
             if (filtros.NomeMarcaProduto != default)
                 return ObterProdutosPorMarca(filtros.NomeMarcaProduto);
 
-            return ObtemTodosProdutos();
+            return ObterTodos();
         }
 
-        public IEnumerable<Produto> ObtemTodosProdutos() =>
-            _produtoRepository.ObtemTodosProdutos();
+        public IEnumerable<Produto> ObterTodos() =>
+            _produtoRepository.ObterTodos();
 
-        public IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto) =>
-            _produtoRepository.ObtemProdutosPorNome(nomeProduto);
+        public IEnumerable<Produto> ObterPorNome(string nomeProduto) =>
+            _produtoRepository.ObterPorNome(nomeProduto);
 
         public IEnumerable<Produto> ObterProdutosPorMarca(string marcaProduto)
         {
-            var marcas = _marcaService.ObterMarcasPorNome(marcaProduto);
+            var marcas = _marcaService.ObterPorNome(marcaProduto);
             var codigosMarcas = marcas.Select(m => m.CodigoMarca);
             
-            return _produtoRepository.ObterProdutoPorCodigoMarca(codigosMarcas);
+            return _produtoRepository.ObterPorCodigoMarca(codigosMarcas);
         }
 
-        public bool AdicionaProduto(Produto produto) =>
-            _produtoRepository.AdicionaProduto(produto);
+        public bool Adiciona(Produto produto) =>
+            _produtoRepository.Adiciona(produto);
 
-        public bool AtualizaProduto(Produto produto) =>
-            _produtoRepository.AtualizaProduto(produto);
+        public bool Atualiza(Produto produto) =>
+            _produtoRepository.Atualiza(produto);
+
+        public bool Deleta(Produto produto) =>
+            _produtoRepository.Deleta(produto);
     }
 }

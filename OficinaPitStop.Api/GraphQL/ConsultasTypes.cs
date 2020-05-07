@@ -2,11 +2,8 @@ using System.Collections.Generic;
 using GraphQL.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Types;
-using OficinaPitStop.Entities.Filtros;
 using OficinaPitStop.Entities.Filtros.Produtos;
 using OficinaPitStop.Entities.Filtros.Produtos.Marcas;
-using OficinaPitStop.Entities.Produtos;
-using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;
 using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
 
@@ -35,7 +32,7 @@ namespace OficinaPitStop.Api.GraphQL
         {
             Field<ListGraphType<MarcaType>>(
                 "marcas",
-                resolve: context => _marcaService.ObtemTodasAsMarcas());
+                resolve: context => _marcaService.ObterTodos());
 
             Field<ListGraphType<MarcaType>>(
                 "marca",
@@ -44,7 +41,7 @@ namespace OficinaPitStop.Api.GraphQL
                 {
                     var filtros = new FiltrosMarca();
                     filtros.NomeMarca = context.GetArgument<string>(FiltrosMarca.FiltroNomeMarca);
-                    return _marcaService.ObterMarcasPorNome(filtros.NomeMarca);
+                    return _marcaService.ObterPorNome(filtros.NomeMarca);
                 });
         }
 
@@ -52,7 +49,7 @@ namespace OficinaPitStop.Api.GraphQL
         {
             Field<ListGraphType<ProdutoType>>(
                 "produtos",
-                resolve: context => _produtoService.ObtemTodosProdutos());
+                resolve: context => _produtoService.ObterTodos());
 
             Field<ListGraphType<ProdutoType>>(
                 "produto",
@@ -63,7 +60,7 @@ namespace OficinaPitStop.Api.GraphQL
                     filtros.NomeProduto = context.GetArgument<string>(FiltrosProduto.FiltroNomeProduto);
                     filtros.NomeMarcaProduto = context.GetArgument<string>(FiltrosProduto.FiltroNomeMarcaProduto);
 
-                    return _produtoService.ObterProdutosPorFitlro(filtros);
+                    return _produtoService.ObterPorFitlro(filtros);
                 });
         }
 

@@ -22,11 +22,11 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
             var marcas = _marcaFixture.MarcasMock();
             var marcaRepository = new Mock<IMarcaRepository>();
 
-            marcaRepository.Setup(m => m.ObtemTodasAsMarcas())
+            marcaRepository.Setup(m => m.ObterTodos())
                 .Returns(marcas);
 
             var marcaService = new MarcaService(marcaRepository.Object);
-            var marcasRetorno = marcaService.ObtemTodasAsMarcas();
+            var marcasRetorno = marcaService.ObterTodos();
 
             Assert.Equal(marcasRetorno, marcas);
         }
@@ -37,11 +37,11 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
             var marca = _marcaFixture.MarcasMock().First();
             var marcaRepository = new Mock<IMarcaRepository>();
 
-            marcaRepository.Setup(m => m.ObtemMarcaPorId(It.IsAny<int>()))
+            marcaRepository.Setup(m => m.ObterPorId(It.IsAny<int>()))
                 .Returns(marca);
 
             var marcaService = new MarcaService(marcaRepository.Object);
-            var marcasRetorno = marcaService.ObtemMarcaPorId(marca.CodigoMarca);
+            var marcasRetorno = marcaService.ObterPorId(marca.CodigoMarca);
 
             Assert.Equal(marcasRetorno, marca);
         }
@@ -52,11 +52,11 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
             var marca = _marcaFixture.MarcasMock();
             var marcaRepository = new Mock<IMarcaRepository>();
 
-            marcaRepository.Setup(m => m.ObterMarcasPorNome(It.IsAny<string>()))
+            marcaRepository.Setup(m => m.ObterPorNome(It.IsAny<string>()))
                 .Returns(marca);
 
             var marcaService = new MarcaService(marcaRepository.Object);
-            var marcasRetorno = marcaService.ObterMarcasPorNome(marca.First().Descricao);
+            var marcasRetorno = marcaService.ObterPorNome(marca.First().Descricao);
 
             Assert.Equal(marcasRetorno, marca);
         }

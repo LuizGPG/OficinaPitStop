@@ -5,8 +5,11 @@ namespace OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas
 {
     public interface IMarcaRepository
     {
-        IEnumerable<Marca> ObtemTodasAsMarcas();
-        Marca ObtemMarcaPorId(int codigoMarca);
-        IEnumerable<Marca> ObterMarcasPorNome(string descricao);
+        IEnumerable<Marca> ObterTodos();
+        Marca ObterPorId(int codigoMarca);
+        IEnumerable<Marca> ObterPorNome(string descricao);
+        bool Adiciona(Marca marca);
+        bool Atualiza(Marca marca);
+        bool Deleta(Marca marca);
     }
 }

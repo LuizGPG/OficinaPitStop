@@ -13,19 +13,43 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
         {
             _context = context;
         }
-        public IEnumerable<Marca> ObtemTodasAsMarcas()
+        public IEnumerable<Marca> ObterTodos()
         {
             return _context.Marca.ToList();
         }
 
-        public Marca ObtemMarcaPorId(int codigoMarca)
+        public Marca ObterPorId(int codigoMarca)
         {
             return _context.Marca.Find(codigoMarca);
         }
 
-        public IEnumerable<Marca> ObterMarcasPorNome(string descricao)
+        public IEnumerable<Marca> ObterPorNome(string descricao)
         {
             return _context.Marca.Where(p => p.Descricao.Contains(descricao)).ToList();
+        }
+
+        public bool Adiciona(Marca marca)
+        {
+            _context.Marca.Add(marca);
+            _context.SaveChanges();
+
+            return true;
+        }
+
+        public bool Atualiza(Marca marca)
+        {
+            _context.Marca.Update(marca);
+            _context.SaveChanges();
+
+            return true;
+        }
+
+        public bool Deleta(Marca marca)
+        {
+            _context.Marca.Remove(marca);
+            _context.SaveChanges();
+
+            return true;
         }
     }
 }

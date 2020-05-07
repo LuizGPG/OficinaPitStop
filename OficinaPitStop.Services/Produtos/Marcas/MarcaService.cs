@@ -14,13 +14,22 @@ namespace OficinaPitStop.Services.Produtos.Marcas
             _marcaRepository = marcaRepository;
         }
 
-        public IEnumerable<Marca> ObtemTodasAsMarcas() =>
-            _marcaRepository.ObtemTodasAsMarcas();
+        public IEnumerable<Marca> ObterTodos() =>
+            _marcaRepository.ObterTodos();
 
-        public Marca ObtemMarcaPorId(int codigoMarca) =>
-            _marcaRepository.ObtemMarcaPorId(codigoMarca);
+        public Marca ObterPorId(int codigoMarca) =>
+            _marcaRepository.ObterPorId(codigoMarca);
 
-        public IEnumerable<Marca> ObterMarcasPorNome(string descricao) =>
-            _marcaRepository.ObterMarcasPorNome(descricao);
+        public IEnumerable<Marca> ObterPorNome(string descricao) =>
+            _marcaRepository.ObterPorNome(descricao);
+
+        public bool Adiciona(Marca marca) =>
+            _marcaRepository.Adiciona(marca);
+
+        public bool Atualiza(Marca marca) =>
+            _marcaRepository.Atualiza(marca);
+
+        public bool Deleta(Marca marca) =>
+            _marcaRepository.Deleta(marca);
     }
 }

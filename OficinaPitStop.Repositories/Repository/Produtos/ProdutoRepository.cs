@@ -14,16 +14,16 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             _context = context;
         }
 
-        public IEnumerable<Produto> ObtemTodosProdutos() =>
+        public IEnumerable<Produto> ObterTodos() =>
             _context.Produtos.ToList();
 
-        public IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto) =>
+        public IEnumerable<Produto> ObterPorNome(string nomeProduto) =>
             _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToList();
 
-        public IEnumerable<Produto> ObterProdutoPorCodigoMarca(IEnumerable<int> codigosMarcas) =>
+        public IEnumerable<Produto> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas) =>
             _context.Produtos.Where(p => codigosMarcas.Contains(p.CodigoMarca)).ToList();
 
-        public bool AdicionaProduto(Produto produto)
+        public bool Adiciona(Produto produto)
         {
             _context.Produtos.Add(produto);
             _context.SaveChanges();
@@ -31,11 +31,19 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             return true;
         }
 
-        public bool AtualizaProduto(Produto produto)
+        public bool Atualiza(Produto produto)
         {
             //todo fazer partial update
             _context.Produtos.Update(produto);
             _context.SaveChanges();
+            return true;
+        }
+
+        public bool Deleta(Produto produto)
+        {
+            _context.Produtos.Remove(produto);
+            _context.SaveChanges();
+            
             return true;
         }
     }
