@@ -53,5 +53,7 @@ namespace OficinaPitStop.Services.Produtos
         public bool AdicionaProduto(Produto produto) =>
             _produtoRepository.AdicionaProduto(produto);
 
+        public bool AtualizaProduto(Produto produto) =>
+            _produtoRepository.AtualizaProduto(produto);
     }
 }

@@ -12,5 +12,6 @@ namespace OficinaPitStop.Services.Abstractions.Produtos
         IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto);
 
         bool AdicionaProduto(Produto produto);
+        bool AtualizaProduto(Produto produto);
     }
 }

@@ -9,5 +9,6 @@ namespace OficinaPitStop.Repositories.Abstractions.Repository
         IEnumerable<Produto> ObtemProdutosPorNome(string nomeProduto);
         IEnumerable<Produto> ObterProdutoPorCodigoMarca(IEnumerable<int> codigosMarcas);
         bool AdicionaProduto(Produto produto);
+        bool AtualizaProduto(Produto produto);
     }
 }

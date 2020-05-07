@@ -30,5 +30,13 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
 
             return true;
         }
+
+        public bool AtualizaProduto(Produto produto)
+        {
+            //todo fazer partial update
+            _context.Produtos.Update(produto);
+            _context.SaveChanges();
+            return true;
+        }
     }
 }

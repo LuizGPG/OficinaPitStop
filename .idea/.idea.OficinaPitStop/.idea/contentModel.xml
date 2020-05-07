@@ -28,8 +28,9 @@
               </e>
             </e>
             <e p="Types" t="Include">
-              <e p="MutationProdutoType.cs" t="Include" />
+              <e p="ProdutoCreateType.cs" t="Include" />
               <e p="ProdutoType.cs" t="Include" />
+              <e p="ProdutoUpdateType.cs" t="Include" />
             </e>
           </e>
         </e>

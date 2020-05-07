@@ -3,11 +3,12 @@ using OficinaPitStop.Entities.Produtos;
 
 namespace OficinaPitStop.Api.GraphQL.Produtos.Types
 {
-    public class MutationProdutoType : InputObjectGraphType<Produto>
+    public class ProdutoCreateType : InputObjectGraphType<Produto>
     {
-        public MutationProdutoType()
+        public ProdutoCreateType()
         {
-            Name = "create";
+            Name = "create_produto";
+            Field(p => p.Codigo, true);
             Field(p => p.Descricao);
             Field(p => p.Preco);
             Field(p => p.Quantidade);
