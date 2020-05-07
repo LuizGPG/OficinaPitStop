@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace OficinaPitStop.Entities.Produtos
+namespace OficinaPitStop.Entities.Filtros.Produtos
 {
     public class FiltrosProduto 
     {
@@ -12,7 +12,6 @@ namespace OficinaPitStop.Entities.Produtos
 
         public FiltrosProduto()
         {
-            
         }
         
         public static List<string> Filtros = new List<string>()
@@ -20,6 +19,5 @@ namespace OficinaPitStop.Entities.Produtos
             FiltroNomeProduto,
             FiltroNomeMarcaProduto
         };
-
     }
 }

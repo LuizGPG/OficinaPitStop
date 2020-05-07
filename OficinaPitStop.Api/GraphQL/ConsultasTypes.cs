@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using GraphQL.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Marcas.Types;
 using OficinaPitStop.Api.GraphQL.Produtos.Types;
+using OficinaPitStop.Entities.Filtros;
+using OficinaPitStop.Entities.Filtros.Produtos;
+using OficinaPitStop.Entities.Filtros.Produtos.Marcas;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 using OficinaPitStop.Services.Abstractions.Produtos;
@@ -18,7 +21,7 @@ namespace OficinaPitStop.Api.GraphQL
         {
             _produtoService = produtoService;
             _marcaService = marcaService;
-            
+
             ConsultasType();
         }
 
@@ -33,8 +36,16 @@ namespace OficinaPitStop.Api.GraphQL
             Field<ListGraphType<MarcaType>>(
                 "marcas",
                 resolve: context => _marcaService.ObtemTodasAsMarcas());
-            
-            //todo Implementar busca de marcas por id e por nome e criar testes
+
+            Field<ListGraphType<MarcaType>>(
+                "marca",
+                arguments: new QueryArguments(MontaListaDeQueryArguments(FiltrosMarca.Filtros)),
+                resolve: context =>
+                {
+                    var filtros = new FiltrosMarca();
+                    filtros.NomeMarca = context.GetArgument<string>(FiltrosMarca.FiltroNomeMarca);
+                    return _marcaService.ObterMarcasPorNome(filtros.NomeMarca);
+                });
         }
 
         private void ConsultaProdutosType()
@@ -45,7 +56,7 @@ namespace OficinaPitStop.Api.GraphQL
 
             Field<ListGraphType<ProdutoType>>(
                 "produto",
-                arguments: new QueryArguments(MontaListaDeQueryArguments()),
+                arguments: new QueryArguments(MontaListaDeQueryArguments(FiltrosProduto.Filtros)),
                 resolve: context =>
                 {
                     var filtros = new FiltrosProduto();
@@ -56,11 +67,10 @@ namespace OficinaPitStop.Api.GraphQL
                 });
         }
 
-        private static List<QueryArgument> MontaListaDeQueryArguments()
+        private static List<QueryArgument> MontaListaDeQueryArguments(List<string> filtros)
         {
-            List<string> filtros = FiltrosProduto.Filtros;
             List<QueryArgument> listaDeQuery = new List<QueryArgument>();
-            
+
             foreach (var filtro in filtros)
                 listaDeQuery.Add(new QueryArgument<IdGraphType> {Name = filtro});
 

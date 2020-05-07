@@ -11,7 +11,7 @@ namespace OficinaPitStop.Api.GraphQL.Produtos.Types
             Field(p => p.Descricao);
             Field(p => p.Preco);
             Field(p => p.Quantidade);
-            Field(p => p.CodigoMarca);
+            Field(p => p.CodigoMarca, true);
         }
     }
 }

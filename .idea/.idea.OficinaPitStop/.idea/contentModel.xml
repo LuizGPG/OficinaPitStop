@@ -103,6 +103,14 @@
       </e>
       <e p="OficinaPitStop.Entities" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Filtros" t="Include">
+          <e p="Produtos" t="Include">
+            <e p="FiltrosProduto.cs" t="Include" />
+            <e p="Marcas" t="Include">
+              <e p="FiltrosMarca.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Fornecedores" t="Include" />
         <e p="Funcionarios" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -114,7 +122,6 @@
         </e>
         <e p="OficinaPitStop.Entities.csproj" t="IncludeRecursive" />
         <e p="Produtos" t="Include">
-          <e p="FiltrosProduto.cs" t="Include" />
           <e p="Marcas" t="Include">
             <e p="Marca.cs" t="Include" />
           </e>

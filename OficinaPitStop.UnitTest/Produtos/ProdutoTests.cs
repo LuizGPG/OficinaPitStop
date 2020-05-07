@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Moq;
+using OficinaPitStop.Entities.Filtros.Produtos;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
