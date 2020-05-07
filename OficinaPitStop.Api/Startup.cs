@@ -69,29 +69,7 @@ namespace OficinaPitStop.Api
 
             app.UseGraphQL<OficinaPitStopSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
-
-            /*app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseSpaStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
-            });
-            */
-            /*app.UseSpa(spa =>
-            {
-                spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
-            });*/
         }
-
 
         private static void AddSchemaToScope(IServiceCollection services)
         {
