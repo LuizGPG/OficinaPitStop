@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Moq;
 using OficinaPitStop.Entities.Filtros.Produtos;
+using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
 using OficinaPitStop.Services.Produtos;
@@ -156,6 +157,60 @@ namespace OficinaPitStop.UnitTest.Produtos
             var produtosRetorno = service.ObterPorFitlro(filtrosProduto);
 
             Assert.Equal(produtosRetorno, produtosMock);
+        }
+        
+        [Fact]
+        public void Deve_Criar_Produto()
+        {
+            var produtosMock = _produtoFixture.ProdutoMock().First();
+            var marcasMock = _produtoFixture.MarcasMock();
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.Adiciona(It.IsAny<Produto>()))
+                .Returns(true);
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            var produtosRetorno = service.Adiciona(produtosMock);
+
+            Assert.True(produtosRetorno);
+        }
+        
+        [Fact]
+        public void Deve_Atualizar_Produto()
+        {
+            var produtosMock = _produtoFixture.ProdutoMock().First();
+            var marcasMock = _produtoFixture.MarcasMock();
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.Atualiza(It.IsAny<Produto>()))
+                .Returns(true);
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            var produtosRetorno = service.Atualiza(produtosMock);
+
+            Assert.True(produtosRetorno);
+        }
+        
+        [Fact]
+        public void Deve_Deletar_Produto()
+        {
+            var produtosMock = _produtoFixture.ProdutoMock().First();
+            var marcasMock = _produtoFixture.MarcasMock();
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.Deleta(It.IsAny<Produto>()))
+                .Returns(true);
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            var produtosRetorno = service.Deleta(produtosMock);
+
+            Assert.True(produtosRetorno);
         }
     }
 }
