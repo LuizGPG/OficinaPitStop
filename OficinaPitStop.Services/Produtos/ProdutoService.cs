@@ -5,6 +5,7 @@ using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Services.Abstractions.Produtos;
 using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
+using OficinaPitStop.Services.Execptions;
 
 namespace OficinaPitStop.Services.Produtos
 {
@@ -46,17 +47,27 @@ namespace OficinaPitStop.Services.Produtos
         {
             var marcas = _marcaService.ObterPorNome(marcaProduto);
             var codigosMarcas = marcas.Select(m => m.CodigoMarca);
-            
+
             return _produtoRepository.ObterPorCodigoMarca(codigosMarcas);
         }
 
         public bool Adiciona(Produto produto) =>
             _produtoRepository.Adiciona(produto);
 
-        public bool Atualiza(Produto produto) =>
-            _produtoRepository.Atualiza(produto);
+        public bool Atualiza(Produto produto)
+        {
+            if (_produtoRepository.ObterPorId(produto.Codigo).Any())
+                return _produtoRepository.Atualiza(produto);
 
-        public bool Deleta(Produto produto) =>
-            _produtoRepository.Deleta(produto);
+            throw new NotFoundExepction("Produto não encontrado para atualizar!");
+        }
+
+        public bool Deleta(Produto produto)
+        {
+            if (_produtoRepository.ObterPorId(produto.Codigo).Any())
+                return _produtoRepository.Deleta(produto);
+            
+            throw new NotFoundExepction("Produto não encontrado para deletar!");
+        }
     }
 }

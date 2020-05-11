@@ -6,14 +6,12 @@ namespace OficinaPitStop.Entities.Produtos
 {
     public class Produto
     {
-        [Key]
+        [Key] 
         public int Codigo { get; set; }
-        public string Descricao { get; set; } 
+        public string Descricao { get; set; }
         public double Quantidade { get; set; }
         public double Preco { get; set; }
         public int CodigoMarca { get; set; }
-        
-        [NotMapped]
-        public Marca Marca { get; set; }
+        [NotMapped] public Marca Marca { get; set; }
     }
 }

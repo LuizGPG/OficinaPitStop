@@ -5,6 +5,7 @@ using OficinaPitStop.Entities.Filtros.Produtos;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
+using OficinaPitStop.Services.Execptions;
 using OficinaPitStop.Services.Produtos;
 using OficinaPitStop.UnitTest.Mock.Produtos;
 using Xunit;
@@ -158,7 +159,7 @@ namespace OficinaPitStop.UnitTest.Produtos
 
             Assert.Equal(produtosRetorno, produtosMock);
         }
-        
+
         [Fact]
         public void Deve_Criar_Produto()
         {
@@ -176,41 +177,87 @@ namespace OficinaPitStop.UnitTest.Produtos
 
             Assert.True(produtosRetorno);
         }
-        
+
         [Fact]
         public void Deve_Atualizar_Produto()
         {
-            var produtosMock = _produtoFixture.ProdutoMock().First();
+            var produtosMock = _produtoFixture.ProdutoMock();
             var marcasMock = _produtoFixture.MarcasMock();
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.ObterPorId(It.IsAny<int>()))
+                .Returns(produtosMock);
 
             produtoRespository.Setup(x => x.Atualiza(It.IsAny<Produto>()))
                 .Returns(true);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = service.Atualiza(produtosMock);
+            var produtosRetorno = service.Atualiza(produtosMock.First());
 
             Assert.True(produtosRetorno);
         }
         
         [Fact]
+        public void Deve_Dar_Erro_Ao_Atualizar_Produto_E_Nao_Encontrar_ID()
+        {
+            var produtosMock = _produtoFixture.ProdutoMock();
+            var marcasMock = _produtoFixture.MarcasMock();
+            var mensagemErro = "Produto não encontrado para atualizar!";
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.Atualiza(It.IsAny<Produto>()))
+                .Throws(new NotFoundExepction(mensagemErro));
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            var produtosRetorno = Assert.ThrowsAsync<NotFoundExepction>(
+                async () => service.Atualiza(produtosMock.First()));
+
+            Assert.Equal(mensagemErro, produtosRetorno.Result.Message);
+        }
+
+        [Fact]
         public void Deve_Deletar_Produto()
         {
-            var produtosMock = _produtoFixture.ProdutoMock().First();
+            var produtosMock = _produtoFixture.ProdutoMock();
             var marcasMock = _produtoFixture.MarcasMock();
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
 
+            produtoRespository.Setup(x => x.ObterPorId(It.IsAny<int>()))
+                .Returns(produtosMock);
+
             produtoRespository.Setup(x => x.Deleta(It.IsAny<Produto>()))
                 .Returns(true);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = service.Deleta(produtosMock);
+            var produtosRetorno = service.Deleta(produtosMock.First());
 
             Assert.True(produtosRetorno);
+        }
+        
+        [Fact]
+        public void Deve_Dar_Erro_Ao_Deletar_Produto_E_Nao_Encontrar_ID()
+        {
+            var produtosMock = _produtoFixture.ProdutoMock();
+            var marcasMock = _produtoFixture.MarcasMock();
+            var mensagemErro = "Produto não encontrado para deletar!";
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.Deleta(It.IsAny<Produto>()))
+                .Throws(new NotFoundExepction(mensagemErro));
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            var produtosRetorno = Assert.ThrowsAsync<NotFoundExepction>(
+                async () => service.Deleta(produtosMock.First()));
+
+            Assert.Equal(mensagemErro, produtosRetorno.Result.Message);
         }
     }
 }

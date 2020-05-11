@@ -6,6 +6,7 @@ namespace OficinaPitStop.Repositories.Abstractions.Repository
     public interface IProdutoRepository
     {
         IEnumerable<Produto> ObterTodos();
+        IEnumerable<Produto> ObterPorId(int idProduto);
         IEnumerable<Produto> ObterPorNome(string nomeProduto);
         IEnumerable<Produto> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas);
         bool Adiciona(Produto produto);

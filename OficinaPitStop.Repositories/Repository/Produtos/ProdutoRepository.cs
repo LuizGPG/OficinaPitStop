@@ -17,6 +17,9 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
         public IEnumerable<Produto> ObterTodos() =>
             _context.Produtos.ToList();
 
+        public IEnumerable<Produto> ObterPorId(int idProduto) =>
+            _context.Produtos.Where(p => p.Codigo == idProduto).ToList();
+
         public IEnumerable<Produto> ObterPorNome(string nomeProduto) =>
             _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToList();
 
