@@ -1,13 +1,9 @@
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
-using FluentAssertions;
 using GraphQL.Server.Transports.AspNetCore.Common;
-using GraphQL.Client;
 using GraphQL.Client.Abstractions;
 using GraphQL.Client.Http;
 using OficinaPitStop.Entities.Produtos;
-using OficinaPitStop.Repositories;
 using Xunit;
 
 namespace OficinaPitStop.IntegrationTest

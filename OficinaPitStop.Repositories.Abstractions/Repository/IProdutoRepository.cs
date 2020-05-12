@@ -1,16 +1,17 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using OficinaPitStop.Entities.Produtos;
 
 namespace OficinaPitStop.Repositories.Abstractions.Repository
 {
     public interface IProdutoRepository
     {
-        IEnumerable<Produto> ObterTodos();
-        IEnumerable<Produto> ObterPorId(int idProduto);
-        IEnumerable<Produto> ObterPorNome(string nomeProduto);
-        IEnumerable<Produto> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas);
-        bool Adiciona(Produto produto);
-        bool Atualiza(Produto produto);
-        bool Deleta(Produto produto);
+        Task<IEnumerable<Produto>> ObterTodos();
+        Task<IEnumerable<Produto>> ObterPorId(int idProduto);
+        Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto);
+        Task<IEnumerable<Produto>> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas);
+        Task<bool> Adiciona(Produto produto);
+        Task<bool> Atualiza(Produto produto);
+        Task<bool> Deleta(Produto produto);
     }
 }

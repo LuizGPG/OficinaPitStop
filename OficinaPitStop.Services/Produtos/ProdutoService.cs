@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using OficinaPitStop.Entities.Filtros.Produtos;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
@@ -20,52 +21,52 @@ namespace OficinaPitStop.Services.Produtos
             _marcaService = marcaService;
         }
 
-        public IEnumerable<Produto> ObterPorFitlro(FiltrosProduto filtros)
+        public async Task<IEnumerable<Produto>> ObterPorFitlro(FiltrosProduto filtros)
         {
             if (filtros.NomeProduto != default && filtros.NomeMarcaProduto != default)
             {
-                var produtos = ObterProdutosPorMarca(filtros.NomeMarcaProduto);
+                var produtos = await ObterProdutosPorMarca(filtros.NomeMarcaProduto);
                 return produtos.Where(p => p.Descricao.Contains(filtros.NomeProduto)).ToList();
             }
 
             if (filtros.NomeProduto != default)
-                return ObterPorNome(filtros.NomeProduto);
+                return await ObterPorNome(filtros.NomeProduto);
 
             if (filtros.NomeMarcaProduto != default)
-                return ObterProdutosPorMarca(filtros.NomeMarcaProduto);
+                return await ObterProdutosPorMarca(filtros.NomeMarcaProduto);
 
-            return ObterTodos();
+            return await ObterTodos();
         }
 
-        public IEnumerable<Produto> ObterTodos() =>
-            _produtoRepository.ObterTodos();
+        public async Task<IEnumerable<Produto>> ObterTodos() =>
+            await _produtoRepository.ObterTodos();
 
-        public IEnumerable<Produto> ObterPorNome(string nomeProduto) =>
-            _produtoRepository.ObterPorNome(nomeProduto);
+        public async Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto) =>
+            await _produtoRepository.ObterPorNome(nomeProduto);
 
-        public IEnumerable<Produto> ObterProdutosPorMarca(string marcaProduto)
+        public async Task<IEnumerable<Produto>> ObterProdutosPorMarca(string marcaProduto)
         {
-            var marcas = _marcaService.ObterPorNome(marcaProduto);
+            var marcas = await _marcaService.ObterPorNome(marcaProduto);
             var codigosMarcas = marcas.Select(m => m.CodigoMarca);
 
-            return _produtoRepository.ObterPorCodigoMarca(codigosMarcas);
+            return await _produtoRepository.ObterPorCodigoMarca(codigosMarcas);
         }
 
-        public bool Adiciona(Produto produto) =>
-            _produtoRepository.Adiciona(produto);
+        public async Task<bool> Adiciona(Produto produto) =>
+            await _produtoRepository.Adiciona(produto);
 
-        public bool Atualiza(Produto produto)
+        public async Task<bool> Atualiza(Produto produto)
         {
-            if (_produtoRepository.ObterPorId(produto.Codigo).Any())
-                return _produtoRepository.Atualiza(produto);
+            if ((await _produtoRepository.ObterPorId(produto.Codigo)).Any())
+                return await _produtoRepository.Atualiza(produto);
 
             throw new NotFoundExepction("Produto não encontrado para atualizar!");
         }
 
-        public bool Deleta(Produto produto)
+        public async Task<bool> Deleta(Produto produto)
         {
-            if (_produtoRepository.ObterPorId(produto.Codigo).Any())
-                return _produtoRepository.Deleta(produto);
+            if ((await _produtoRepository.ObterPorId(produto.Codigo)).Any())
+                return await _produtoRepository.Deleta(produto);
             
             throw new NotFoundExepction("Produto não encontrado para deletar!");
         }

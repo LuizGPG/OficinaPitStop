@@ -53,3 +53,4 @@ OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.
 .idea/.idea.OficinaPitStop/.idea/workspace.xml
 *.xml
 *.xml
+*.cache

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Repositories.Abstractions.Repository;
 
@@ -14,19 +16,19 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             _context = context;
         }
 
-        public IEnumerable<Produto> ObterTodos() =>
-            _context.Produtos.ToList();
+        public async Task<IEnumerable<Produto>> ObterTodos() =>
+            await _context.Produtos.ToListAsync();
 
-        public IEnumerable<Produto> ObterPorId(int idProduto) =>
-            _context.Produtos.Where(p => p.Codigo == idProduto).ToList();
+        public async Task<IEnumerable<Produto>> ObterPorId(int idProduto) =>
+            await _context.Produtos.Where(p => p.Codigo == idProduto).ToListAsync();
 
-        public IEnumerable<Produto> ObterPorNome(string nomeProduto) =>
-            _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToList();
+        public async Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto) =>
+            await _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToListAsync();
 
-        public IEnumerable<Produto> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas) =>
-            _context.Produtos.Where(p => codigosMarcas.Contains(p.CodigoMarca)).ToList();
+        public async Task<IEnumerable<Produto>> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas) =>
+            await _context.Produtos.Where(p => codigosMarcas.Contains(p.CodigoMarca)).ToListAsync();
 
-        public bool Adiciona(Produto produto)
+        public async Task<bool> Adiciona(Produto produto)
         {
             _context.Produtos.Add(produto);
             _context.SaveChanges();
@@ -34,7 +36,7 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             return true;
         }
 
-        public bool Atualiza(Produto produto)
+        public async Task<bool> Atualiza(Produto produto)
         {
             //todo fazer partial update
             _context.Produtos.Update(produto);
@@ -42,7 +44,7 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             return true;
         }
 
-        public bool Deleta(Produto produto)
+        public async Task<bool> Deleta(Produto produto)
         {
             _context.Produtos.Remove(produto);
             _context.SaveChanges();

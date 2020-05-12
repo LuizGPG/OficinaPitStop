@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using OficinaPitStop.Entities.Produtos.Marcas;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
 
@@ -13,22 +15,22 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
         {
             _context = context;
         }
-        public IEnumerable<Marca> ObterTodos()
+        public async Task<IEnumerable<Marca>> ObterTodos()
         {
-            return _context.Marca.ToList();
+            return await _context.Marca.ToListAsync();
         }
 
-        public Marca ObterPorId(int codigoMarca)
+        public async Task<Marca> ObterPorId(int codigoMarca)
         {
-            return _context.Marca.Find(codigoMarca);
+            return await _context.Marca.FindAsync(codigoMarca);
         }
 
-        public IEnumerable<Marca> ObterPorNome(string descricao)
+        public async Task<IEnumerable<Marca>> ObterPorNome(string descricao)
         {
-            return _context.Marca.Where(p => p.Descricao.Contains(descricao)).ToList();
+            return await _context.Marca.Where(p => p.Descricao.Contains(descricao)).ToListAsync();
         }
 
-        public bool Adiciona(Marca marca)
+        public async Task<bool> Adiciona(Marca marca)
         {
             _context.Marca.Add(marca);
             _context.SaveChanges();
@@ -36,7 +38,7 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
             return true;
         }
 
-        public bool Atualiza(Marca marca)
+        public async Task<bool> Atualiza(Marca marca)
         {
             _context.Marca.Update(marca);
             _context.SaveChanges();
@@ -44,7 +46,7 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
             return true;
         }
 
-        public bool Deleta(Marca marca)
+        public async Task<bool> Deleta(Marca marca)
         {
             _context.Marca.Remove(marca);
             _context.SaveChanges();
