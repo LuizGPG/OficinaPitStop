@@ -1,6 +1,8 @@
 using System;
 using System.Net.Http;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using OficinaPitStop.Api;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +20,10 @@ namespace OficinaPitStop.IntegrationTest
 
         protected IntegrationTest()
         {
+            
+           
+            
+            
             var appFactory = new WebApplicationFactory<Startup>()
                 .WithWebHostBuilder(builder =>
                 {
@@ -30,6 +36,10 @@ namespace OficinaPitStop.IntegrationTest
                         });
                     });
                 });
+            Client = appFactory.CreateClient();
+            Client.BaseAddress = new Uri("https://localhost:5001/graphql");
+            
+            //-----------------------------------------
 
             var optionsMemory = new DbContextOptionsBuilder<OficinaPitStopContext>()
                 .UseInMemoryDatabase("DBMemory")
@@ -39,8 +49,7 @@ namespace OficinaPitStop.IntegrationTest
             PreencheProdutos(context);
             PreencheMarca(context);
             
-            Client = appFactory.CreateClient();
-            Client.BaseAddress = new Uri("https://localhost:5001/graphql");
+            
         }
 
         private void PreencheProdutos(OficinaPitStopContext context)

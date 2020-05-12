@@ -57,7 +57,7 @@ namespace OficinaPitStop.Services.Produtos
 
         public async Task<bool> Atualiza(Produto produto)
         {
-            if ((await _produtoRepository.ObterPorId(produto.Codigo)).Any())
+            if ((await _produtoRepository.ObterPorId(produto.Codigo)) != null)
                 return await _produtoRepository.Atualiza(produto);
 
             throw new NotFoundExepction("Produto não encontrado para atualizar!");
@@ -65,7 +65,7 @@ namespace OficinaPitStop.Services.Produtos
 
         public async Task<bool> Deleta(Produto produto)
         {
-            if ((await _produtoRepository.ObterPorId(produto.Codigo)).Any())
+            if ((await _produtoRepository.ObterPorId(produto.Codigo)) != null)
                 return await _produtoRepository.Deleta(produto);
             
             throw new NotFoundExepction("Produto não encontrado para deletar!");

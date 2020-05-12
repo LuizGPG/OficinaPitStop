@@ -20,10 +20,8 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
             return await _context.Marca.ToListAsync();
         }
 
-        public async Task<Marca> ObterPorId(int codigoMarca)
-        {
-            return await _context.Marca.FindAsync(codigoMarca);
-        }
+        public async Task<Marca> ObterPorId(int codigoMarca) =>
+            await _context.Marca.Where(m => m.CodigoMarca == codigoMarca).FirstOrDefaultAsync();
 
         public async Task<IEnumerable<Marca>> ObterPorNome(string descricao)
         {

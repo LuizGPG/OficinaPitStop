@@ -19,8 +19,8 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
         public async Task<IEnumerable<Produto>> ObterTodos() =>
             await _context.Produtos.ToListAsync();
 
-        public async Task<IEnumerable<Produto>> ObterPorId(int idProduto) =>
-            await _context.Produtos.Where(p => p.Codigo == idProduto).ToListAsync();
+        public async Task<Produto> ObterPorId(int idProduto) =>
+            await _context.Produtos.Where(p => p.Codigo == idProduto).FirstOrDefaultAsync();
 
         public async Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto) =>
             await _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToListAsync();

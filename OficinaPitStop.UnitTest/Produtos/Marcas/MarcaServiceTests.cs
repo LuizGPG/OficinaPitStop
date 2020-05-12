@@ -9,11 +9,11 @@ using Xunit;
 
 namespace OficinaPitStop.UnitTest.Produtos.Marcas
 {
-    public class MarcaTests : IClassFixture<MarcaFixture>
+    public class MarcaServiceTests : IClassFixture<MarcaFixture>
     {
         private readonly MarcaFixture _marcaFixture;
 
-        public MarcaTests(MarcaFixture marcaFixture)
+        public MarcaServiceTests(MarcaFixture marcaFixture)
         {
             _marcaFixture = marcaFixture;
         }

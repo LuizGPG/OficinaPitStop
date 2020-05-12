@@ -196,9 +196,10 @@
         <e p="OficinaPitStop.UnitTest.csproj" t="IncludeRecursive" />
         <e p="Produtos" t="Include">
           <e p="Marcas" t="Include">
-            <e p="MarcaTests.cs" t="Include" />
+            <e p="MarcaServiceTests.cs" t="Include" />
           </e>
-          <e p="ProdutoTests.cs" t="Include" />
+          <e p="ProdutoRepositoryTests.cs" t="Include" />
+          <e p="ProdutoServiceTests.cs" t="Include" />
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
