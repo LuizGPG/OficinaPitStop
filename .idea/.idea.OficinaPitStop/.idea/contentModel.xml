@@ -86,6 +86,7 @@
         </e>
       </e>
       <e p="OficinaPitStop.IntegrationTest" t="IncludeRecursive">
+        <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="IntegrationTest.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -196,6 +197,7 @@
         <e p="OficinaPitStop.UnitTest.csproj" t="IncludeRecursive" />
         <e p="Produtos" t="Include">
           <e p="Marcas" t="Include">
+            <e p="MarcaRepositoryTest.cs" t="Include" />
             <e p="MarcaServiceTests.cs" t="Include" />
           </e>
           <e p="ProdutoRepositoryTests.cs" t="Include" />

@@ -1,52 +1,47 @@
-using System;
-using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using FluentAssertions;
-using GraphQL.Server.Transports.AspNetCore.Common;
-using GraphQL.Client.Abstractions;
-using GraphQL.Client.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using OficinaPitStop.Api;
 using OficinaPitStop.Entities.Produtos;
 using Xunit;
 
 namespace OficinaPitStop.IntegrationTest
 {
-    public class ProdutoIntegrationTest// : IntegrationTest
+    public class ProdutoIntegrationTest : IntegrationTest
     {
-        private readonly HttpClient _client;
-
-        public ProdutoIntegrationTest()
-        {
-            var server = new TestServer(new WebHostBuilder()
-                .UseStartup<Startup>()
-            );
-            _client = server.CreateClient();
-            //_client.BaseAddress = new Uri("https://localhost:5001");
-        }
 
         [Fact]
-        public async Task Deve_Retornar_Todos_Os_Produtos()
+        public async Task Deve_Retornar_Consulta()
         {
-            const string query = @"{
-                ""query"": ""query { produtos { codigo } }""
-            }";
+            var queryObject = new
+            {
+                query = @"{
+                            produtos{
+                                codigo
+                            }
+                          }"
+            };
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                Content = new StringContent(JsonConvert.SerializeObject(queryObject), Encoding.UTF8, "application/json")
+            };
+
+            var response = await Client.PostAsync("/graphql", request.Content);
+            response.EnsureSuccessStatusCode();
+            var retorno = await response.Content.ReadAsStringAsync();
             
-            var content = new StringContent("", Encoding.UTF8, "application/json");
-            var response = await _client.PostAsync("https://localhost:5001/graphql?query={produtos{codigo}}", content);
+            var jObject = JsonConvert.DeserializeObject<JObject>(response.Content.ReadAsStringAsync().Result);
+            var nomeRetorno = jObject["data"].ToString();
             
-            content = new StringContent("graphql?query={produtos{codigo}}", Encoding.UTF8, "application/json");
-            response = await _client.PostAsync("https://localhost:5001", content);
-            
-            content = new StringContent("graphql?query={produtos{codigo}}", Encoding.UTF8, "application/json");
-            response = await _client.PostAsync("https://localhost:5001", content);
-            
-            
-            //response.EnsureSuccessStatusCode();
-            var responseString = await response.Content.ReadAsStringAsync();
+            Assert.NotEmpty(retorno);
         }
     }
 }

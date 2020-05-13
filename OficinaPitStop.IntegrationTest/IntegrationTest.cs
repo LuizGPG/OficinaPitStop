@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Net.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using OficinaPitStop.Api;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Entities.Produtos.Marcas;
@@ -20,36 +22,18 @@ namespace OficinaPitStop.IntegrationTest
 
         protected IntegrationTest()
         {
+            string curDir = Directory.GetCurrentDirectory();
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(curDir)
+                .AddJsonFile("appsettings.json");
             
-           
-            
-            
-            var appFactory = new WebApplicationFactory<Startup>()
-                .WithWebHostBuilder(builder =>
-                {
-                    builder.ConfigureServices(services =>
-                    {
-                        services.RemoveAll(typeof(OficinaPitStopContext));
-                        services.AddDbContext<OficinaPitStopContext>(options =>
-                        {
-                            options.UseInMemoryDatabase("DBMemory");
-                        });
-                    });
-                });
-            Client = appFactory.CreateClient();
-            Client.BaseAddress = new Uri("https://localhost:5001/graphql");
-            
-            //-----------------------------------------
+            var webBuilder = new WebHostBuilder()
+                .UseContentRoot(curDir).UseConfiguration(builder.Build())
+                .UseStartup<Startup>();
 
-            var optionsMemory = new DbContextOptionsBuilder<OficinaPitStopContext>()
-                .UseInMemoryDatabase("DBMemory")
-                .Options;
-
-            var context = new OficinaPitStopContext(optionsMemory);
-            PreencheProdutos(context);
-            PreencheMarca(context);
-            
-            
+            var server = new TestServer(webBuilder);
+            Client = server.CreateClient();
+            Client.BaseAddress = new System.Uri("https://localhost:5001");
         }
 
         private void PreencheProdutos(OficinaPitStopContext context)

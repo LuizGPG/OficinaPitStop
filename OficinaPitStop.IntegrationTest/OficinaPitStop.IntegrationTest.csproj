@@ -22,4 +22,10 @@
       <ProjectReference Include="..\OficinaPitStop.Repositories\OficinaPitStop.Repositories.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="appsettings.json">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
