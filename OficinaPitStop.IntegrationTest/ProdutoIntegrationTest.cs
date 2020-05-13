@@ -25,7 +25,7 @@ namespace OficinaPitStop.IntegrationTest
                 .UseStartup<Startup>()
             );
             _client = server.CreateClient();
-            _client.BaseAddress = new Uri("https://localhost:5001");
+            //_client.BaseAddress = new Uri("https://localhost:5001");
         }
 
         [Fact]
@@ -35,8 +35,15 @@ namespace OficinaPitStop.IntegrationTest
                 ""query"": ""query { produtos { codigo } }""
             }";
             
-            var content = new StringContent(query, Encoding.UTF8, "application/json");
-            var response = await _client.PostAsync("/graphql", content);
+            var content = new StringContent("", Encoding.UTF8, "application/json");
+            var response = await _client.PostAsync("https://localhost:5001/graphql?query={produtos{codigo}}", content);
+            
+            content = new StringContent("graphql?query={produtos{codigo}}", Encoding.UTF8, "application/json");
+            response = await _client.PostAsync("https://localhost:5001", content);
+            
+            content = new StringContent("graphql?query={produtos{codigo}}", Encoding.UTF8, "application/json");
+            response = await _client.PostAsync("https://localhost:5001", content);
+            
             
             //response.EnsureSuccessStatusCode();
             var responseString = await response.Content.ReadAsStringAsync();

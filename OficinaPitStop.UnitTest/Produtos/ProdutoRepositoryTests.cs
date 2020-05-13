@@ -44,11 +44,12 @@ namespace OficinaPitStop.UnitTest.Produtos
         public async Task Deve_Adicionar_Atualizar_E_Deletar_Produto()
         {
             var options = new DbContextOptionsBuilder<OficinaPitStopContext>()
-                .UseInMemoryDatabase("Testes_Adiciona_Produto")
+                .UseInMemoryDatabase("Testes_Modifica_Produto")
                 .Options;
 
             using (var context = new OficinaPitStopContext(options))
             {
+                //Cria
                 var produtoRepository = new ProdutoRepository(context);
                 var produto = CriaProduto(1);
                 var retornoAdiciona = await produtoRepository.Adiciona(produto);
@@ -56,9 +57,21 @@ namespace OficinaPitStop.UnitTest.Produtos
 
                 var retornoPorId = await produtoRepository.ObterPorId(produto.Codigo);
                 Assert.Equal(retornoPorId, produto);
+                Assert.Equal(produto.Preco, retornoPorId.Preco);
+                Assert.Equal(produto.Quantidade, retornoPorId.Quantidade);
                 
-                //UPDATE
+                //Atualiza
+                var descricaoAntigaProduto = retornoPorId.Descricao;
+                var novaDescricaoProduto = "Nova descrição produto!";
+                produto.Descricao = novaDescricaoProduto;
+                var retornoAtualiza = await produtoRepository.Atualiza(produto);
+                Assert.True(retornoAtualiza);
+                retornoPorId = await produtoRepository.ObterPorId(produto.Codigo);
                 
+                Assert.NotEqual(descricaoAntigaProduto, retornoPorId.Descricao);
+                Assert.Equal(novaDescricaoProduto, retornoPorId.Descricao);
+                
+                //Deleta
                 var retornoDelete = await produtoRepository.Deleta(produto);
                 Assert.True(retornoDelete);
                 
@@ -84,7 +97,7 @@ namespace OficinaPitStop.UnitTest.Produtos
             return new Produto()
             {
                 Codigo = codigo,
-                Descricao = "Descricao produto 1",
+                Descricao = "Descricao produto",
                 Preco = 1,
                 Quantidade = 1,
                 CodigoMarca = 1
