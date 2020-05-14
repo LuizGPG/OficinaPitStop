@@ -26,7 +26,7 @@ namespace OficinaPitStop.Services.Produtos
             if (filtros.NomeProduto != default && filtros.NomeMarcaProduto != default)
             {
                 var produtos = await ObterProdutosPorMarca(filtros.NomeMarcaProduto);
-                return produtos.Where(p => p.Descricao.Contains(filtros.NomeProduto)).ToList();
+                return produtos.Where(p => p.Descricao.ToUpper().Contains(filtros.NomeProduto.ToUpper())).ToList();
             }
 
             if (filtros.NomeProduto != default)
@@ -47,26 +47,26 @@ namespace OficinaPitStop.Services.Produtos
         public async Task<IEnumerable<Produto>> ObterProdutosPorMarca(string marcaProduto)
         {
             var marcas = await _marcaService.ObterPorNome(marcaProduto);
-            var codigosMarcas = marcas.Select(m => m.CodigoMarca);
+            var codigosMarcas = marcas.Select(m => m.CodigoMarca).ToList();
 
             return await _produtoRepository.ObterPorCodigoMarca(codigosMarcas);
         }
 
-        public async Task<bool> Adiciona(Produto produto) =>
-            await _produtoRepository.Adiciona(produto);
+        public bool Adiciona(Produto produto) =>
+            _produtoRepository.Adiciona(produto);
 
-        public async Task<bool> Atualiza(Produto produto)
+        public bool Atualiza(Produto produto)
         {
-            if ((await _produtoRepository.ObterPorId(produto.Codigo)) != null)
-                return await _produtoRepository.Atualiza(produto);
+            if ((_produtoRepository.ObterPorId(produto.Codigo)) != null)
+                return _produtoRepository.Atualiza(produto);
 
             throw new NotFoundExepction("Produto não encontrado para atualizar!");
         }
 
-        public async Task<bool> Deleta(Produto produto)
+        public bool Deleta(Produto produto)
         {
-            if ((await _produtoRepository.ObterPorId(produto.Codigo)) != null)
-                return await _produtoRepository.Deleta(produto);
+            if ((_produtoRepository.ObterPorId(produto.Codigo)) != null)
+                return _produtoRepository.Deleta(produto);
             
             throw new NotFoundExepction("Produto não encontrado para deletar!");
         }

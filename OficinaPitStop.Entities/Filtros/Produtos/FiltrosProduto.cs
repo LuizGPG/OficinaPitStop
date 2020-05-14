@@ -10,10 +10,6 @@ namespace OficinaPitStop.Entities.Filtros.Produtos
         public string NomeProduto { get; set; }
         public string NomeMarcaProduto { get; set; }
 
-        public FiltrosProduto()
-        {
-        }
-        
         public static List<string> Filtros = new List<string>()
         {
             FiltroNomeProduto,

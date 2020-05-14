@@ -11,8 +11,8 @@ namespace OficinaPitStop.Services.Abstractions.Produtos
         Task<IEnumerable<Produto>> ObterTodos();
         Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto);
 
-        Task<bool> Adiciona(Produto produto);
-        Task<bool> Atualiza(Produto produto);
-        Task<bool> Deleta(Produto produto);
+        bool Adiciona(Produto produto);
+        bool Atualiza(Produto produto);
+        bool Deleta(Produto produto);
     }
 }

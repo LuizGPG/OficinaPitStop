@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,15 +21,15 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
             return await _context.Marca.ToListAsync();
         }
 
-        public async Task<Marca> ObterPorId(int codigoMarca) =>
-            await _context.Marca.Where(m => m.CodigoMarca == codigoMarca).FirstOrDefaultAsync();
+        public Marca ObterPorId(int codigoMarca) =>
+            _context.Marca.FirstOrDefault(m => m.CodigoMarca == codigoMarca);
 
         public async Task<IEnumerable<Marca>> ObterPorNome(string descricao)
         {
             return await _context.Marca.Where(p => p.Descricao.Contains(descricao)).ToListAsync();
         }
 
-        public async Task<bool> Adiciona(Marca marca)
+        public bool Adiciona(Marca marca)
         {
             _context.Marca.Add(marca);
             _context.SaveChanges();
@@ -36,20 +37,29 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
             return true;
         }
 
-        public async Task<bool> Atualiza(Marca marca)
+        public bool Atualiza(Marca marca)
         {
+            DetachLocal(_ => _.CodigoMarca == marca.CodigoMarca);
             _context.Marca.Update(marca);
             _context.SaveChanges();
 
             return true;
         }
 
-        public async Task<bool> Deleta(Marca marca)
+        public bool Deleta(Marca marca)
         {
+            DetachLocal(_ => _.CodigoMarca == marca.CodigoMarca);
             _context.Marca.Remove(marca);
-            _context.SaveChanges();
+            _context.SaveChangesAsync();
 
             return true;
+        }
+        
+        public void DetachLocal(Func<Marca, bool> predicate)
+        {
+            var local = _context.Set<Marca>().Local.Where(predicate).FirstOrDefault();
+            if (local != null)
+                _context.Entry(local).State = EntityState.Detached;
         }
     }
 }

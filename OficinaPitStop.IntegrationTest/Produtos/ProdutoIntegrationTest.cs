@@ -18,6 +18,17 @@ namespace OficinaPitStop.IntegrationTest.Produtos
             var listaProdutosObj = jObject["data"]["produto"].ToString();
             var produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(listaProdutosObj);
 
+            Assert.NotEmpty(produtos);
+        }
+        
+        [Fact]
+        public async Task Deve_Modificar_Produto()
+        {
+            var response = await ExecutaComando(QueryObterTodosProdutos());
+            response.EnsureSuccessStatusCode();
+            var jObject = JsonConvert.DeserializeObject<JObject>(response.Content.ReadAsStringAsync().Result);
+            var listaProdutosObj = jObject["data"]["produto"].ToString();
+            var produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(listaProdutosObj);
 
             Assert.NotEmpty(produtos);
         }

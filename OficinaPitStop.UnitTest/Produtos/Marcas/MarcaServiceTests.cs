@@ -34,16 +34,16 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
         }
 
         [Fact]
-        public async Task Deve_Retornar_Marca_Por_Id()
+        public void Deve_Retornar_Marca_Por_Id()
         {
             var marca = _marcaFixture.MarcasMock().First();
             var marcaRepository = new Mock<IMarcaRepository>();
 
             marcaRepository.Setup(m => m.ObterPorId(It.IsAny<int>()))
-                .ReturnsAsync(marca);
+                .Returns(marca);
 
             var marcaService = new MarcaService(marcaRepository.Object);
-            var marcasRetorno = await marcaService.ObterPorId(marca.CodigoMarca);
+            var marcasRetorno = marcaService.ObterPorId(marca.CodigoMarca);
 
             Assert.Equal(marcasRetorno, marca);
         }
@@ -64,51 +64,51 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
         }
 
         [Fact]
-        public async Task Deve_Criar_Marca()
+        public void Deve_Criar_Marca()
         {
             var marca = _marcaFixture.MarcasMock().First();
             var marcaRepository = new Mock<IMarcaRepository>();
 
             marcaRepository.Setup(m => m.Adiciona(It.IsAny<Marca>()))
-                .ReturnsAsync(true);
+                .Returns(true);
             
             var marcaService = new MarcaService(marcaRepository.Object);
-            var retorno = await marcaService.Adiciona(marca);
+            var retorno = marcaService.Adiciona(marca);
 
             Assert.True(retorno);
         }
         
         [Fact]
-        public async Task Deve_Atualizar_Marca()
+        public void Deve_Atualizar_Marca()
         {
             var marca = _marcaFixture.MarcasMock().First();
             var marcaRepository = new Mock<IMarcaRepository>();
 
             marcaRepository.Setup(m => m.ObterPorId(It.IsAny<int>()))
-                .ReturnsAsync(marca);
+                .Returns(marca);
             marcaRepository.Setup(m => m.Atualiza(It.IsAny<Marca>()))
-                .ReturnsAsync(true);
+                .Returns(true);
             
             var marcaService = new MarcaService(marcaRepository.Object);
-            var retorno = await marcaService.Atualiza(marca);
+            var retorno = marcaService.Atualiza(marca);
 
             Assert.True(retorno);
         }
         
         [Fact]
-        public async Task Deve_Excluir_Marca()
+        public void Deve_Excluir_Marca()
         {
             var marca = _marcaFixture.MarcasMock().First();
             var marcaRepository = new Mock<IMarcaRepository>();
 
             marcaRepository.Setup(m => m.ObterPorId(It.IsAny<int>()))
-                .ReturnsAsync(marca);
+                .Returns(marca);
             
             marcaRepository.Setup(m => m.Deleta(It.IsAny<Marca>()))
-                .ReturnsAsync(true);
+                .Returns(true);
             
             var marcaService = new MarcaService(marcaRepository.Object);
-            var retorno = await marcaService.Deleta(marca);
+            var retorno = marcaService.Deleta(marca);
 
             Assert.True(retorno);
         }

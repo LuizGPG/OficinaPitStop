@@ -17,12 +17,12 @@ namespace OficinaPitStop.UnitTest.Produtos
     public class ProdutoServiceTests : IClassFixture<ProdutoFixture>
     {
         private readonly ProdutoFixture _produtoFixture;
-        public static FiltrosProduto filtrosProduto;
+        public static FiltrosProduto FiltrosProduto;
 
         public ProdutoServiceTests(ProdutoFixture produtoFixture)
         {
             _produtoFixture = produtoFixture;
-            filtrosProduto = new FiltrosProduto();
+            FiltrosProduto = new FiltrosProduto();
         }
 
         [Fact]
@@ -83,8 +83,7 @@ namespace OficinaPitStop.UnitTest.Produtos
         public async Task Deve_Retornar_Produto_Usando_Filtro_De_Produto()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
-            var marcasMock = _produtoFixture.MarcasMock();
-            filtrosProduto.NomeProduto = produtosMock.First().Descricao;
+            FiltrosProduto.NomeProduto = produtosMock.First().Descricao;
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
@@ -93,7 +92,7 @@ namespace OficinaPitStop.UnitTest.Produtos
                 .ReturnsAsync(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.ObterPorFitlro(filtrosProduto);
+            var produtosRetorno = await service.ObterPorFitlro(FiltrosProduto);
 
             Assert.Equal(produtosRetorno, produtosMock);
         }
@@ -103,7 +102,7 @@ namespace OficinaPitStop.UnitTest.Produtos
         {
             var produtosMock = _produtoFixture.ProdutoMock();
             var marcasMock = _produtoFixture.MarcasMock();
-            filtrosProduto.NomeMarcaProduto = produtosMock.First().Marca.Descricao;
+            FiltrosProduto.NomeMarcaProduto = produtosMock.First().Marca.Descricao;
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
@@ -115,7 +114,7 @@ namespace OficinaPitStop.UnitTest.Produtos
                 .ReturnsAsync(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.ObterPorFitlro(filtrosProduto);
+            var produtosRetorno = await service.ObterPorFitlro(FiltrosProduto);
 
             Assert.Equal(produtosRetorno, produtosMock);
         }
@@ -125,8 +124,8 @@ namespace OficinaPitStop.UnitTest.Produtos
         {
             var produtosMock = _produtoFixture.ProdutoMock();
             var marcasMock = _produtoFixture.MarcasMock();
-            filtrosProduto.NomeProduto = produtosMock.First().Descricao;
-            filtrosProduto.NomeMarcaProduto = produtosMock.First().Marca.Descricao;
+            FiltrosProduto.NomeProduto = produtosMock.First().Descricao;
+            FiltrosProduto.NomeMarcaProduto = produtosMock.First().Marca.Descricao;
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
@@ -138,7 +137,7 @@ namespace OficinaPitStop.UnitTest.Produtos
                 .ReturnsAsync(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.ObterPorFitlro(filtrosProduto);
+            var produtosRetorno = await service.ObterPorFitlro(FiltrosProduto);
 
             Assert.Equal(produtosRetorno, produtosMock);
         }
@@ -147,7 +146,6 @@ namespace OficinaPitStop.UnitTest.Produtos
         public async Task Deve_Retornar_Produto_Usando_Sem_Filtro()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
-            var marcasMock = _produtoFixture.MarcasMock();
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
@@ -156,46 +154,44 @@ namespace OficinaPitStop.UnitTest.Produtos
                 .ReturnsAsync(produtosMock);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.ObterPorFitlro(filtrosProduto);
+            var produtosRetorno = await service.ObterPorFitlro(FiltrosProduto);
 
             Assert.Equal(produtosRetorno, produtosMock);
         }
 
         [Fact]
-        public async Task Deve_Criar_Produto()
+        public void Deve_Criar_Produto()
         {
             var produtosMock = _produtoFixture.ProdutoMock().First();
-            var marcasMock = _produtoFixture.MarcasMock();
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
 
             produtoRespository.Setup(x => x.Adiciona(It.IsAny<Produto>()))
-                .ReturnsAsync(true);
+                .Returns(true);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.Adiciona(produtosMock);
+            var produtosRetorno = service.Adiciona(produtosMock);
 
             Assert.True(produtosRetorno);
         }
 
         [Fact]
-        public async Task Deve_Atualizar_Produto()
+        public void Deve_Atualizar_Produto()
         {
             var produtoMock = _produtoFixture.ProdutoMock().First();
-            var marcasMock = _produtoFixture.MarcasMock();
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
 
             produtoRespository.Setup(x => x.ObterPorId(It.IsAny<int>()))
-                .ReturnsAsync(produtoMock);
+                .Returns(produtoMock);
 
             produtoRespository.Setup(x => x.Atualiza(It.IsAny<Produto>()))
-                .ReturnsAsync(true);
+                .Returns(true);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.Atualiza(produtoMock);
+            var produtosRetorno = service.Atualiza(produtoMock);
 
             Assert.True(produtosRetorno);
         }
@@ -204,7 +200,6 @@ namespace OficinaPitStop.UnitTest.Produtos
         public void Deve_Dar_Erro_Ao_Atualizar_Produto_E_Nao_Encontrar_ID()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
-            var marcasMock = _produtoFixture.MarcasMock();
             var mensagemErro = "Produto não encontrado para atualizar!";
 
             var marcaService = new Mock<IMarcaService>();
@@ -215,28 +210,27 @@ namespace OficinaPitStop.UnitTest.Produtos
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
             var produtosRetorno = Assert.ThrowsAsync<NotFoundExepction>(
-                async () => await service.Atualiza(produtosMock.First()));
+                async () => service.Atualiza(produtosMock.First()));
 
             Assert.Equal(mensagemErro, produtosRetorno.Result.Message);
         }
 
         [Fact]
-        public async Task Deve_Deletar_Produto()
+        public void Deve_Deletar_Produto()
         {
             var produtoMock = _produtoFixture.ProdutoMock().First();
-            var marcasMock = _produtoFixture.MarcasMock();
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
 
             produtoRespository.Setup(x => x.ObterPorId(It.IsAny<int>()))
-                .ReturnsAsync(produtoMock);
+                .Returns(produtoMock);
 
             produtoRespository.Setup(x => x.Deleta(It.IsAny<Produto>()))
-                .ReturnsAsync(true);
+                .Returns(true);
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
-            var produtosRetorno = await service.Deleta(produtoMock);
+            var produtosRetorno = service.Deleta(produtoMock);
 
             Assert.True(produtosRetorno);
         }
@@ -245,7 +239,6 @@ namespace OficinaPitStop.UnitTest.Produtos
         public void Deve_Dar_Erro_Ao_Deletar_Produto_E_Nao_Encontrar_ID()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
-            var marcasMock = _produtoFixture.MarcasMock();
             var mensagemErro = "Produto não encontrado para deletar!";
 
             var marcaService = new Mock<IMarcaService>();
@@ -256,7 +249,7 @@ namespace OficinaPitStop.UnitTest.Produtos
 
             var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
             var produtosRetorno = Assert.ThrowsAsync<NotFoundExepction>(
-                async () => await service.Deleta(produtosMock.First()));
+                async () => service.Deleta(produtosMock.First()));
 
             Assert.Equal(mensagemErro, produtosRetorno.Result.Message);
         }

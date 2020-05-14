@@ -1,4 +1,3 @@
-
 using Microsoft.EntityFrameworkCore;
 using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Entities.Produtos.Marcas;

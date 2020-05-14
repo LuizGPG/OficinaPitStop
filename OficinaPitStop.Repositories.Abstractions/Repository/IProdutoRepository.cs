@@ -7,11 +7,11 @@ namespace OficinaPitStop.Repositories.Abstractions.Repository
     public interface IProdutoRepository
     {
         Task<IEnumerable<Produto>> ObterTodos();
-        Task<Produto> ObterPorId(int idProduto);
+        Produto ObterPorId(int idProduto);
         Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto);
         Task<IEnumerable<Produto>> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas);
-        Task<bool> Adiciona(Produto produto);
-        Task<bool> Atualiza(Produto produto);
-        Task<bool> Deleta(Produto produto);
+        bool Adiciona(Produto produto);
+        bool Atualiza(Produto produto);
+        bool Deleta(Produto produto);
     }
 }

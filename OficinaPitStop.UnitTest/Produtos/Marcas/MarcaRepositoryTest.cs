@@ -26,7 +26,7 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
 
                 var marca = marcas.First();
                 
-                var retornoPorId = await marcaRepository.ObterPorId(marca.CodigoMarca);
+                var retornoPorId = marcaRepository.ObterPorId(marca.CodigoMarca);
                 Assert.NotNull(retornoPorId);
 
                 var retornoPorNome = await marcaRepository.ObterPorNome(marca.Descricao);
@@ -35,7 +35,7 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
         }
         
         [Fact]
-        public async Task Deve_Adicionar_Atualizar_E_Deletar_Marca()
+        public void Deve_Adicionar_Atualizar_E_Deletar_Marca()
         {
             var options = new DbContextOptionsBuilder<OficinaPitStopContext>()
                 .UseInMemoryDatabase("Testes_Modifica_Marcas")
@@ -46,28 +46,28 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
                 //Cria
                 var marcaRepository = new MarcaRepository(context);
                 var marca = CriaMarca(1);
-                var retornoAdiciona = await marcaRepository.Adiciona(marca);
+                var retornoAdiciona = marcaRepository.Adiciona(marca);
                 Assert.True(retornoAdiciona);
                 
-                var retornoPorId = await marcaRepository.ObterPorId(marca.CodigoMarca);
+                var retornoPorId = marcaRepository.ObterPorId(marca.CodigoMarca);
                 Assert.NotNull(retornoPorId);
 
                 //Atualiza
                 var descricaoAntigaMarca = retornoPorId.Descricao;
                 var novaDescricaoMarca = "Nova descrição marca!";
                 marca.Descricao = novaDescricaoMarca;
-                var retornoAtualiza = await marcaRepository.Atualiza(marca);
+                var retornoAtualiza = marcaRepository.Atualiza(marca);
                 Assert.True(retornoAtualiza);
                 
-                retornoPorId = await marcaRepository.ObterPorId(marca.CodigoMarca);
+                retornoPorId = marcaRepository.ObterPorId(marca.CodigoMarca);
                 Assert.NotEqual(retornoPorId.Descricao, descricaoAntigaMarca);
                 Assert.Equal(retornoPorId.Descricao, novaDescricaoMarca);
                 
                 //Deleta
-                var retornoDelete = await marcaRepository.Deleta(marca);
+                var retornoDelete = marcaRepository.Deleta(marca);
                 Assert.True(retornoDelete);
                 
-                retornoPorId = await marcaRepository.ObterPorId(marca.CodigoMarca);
+                retornoPorId = marcaRepository.ObterPorId(marca.CodigoMarca);
                 Assert.Null(retornoPorId);
 
             }

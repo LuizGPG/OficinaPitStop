@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -28,7 +27,7 @@ namespace OficinaPitStop.UnitTest.Produtos
 
                 var produto = produtos.First();
 
-                var retornoPorId = await produtoRepository.ObterPorId(produto.Codigo);
+                var retornoPorId = produtoRepository.ObterPorId(produto.Codigo);
                 Assert.NotNull(retornoPorId);
 
                 var retornoPorNome = await produtoRepository.ObterPorNome(produto.Descricao);
@@ -41,7 +40,7 @@ namespace OficinaPitStop.UnitTest.Produtos
         }
         
         [Fact]
-        public async Task Deve_Adicionar_Atualizar_E_Deletar_Produto()
+        public void Deve_Adicionar_Atualizar_E_Deletar_Produto()
         {
             var options = new DbContextOptionsBuilder<OficinaPitStopContext>()
                 .UseInMemoryDatabase("Testes_Modifica_Produto")
@@ -52,10 +51,10 @@ namespace OficinaPitStop.UnitTest.Produtos
                 //Cria
                 var produtoRepository = new ProdutoRepository(context);
                 var produto = CriaProduto(1);
-                var retornoAdiciona = await produtoRepository.Adiciona(produto);
+                var retornoAdiciona = produtoRepository.Adiciona(produto);
                 Assert.True(retornoAdiciona);
 
-                var retornoPorId = await produtoRepository.ObterPorId(produto.Codigo);
+                var retornoPorId = produtoRepository.ObterPorId(produto.Codigo);
                 Assert.Equal(retornoPorId, produto);
                 Assert.Equal(produto.Preco, retornoPorId.Preco);
                 Assert.Equal(produto.Quantidade, retornoPorId.Quantidade);
@@ -64,18 +63,18 @@ namespace OficinaPitStop.UnitTest.Produtos
                 var descricaoAntigaProduto = retornoPorId.Descricao;
                 var novaDescricaoProduto = "Nova descrição produto!";
                 produto.Descricao = novaDescricaoProduto;
-                var retornoAtualiza = await produtoRepository.Atualiza(produto);
+                var retornoAtualiza = produtoRepository.Atualiza(produto);
                 Assert.True(retornoAtualiza);
-                retornoPorId = await produtoRepository.ObterPorId(produto.Codigo);
+                retornoPorId = produtoRepository.ObterPorId(produto.Codigo);
                 
                 Assert.NotEqual(descricaoAntigaProduto, retornoPorId.Descricao);
                 Assert.Equal(novaDescricaoProduto, retornoPorId.Descricao);
                 
                 //Deleta
-                var retornoDelete = await produtoRepository.Deleta(produto);
+                var retornoDelete = produtoRepository.Deleta(produto);
                 Assert.True(retornoDelete);
                 
-                retornoPorId = await produtoRepository.ObterPorId(produto.Codigo);
+                retornoPorId = produtoRepository.ObterPorId(produto.Codigo);
                 Assert.Null(retornoPorId);
             }
         }

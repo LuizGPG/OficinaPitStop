@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,8 +20,11 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
         public async Task<IEnumerable<Produto>> ObterTodos() =>
             await _context.Produtos.ToListAsync();
 
-        public async Task<Produto> ObterPorId(int idProduto) =>
-            await _context.Produtos.Where(p => p.Codigo == idProduto).FirstOrDefaultAsync();
+        public Produto ObterPorId(int idProduto)
+        {
+            var produto = _context.Produtos.Find(idProduto);
+            return produto;
+        }
 
         public async Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto) =>
             await _context.Produtos.Where(p => p.Descricao.Contains(nomeProduto)).ToListAsync();
@@ -28,7 +32,7 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
         public async Task<IEnumerable<Produto>> ObterPorCodigoMarca(IEnumerable<int> codigosMarcas) =>
             await _context.Produtos.Where(p => codigosMarcas.Contains(p.CodigoMarca)).ToListAsync();
 
-        public async Task<bool> Adiciona(Produto produto)
+        public bool Adiciona(Produto produto)
         {
             _context.Produtos.Add(produto);
             _context.SaveChanges();
@@ -36,20 +40,29 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
             return true;
         }
 
-        public async Task<bool> Atualiza(Produto produto)
+        public bool Atualiza(Produto produto)
         {
             //todo fazer partial update
+            DetachLocal(_ => _.Codigo == produto.Codigo);
             _context.Produtos.Update(produto);
             _context.SaveChanges();
             return true;
         }
 
-        public async Task<bool> Deleta(Produto produto)
+        public bool Deleta(Produto produto)
         {
+            DetachLocal(_ => _.Codigo == produto.Codigo);
             _context.Produtos.Remove(produto);
             _context.SaveChanges();
-            
+
             return true;
+        }
+
+        public void DetachLocal(Func<Produto, bool> predicate)
+        {
+            var local = _context.Set<Produto>().Local.Where(predicate).FirstOrDefault();
+            if (local != null)
+                _context.Entry(local).State = EntityState.Detached;
         }
     }
 }

@@ -19,27 +19,27 @@ namespace OficinaPitStop.Services.Produtos.Marcas
         public async Task<IEnumerable<Marca>> ObterTodos() =>
             await _marcaRepository.ObterTodos();
 
-        public async Task<Marca> ObterPorId(int codigoMarca) =>
-            await _marcaRepository.ObterPorId(codigoMarca);
+        public Marca ObterPorId(int codigoMarca) =>
+            _marcaRepository.ObterPorId(codigoMarca);
 
         public async Task<IEnumerable<Marca>> ObterPorNome(string descricao) =>
             await _marcaRepository.ObterPorNome(descricao);
 
-        public async Task<bool> Adiciona(Marca marca) =>
-            await _marcaRepository.Adiciona(marca);
+        public bool Adiciona(Marca marca) =>
+            _marcaRepository.Adiciona(marca);
 
-        public async Task<bool> Atualiza(Marca marca)
+        public bool Atualiza(Marca marca)
         {
-            if ((await _marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
-                return await _marcaRepository.Atualiza(marca);
-            
+            if ((_marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
+                return _marcaRepository.Atualiza(marca);
+
             throw new NotFoundExepction("Marca não encontrada para deletar!");
         }
 
-        public async Task<bool> Deleta(Marca marca)
+        public bool Deleta(Marca marca)
         {
-            if ((await _marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
-                return await _marcaRepository.Deleta(marca);
+            if ((_marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
+                return _marcaRepository.Deleta(marca);
 
             throw new NotFoundExepction("Marca não encontrada para deletar!");
         }
