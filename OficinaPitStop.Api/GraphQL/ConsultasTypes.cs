@@ -25,10 +25,10 @@ namespace OficinaPitStop.Api.GraphQL
         private void ConsultasType()
         {
             ConsultaProdutosType();
-            ConsultaMarcasTyoe();
+            ConsultaMarcasType();
         }
 
-        private void ConsultaMarcasTyoe()
+        private void ConsultaMarcasType()
         {
             Field<ListGraphType<MarcaType>>(
                 "marcas",

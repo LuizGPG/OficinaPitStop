@@ -1,0 +1,12 @@
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.deps.json
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.pdb
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\bin\Debug\netcoreapp2.2\OficinaPitStop.Entities.pdb
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.csprojAssemblyReference.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.AssemblyInfoInputs.cache
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.AssemblyInfo.cs
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.csproj.CopyComplete
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.dll
+C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop\OficinaPitStop.Services.Abstractions\obj\Debug\netcoreapp2.2\OficinaPitStop.Services.Abstractions.pdb
