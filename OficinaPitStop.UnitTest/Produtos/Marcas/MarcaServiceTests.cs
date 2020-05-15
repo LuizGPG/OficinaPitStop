@@ -1,8 +1,13 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Moq;
+using OficinaPitStop.Entities.Produtos;
 using OficinaPitStop.Entities.Produtos.Marcas;
+using OficinaPitStop.Repositories.Abstractions.Repository;
 using OficinaPitStop.Repositories.Abstractions.Repository.Produtos.Marcas;
+using OficinaPitStop.Services.Abstractions.Produtos.Marcas;
+using OficinaPitStop.Services.Execptions;
+using OficinaPitStop.Services.Produtos;
 using OficinaPitStop.Services.Produtos.Marcas;
 using OficinaPitStop.UnitTest.Mock.Produtos.Marcas;
 using Xunit;
@@ -111,6 +116,42 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
             var retorno = marcaService.Deleta(marca);
 
             Assert.True(retorno);
+        }
+        
+        [Fact]
+        public void Deve_Dar_Erro_Ao_Atualizar_Marca_E_Nao_Encontrar_ID()
+        {
+            var marcaMock = _marcaFixture.MarcasMock();
+            var mensagemErro = "Marca não encontrada para atualizar!";
+
+            var marcaRepository = new Mock<IMarcaRepository>();
+
+            marcaRepository.Setup(x => x.Atualiza(It.IsAny<Marca>()))
+                .Throws(new NotFoundExepction(mensagemErro));
+
+            var service = new MarcaService(marcaRepository.Object);
+            var marcasRetorno = Assert.ThrowsAsync<NotFoundExepction>(
+                async () => service.Atualiza(marcaMock.First()));
+
+            Assert.Equal(mensagemErro, marcasRetorno.Result.Message);
+        }
+        
+        [Fact]
+        public void Deve_Dar_Erro_Ao_Deletar_Marca_E_Nao_Encontrar_ID()
+        {
+            var marcaMock = _marcaFixture.MarcasMock();
+            var mensagemErro = "Marca não encontrada para deletar!";
+
+            var marcaRepository = new Mock<IMarcaRepository>();
+
+            marcaRepository.Setup(x => x.Deleta(It.IsAny<Marca>()))
+                .Throws(new NotFoundExepction(mensagemErro));
+
+            var service = new MarcaService(marcaRepository.Object);
+            var marcasRetorno = Assert.ThrowsAsync<NotFoundExepction>(
+                async () => service.Deleta(marcaMock.First()));
+
+            Assert.Equal(mensagemErro, marcasRetorno.Result.Message);
         }
     }
 }

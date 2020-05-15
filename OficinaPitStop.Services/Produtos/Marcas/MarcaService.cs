@@ -33,7 +33,7 @@ namespace OficinaPitStop.Services.Produtos.Marcas
             if ((_marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
                 return _marcaRepository.Atualiza(marca);
 
-            throw new NotFoundExepction("Marca não encontrada para deletar!");
+            throw new NotFoundExepction("Marca não encontrada para atualizar!");
         }
 
         public bool Deleta(Marca marca)

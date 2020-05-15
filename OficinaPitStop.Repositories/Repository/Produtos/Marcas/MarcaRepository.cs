@@ -50,7 +50,7 @@ namespace OficinaPitStop.Repositories.Repository.Produtos.Marcas
         {
             DetachLocal(_ => _.CodigoMarca == marca.CodigoMarca);
             _context.Marca.Remove(marca);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
 
             return true;
         }

@@ -29,7 +29,6 @@
           <e p="Produtos" t="Include">
             <e p="Marcas" t="Include">
               <e p="Types" t="Include">
-                <e p="MarcaConsultaType.cs" t="Include" />
                 <e p="MarcaCreateType.cs" t="Include" />
                 <e p="MarcaDeleteType.cs" t="Include" />
                 <e p="MarcaType.cs" t="Include" />

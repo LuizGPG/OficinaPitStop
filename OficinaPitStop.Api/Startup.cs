@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using GraphQL;
 using GraphQL.Server;
 using GraphQL.Server.Ui.Playground;
@@ -20,6 +21,7 @@ using OficinaPitStop.Services.Produtos.Marcas;
 
 namespace OficinaPitStop.Api
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)
