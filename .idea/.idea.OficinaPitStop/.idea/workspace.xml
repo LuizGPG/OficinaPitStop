@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.csproj.FileListAbsolute.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,78 +15,80 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="304">
+                    <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+                    <folding>
+                      <marker date="1589506971008" expanded="true" signature="6:158" ph="..." />
+                      <marker date="1589506971008" expanded="true" signature="209:2515" ph="{...}" />
+                      <marker date="1589506971008" expanded="true" signature="277:2513" ph="{...}" />
+                      <marker date="1589506971008" expanded="true" signature="349:720" ph="{...}" />
+                      <marker date="1589506971008" expanded="true" signature="791:2507" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state>
+                    <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+                    <folding>
+                      <marker date="1589506971159" expanded="true" signature="6:67" ph="..." />
+                      <marker date="1589506971159" expanded="true" signature="118:2783" ph="{...}" />
+                      <marker date="1589506971159" expanded="true" signature="168:2781" ph="{...}" />
+                      <marker date="1589506971159" expanded="true" signature="183:609" ph="QueryObterProdutoPorNome" />
+                      <marker date="1589506971159" expanded="true" signature="273:589" ph="{...}" />
+                      <marker date="1589506971159" expanded="true" signature="619:1011" ph="QueryObterTodosProdutos" />
+                      <marker date="1589506971159" expanded="true" signature="1021:1827" ph="MutationAtualizaProduto" />
+                      <marker date="1589506971159" expanded="true" signature="1123:1808" ph="{...}" />
+                      <marker date="1589506971159" expanded="true" signature="1838:2366" ph="MutationDeletarProduto" />
+                      <marker date="1589506971159" expanded="true" signature="1938:2347" ph="{...}" />
+                      <marker date="1589506971159" expanded="true" signature="2384:2775" ph="MutationAdicionarProduto" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="385">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
-                <marker date="1589497914390" expanded="true" signature="6:186" ph="..." />
-                <marker date="1589497914390" expanded="true" signature="237:3279" ph="{...}" />
-                <marker date="1589497914390" expanded="true" signature="305:3277" ph="{...}" />
-                <marker date="1589497914390" expanded="true" signature="377:845" ph="{...}" />
-                <marker date="1589497914390" expanded="true" signature="912:3271" ph="{...}" />
+                <marker date="1589506971093" expanded="true" signature="70:2629" ph="{...}" />
+                <marker date="1589506971093" expanded="true" signature="136:2627" ph="{...}" />
+                <marker date="1589506971093" expanded="true" signature="204:2621" ph="{...}" />
+                <marker date="1589506971093" expanded="true" signature="250:2611" ph="/* var responseCreate = await ExecutaComando(MutationAdicionarProduto()); ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            <state relative-caret-position="144">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding>
-                <marker date="1589502576461" expanded="true" signature="6:176" ph="..." />
-                <marker date="1589502576461" expanded="true" signature="227:4009" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="277:4007" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="292:846" ph="QueryObterProdutoPorNome" />
-                <marker date="1589502576461" expanded="true" signature="382:826" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="439:754" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="856:1540" ph="QueryObterTodosProdutos" />
-                <marker date="1589502576461" expanded="true" signature="943:1521" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="1000:1449" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="1550:2449" ph="MutationAtualizaProduto" />
-                <marker date="1589502576461" expanded="true" signature="1652:2430" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="2460:3066" ph="MutationDeletarProduto" />
-                <marker date="1589502576461" expanded="true" signature="2560:3047" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="3084:3621" ph="MutationAdicionarProduto" />
-                <marker date="1589502576461" expanded="true" signature="3173:3602" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="3230:3529" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="3700:4001" ph="{...}" />
-                <marker date="1589502576461" expanded="true" signature="3772:3917" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DB49E-5E34-4072-9DA3-1845C03DDC3A/2b/4beff887/JsonConvert.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7424">
-              <caret line="473" column="6" selection-start-line="473" selection-start-column="6" selection-end-line="473" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding>
-                <marker date="1589502984116" expanded="false" signature="6:375" ph="..." />
-                <marker date="1589502984116" expanded="true" signature="413:2764" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="465:2762" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="674:812" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="850:940" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="983:1608" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="1350:1596" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="1653:2408" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="2032:2396" ph="{...}" />
-                <marker date="1589502984116" expanded="true" signature="2501:2756" ph="{...}" />
+                <marker date="1589505902042" expanded="true" signature="56:378" ph="{...}" />
+                <marker date="1589505902042" expanded="true" signature="104:376" ph="{...}" />
+                <marker date="1589505902042" expanded="true" signature="165:370" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -138,7 +132,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7C9A35B-06A3-4993-8BB6-1C4C3B96BCE0/b0/a4e15fd6/ExecutionStrategy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AFEF21B5-7AD6-402F-8DF4-C5299BA699E2/2A/Select.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45B80AE8-5287-4889-B763-035D637BFDDC/ba/a14d2ad4/CallSiteRuntimeResolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377B61B6-13EA-444F-826F-377D9474FFCA/f9/75c0df3a/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6BF71446-6FEB-451A-AD21-DE19C6C5E33E/80/35743dfb/HttpsPolicyBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/127E718A-C42E-4542-A71B-54CEC3EF156B/93/5108a709/ConfigureBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADF771F9-2E75-4FE1-BB85-C5850CD0C16B/e0/bcda5904/LinqOperatorProvider.cs" root0="SKIP_HIGHLIGHTING" />
@@ -231,8 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OificinaPitStop.Test.Integration/Program.cs" />
-        <option value="$PROJECT_DIR$/OificinaPitStop.Test.Integration/Produtos/ProdutoIntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Mock/ProdutoFixture.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/ProdutosTests.cs" />
@@ -261,7 +255,6 @@
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/ProdutoIntegrationTest.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/Repository/IProdutoRepository.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/Produtos/IProdutoService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/MutationsType.cs" />
@@ -279,9 +272,12 @@
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Marcas/Types/MarcaConsultaType.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Filtros/Produtos/FiltrosProduto.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Filtros/Produtos/Marcas/FiltrosMarca.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs" />
       </list>
     </option>
   </component>
@@ -330,6 +326,21 @@
               <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
               <item name="test" type="24d0babc:SolutionExplorerModelNode" />
               <item name="OficinaPitStop.IntegrationTest" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="test" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="OficinaPitStop.IntegrationTest" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Produtos" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="test" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="OficinaPitStop.IntegrationTest" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Produtos" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Marcas" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -468,12 +479,12 @@
       <workItem from="1588954938985" duration="1742000" />
       <workItem from="1588984641427" duration="32735000" />
       <workItem from="1589374570806" duration="56609000" />
-      <workItem from="1589491697262" duration="4695000" />
+      <workItem from="1589491697262" duration="8759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320064000" />
+    <option name="totallyTimeSpent" value="324128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,16 +513,16 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.31590182" />
+      <window_info active="true" anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.31590182" />
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5002664" side_tool="true" weight="0.3180363" />
       <window_info anchor="bottom" id="Build" order="16" weight="0.25080043" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32977587" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.3185935" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.3185935" />
       <window_info anchor="right" id="Errors In Solution" order="1" weight="0.32978156" />
       <window_info anchor="right" id="Database" order="2" />
-      <window_info active="true" anchor="right" id="Unit Tests Coverage" order="3" visible="true" weight="0.2679808" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="3" weight="0.2679808" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
@@ -552,7 +563,7 @@
     <option name="coveragePercentColumnWidth" value="66" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="352" />
+    <option name="symbolColumnWidth" value="359" />
     <coverage-tree-state>
       <expand>
         <path>
@@ -591,25 +602,7 @@
           <item name="417" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="418" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="306" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="307" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="310" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="417" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="418" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="306" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="319" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="417" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="418" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="306" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="319" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="321" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -657,42 +650,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs</url>
-          <line>17</line>
+          <line>15</line>
           <properties documentPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" initialLine="21">
             <startOffsets>
-              <option value="525" />
+              <option value="435" />
             </startOffsets>
             <endOffsets>
-              <option value="623" />
+              <option value="498" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs</url>
-          <line>43</line>
+          <line>39</line>
           <properties documentPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" initialLine="43">
             <startOffsets>
-              <option value="1801" />
+              <option value="1411" />
             </startOffsets>
             <endOffsets>
-              <option value="1846" />
+              <option value="1456" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs</url>
-          <line>65</line>
-          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" initialLine="65">
-            <startOffsets>
-              <option value="2938" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3019" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -756,169 +736,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97814C44-4494-4E10-9702-FD400B1A900F/fc/0ad3bb4c/HttpClient.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10368">
-          <caret line="653" column="8" selection-start-line="653" selection-start-column="8" selection-end-line="653" selection-end-column="8" />
-          <folding>
-            <marker date="1578919865116" expanded="true" signature="0:318" ph="/* Decompiled with JetBrains decompiler ... */" />
-            <marker date="1578919865116" expanded="true" signature="515:41636" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="704:41634" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="1303:1529" ph="///Gets the headers which should be sent with each request. ... " />
-            <marker date="1578919865116" expanded="true" signature="1581:1778" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="1597:1772" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="1784:2096" ph="///Gets or sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending  ... " />
-            <marker date="1578919865116" expanded="true" signature="2123:2456" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="2139:2189" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="2199:2450" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="2462:3133" ph="///Gets or sets the number of milliseconds to wait before the request times out. ... " />
-            <marker date="1578919865116" expanded="true" signature="3161:3504" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="3177:3223" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="3233:3498" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="3510:4182" ph="///Gets or sets the maximum number of bytes to buffer when reading the response content. ... " />
-            <marker date="1578919865116" expanded="true" signature="4227:4782" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="4243:4317" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="4327:4776" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="4978:4990" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="4996:5218" ph="///Initializes a new instance of the &lt;see cref=&quot;T:System.Net.Http.HttpClient&quot; /&gt; class with a specific handler. ... " />
-            <marker date="1578919865116" expanded="true" signature="5296:5308" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="5314:5748" ph="///Initializes a new instance of the &lt;see cref=&quot;T:System.Net.Http.HttpClient&quot; /&gt; class with a specific handler. ... " />
-            <marker date="1578919865116" expanded="true" signature="5857:6279" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="6285:6744" ph="///Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="6802:6876" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="6882:7341" ph="///Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="7396:7515" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="7601:8676" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="7702:8670" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="7838:8633" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="8125:8576" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="8340:8564" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="8682:9145" ph="///Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operat ... " />
-            <marker date="1578919865116" expanded="true" signature="9206:9283" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="9289:9752" ph="///Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operat ... " />
-            <marker date="1578919865116" expanded="true" signature="9810:9932" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="10021:11694" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="10122:11688" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="10258:11644" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="10545:11587" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="10670:11040" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="11057:11539" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="11200:11437" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="11459:11525" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="11700:12159" ph="///Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="12217:12291" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="12297:12756" ph="///Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="12811:12932" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="13020:13541" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="13270:13471" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="13547:13965" ph="///Send a GET request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="14030:14098" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="14104:14522" ph="///Send a GET request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="14584:14678" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="14684:15222" ph="///Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="15339:15425" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="15431:16026" ph="///Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="16140:16234" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="16240:16777" ph="///Send a GET request to the specified Uri with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="16892:16979" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="16985:17578" ph="///Send a GET request to the specified Uri with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="17690:17803" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="17809:18522" ph="///Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchro ... " />
-            <marker date="1578919865116" expanded="true" signature="18682:18787" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="18793:19562" ph="///Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchro ... " />
-            <marker date="1578919865116" expanded="true" signature="19719:19849" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="19855:20357" ph="///Send a POST request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="20457:20535" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="20541:21043" ph="///Send a POST request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="21140:21226" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="21232:21888" ph="///Send a POST request with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="22031:22128" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="22134:22790" ph="///Send a POST request with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="22930:23085" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="23023:23058" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="23091:23592" ph="///Send a PUT request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="23691:23768" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="23774:24275" ph="///Send a PUT request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="24371:24456" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="24462:25117" ph="///Send a PUT request with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="25259:25355" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="25361:26016" ph="///Send a PUT request with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="26155:26309" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="26247:26282" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="26411:26490" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="26589:26676" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="26821:26919" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="27061:27217" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="27155:27190" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="27223:27815" ph="///Send a DELETE request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="27883:27954" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="27960:28552" ph="///Send a DELETE request to the specified Uri as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="28617:28696" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="28702:29469" ph="///Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="29587:29677" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="29683:30450" ph="///Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="30565:30680" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="30686:31252" ph="///Send an HTTP request as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="31327:31443" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="31449:32107" ph="///Send an HTTP request as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="32241:32352" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="32358:33089" ph="///Send an HTTP request as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="33216:33308" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="33314:34136" ph="///Send an HTTP request as an asynchronous operation. ... " />
-            <marker date="1578919865116" expanded="true" signature="34306:35502" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="34724:34941" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="34952:35036" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="35088:35159" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="35178:35262" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="35706:36660" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="35870:36381" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="36408:36524" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="36538:36620" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="36866:37572" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="36965:37322" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="37349:37436" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="37450:37532" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="37659:38109" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="37863:38103" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="38202:38274" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="38388:38965" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="38971:39270" ph="///Releases the unmanaged resources used by the &lt;see cref=&quot;T:System.Net.Http.HttpClient&quot; /&gt; and optionally dispos ... " />
-            <marker date="1578919865116" expanded="true" signature="39322:39539" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="39368:39502" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="39579:39678" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="39721:39871" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="39905:40013" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="40086:40217" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="40285:41027" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="40609:40818" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="41108:41460" ph="{...}" />
-            <marker date="1578919865116" expanded="true" signature="41499:41630" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97814C44-4494-4E10-9702-FD400B1A900F/c0/cd9a6910/HttpMessageInvoker.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
-          <folding>
-            <marker date="1589311186530" expanded="true" signature="0:326" ph="/* Decompiled with JetBrains decompiler ... */" />
-            <marker date="1589311186530" expanded="true" signature="408:4398" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="705:4396" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="827:1154" ph="///Initializes an instance of a &lt;see cref=&quot;T:System.Net.Http.HttpMessageInvoker&quot; /&gt; class with a specific &lt;see cr ... " />
-            <marker date="1589311186530" expanded="true" signature="1240:1252" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="1258:1739" ph="///Initializes an instance of a &lt;see cref=&quot;T:System.Net.Http.HttpMessageInvoker&quot; /&gt; class with a specific &lt;see cr ... " />
-            <marker date="1589311186530" expanded="true" signature="1818:2342" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="2348:2835" ph="///Send an HTTP request as an asynchronous operation. ... " />
-            <marker date="1589311186530" expanded="true" signature="2968:3439" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="3629:3709" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="3715:4022" ph="///Releases the unmanaged resources used by the &lt;see cref=&quot;T:System.Net.Http.HttpMessageInvoker&quot; /&gt; and optionall ... " />
-            <marker date="1589311186530" expanded="true" signature="4073:4250" ph="{...}" />
-            <marker date="1589311186530" expanded="true" signature="4284:4392" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77A26029-7DE4-4284-9A96-A0F2080CD8D7/30/9ea9bffc/ClientHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1312">
@@ -1039,19 +856,6 @@
             <marker date="1588645478234" expanded="true" signature="73:353" ph="{...}" />
             <marker date="1588645478234" expanded="true" signature="122:351" ph="{...}" />
             <marker date="1588645478234" expanded="true" signature="211:345" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <marker date="1589410692636" expanded="true" signature="6:180" ph="..." />
-            <marker date="1589410692636" expanded="true" signature="223:926" ph="{...}" />
-            <marker date="1589410692636" expanded="true" signature="258:924" ph="{...}" />
-            <marker date="1589410692636" expanded="true" signature="347:918" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1510,42 +1314,15 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DB49E-5E34-4072-9DA3-1845C03DDC3A/2b/4beff887/JsonConvert.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7424">
+        <state relative-caret-position="199">
           <caret line="473" column="6" selection-start-line="473" selection-start-column="6" selection-end-line="473" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-          <folding>
-            <marker date="1589502576461" expanded="true" signature="6:176" ph="..." />
-            <marker date="1589502576461" expanded="true" signature="227:4009" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="277:4007" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="292:846" ph="QueryObterProdutoPorNome" />
-            <marker date="1589502576461" expanded="true" signature="382:826" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="439:754" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="856:1540" ph="QueryObterTodosProdutos" />
-            <marker date="1589502576461" expanded="true" signature="943:1521" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="1000:1449" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="1550:2449" ph="MutationAtualizaProduto" />
-            <marker date="1589502576461" expanded="true" signature="1652:2430" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="2460:3066" ph="MutationDeletarProduto" />
-            <marker date="1589502576461" expanded="true" signature="2560:3047" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="3084:3621" ph="MutationAdicionarProduto" />
-            <marker date="1589502576461" expanded="true" signature="3173:3602" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="3230:3529" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="3700:4001" ph="{...}" />
-            <marker date="1589502576461" expanded="true" signature="3772:3917" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding>
             <marker date="1589502984116" expanded="false" signature="6:375" ph="..." />
             <marker date="1589502984116" expanded="true" signature="413:2764" ph="{...}" />
@@ -1561,16 +1338,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <marker date="1589506253014" expanded="true" signature="6:280" ph="..." />
+            <marker date="1589506253014" expanded="true" signature="323:1654" ph="{...}" />
+            <marker date="1589506253014" expanded="true" signature="358:1652" ph="{...}" />
+            <marker date="1589506253014" expanded="true" signature="447:1018" ph="{...}" />
+            <marker date="1589506253014" expanded="true" signature="1091:1646" ph="{...}" />
+            <marker date="1589506253014" expanded="true" signature="1231:1376" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <marker date="1589505902042" expanded="true" signature="56:378" ph="{...}" />
+            <marker date="1589505902042" expanded="true" signature="104:376" ph="{...}" />
+            <marker date="1589505902042" expanded="true" signature="165:370" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <marker date="1589506971093" expanded="true" signature="70:2629" ph="{...}" />
+            <marker date="1589506971093" expanded="true" signature="136:2627" ph="{...}" />
+            <marker date="1589506971093" expanded="true" signature="204:2621" ph="{...}" />
+            <marker date="1589506971093" expanded="true" signature="250:2611" ph="/* var responseCreate = await ExecutaComando(MutationAdicionarProduto()); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+          <folding>
+            <marker date="1589506971159" expanded="true" signature="6:67" ph="..." />
+            <marker date="1589506971159" expanded="true" signature="118:2783" ph="{...}" />
+            <marker date="1589506971159" expanded="true" signature="168:2781" ph="{...}" />
+            <marker date="1589506971159" expanded="true" signature="183:609" ph="QueryObterProdutoPorNome" />
+            <marker date="1589506971159" expanded="true" signature="273:589" ph="{...}" />
+            <marker date="1589506971159" expanded="true" signature="619:1011" ph="QueryObterTodosProdutos" />
+            <marker date="1589506971159" expanded="true" signature="1021:1827" ph="MutationAtualizaProduto" />
+            <marker date="1589506971159" expanded="true" signature="1123:1808" ph="{...}" />
+            <marker date="1589506971159" expanded="true" signature="1838:2366" ph="MutationDeletarProduto" />
+            <marker date="1589506971159" expanded="true" signature="1938:2347" ph="{...}" />
+            <marker date="1589506971159" expanded="true" signature="2384:2775" ph="MutationAdicionarProduto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="304">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
-            <marker date="1589497914390" expanded="true" signature="6:186" ph="..." />
-            <marker date="1589497914390" expanded="true" signature="237:3279" ph="{...}" />
-            <marker date="1589497914390" expanded="true" signature="305:3277" ph="{...}" />
-            <marker date="1589497914390" expanded="true" signature="377:845" ph="{...}" />
-            <marker date="1589497914390" expanded="true" signature="912:3271" ph="{...}" />
+            <marker date="1589506971008" expanded="true" signature="6:158" ph="..." />
+            <marker date="1589506971008" expanded="true" signature="209:2515" ph="{...}" />
+            <marker date="1589506971008" expanded="true" signature="277:2513" ph="{...}" />
+            <marker date="1589506971008" expanded="true" signature="349:720" ph="{...}" />
+            <marker date="1589506971008" expanded="true" signature="791:2507" ph="{...}" />
           </folding>
         </state>
       </provider>

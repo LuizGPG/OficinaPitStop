@@ -98,6 +98,10 @@
         </e>
         <e p="OficinaPitStop.IntegrationTest.csproj" t="IncludeRecursive" />
         <e p="Produtos" t="Include">
+          <e p="Marcas" t="Include">
+            <e p="MarcaIntegrationTest.cs" t="Include" />
+            <e p="MarcaPartialIntegrationTest.cs" t="Include" />
+          </e>
           <e p="ProdutoIntegrationTest.cs" t="Include" />
           <e p="ProdutoPartialIntegrationTest.cs" t="Include" />
         </e>

@@ -1,35 +1,22 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using OficinaPitStop.Entities.Produtos;
 using Xunit;
 
-namespace OficinaPitStop.IntegrationTest.Produtos
+namespace OficinaPitStop.IntegrationTest.Produtos.Marcas
 {
-    public partial class ProdutoIntegrationTest : IntegrationTest
+    public partial class MarcaIntegrationTest : IntegrationTest
     {
         [Fact]
-        public async Task Deve_Retornar_Consulta()
-        {
-            //todo rever teste para cobrir consulta de produto
-            var jObject = await ExecutaComando(QueryObterProdutoPorNome());
-            var listaProdutosObj = jObject["data"]["produto"].ToString();
-            var produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(listaProdutosObj);
-
-            Assert.NotEmpty(produtos);
-        }
-
-        [Fact]
-        public async Task Deve_Fazer_Crud_De_Produto()
+        public void Deve_Fazer_Crud_De_Marca()
         {
             //Adiciona
-            var jObject = await ExecutaComando(MutationAdicionarProduto);
+            /*var responseCreate = await ExecutaComando(MutationAdicionarProduto());
+            responseCreate.EnsureSuccessStatusCode();
+            var jObject = JsonConvert.DeserializeObject<JObject>(responseCreate.Content.ReadAsStringAsync().Result);
             var cadastrouProduto = jObject["data"]["create_produto"].ToString();
             Assert.Equal("True", cadastrouProduto);
 
             //consulta
-            jObject = await ExecutaComando(QueryObterTodosProdutos);
+            var responseConsulta = await ExecutaComando(QueryObterTodosProdutos());
+            jObject = JsonConvert.DeserializeObject<JObject>(responseConsulta.Content.ReadAsStringAsync().Result);
             var produtosObj = jObject["data"]["produtos"].ToString();
             var produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(produtosObj);
             Assert.NotEmpty(produtos);
@@ -41,12 +28,14 @@ namespace OficinaPitStop.IntegrationTest.Produtos
             var novoPreco = 78.4;
             ultimoProduto.Descricao = novaDescricao;
             ultimoProduto.Preco = novoPreco;
-            jObject = await ExecutaComando(MutationAtualizaProduto(ultimoProduto));
+            var responseUpdate = await ExecutaComando(MutationAtualizaProduto(ultimoProduto));
+            jObject = JsonConvert.DeserializeObject<JObject>(responseUpdate.Content.ReadAsStringAsync().Result);
             var atualizouProduto = jObject["data"]["update_produto"].ToString();
             Assert.Equal("True", atualizouProduto);
 
             //consulta
-            jObject = await ExecutaComando(QueryObterTodosProdutos);
+            responseConsulta = await ExecutaComando(QueryObterTodosProdutos());
+            jObject = JsonConvert.DeserializeObject<JObject>(responseConsulta.Content.ReadAsStringAsync().Result);
             produtosObj = jObject["data"]["produtos"].ToString();
             produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(produtosObj);
             Assert.NotEmpty(produtos);
@@ -57,9 +46,11 @@ namespace OficinaPitStop.IntegrationTest.Produtos
             Assert.Equal(novoPreco, ultimoProduto.Preco);
 
             //delete
-            jObject = await ExecutaComando(MutationDeletarProduto(ultimoProduto));
+            var responseDelete = await ExecutaComando(MutationDeletarProduto(ultimoProduto));
+            jObject = JsonConvert.DeserializeObject<JObject>(responseDelete.Content.ReadAsStringAsync().Result);
             var deletouProduto = jObject["data"]["delete_produto"].ToString();
             Assert.Equal("True", deletouProduto);
+            */
         }
     }
 }
