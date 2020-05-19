@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/OficinaPitStop.Entities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/OficinaPitStop.Entities.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" afterDir="false" />
-    </list>
+    <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -527,12 +513,12 @@
       <workItem from="1589374570806" duration="56609000" />
       <workItem from="1589491697262" duration="14889000" />
       <workItem from="1589766220205" duration="7127000" />
-      <workItem from="1589846375675" duration="8563000" />
+      <workItem from="1589846375675" duration="9676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345948000" />
+    <option name="totallyTimeSpent" value="347061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,7 +531,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -561,7 +546,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.31696904" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.3190118" />
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5002664" side_tool="true" weight="0.3180363" />
@@ -570,7 +555,7 @@
       <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.32232285" />
       <window_info anchor="right" id="Errors In Solution" order="1" weight="0.32978156" />
       <window_info anchor="right" id="Database" order="2" />
-      <window_info active="true" anchor="right" id="Unit Tests Coverage" order="3" visible="true" weight="0.3351092" />
+      <window_info active="true" anchor="right" id="Unit Tests Coverage" order="3" visible="true" weight="0.3360043" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
@@ -622,6 +607,17 @@
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
           <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="325" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="325" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="326" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
