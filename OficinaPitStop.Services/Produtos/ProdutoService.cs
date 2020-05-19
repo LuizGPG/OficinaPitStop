@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -41,6 +42,16 @@ namespace OficinaPitStop.Services.Produtos
         public async Task<IEnumerable<Produto>> ObterTodos() =>
             await _produtoRepository.ObterTodos();
 
+        private Produto ObterPorId(int codigo)
+        {
+            var produto = _produtoRepository.ObterPorId(codigo);
+
+            if (produto == null)
+                throw new NotFoundExepction(Produto.ProdutoNaoEncontrato);
+
+            return produto;
+        }
+
         public async Task<IEnumerable<Produto>> ObterPorNome(string nomeProduto) =>
             await _produtoRepository.ObterPorNome(nomeProduto);
 
@@ -57,18 +68,36 @@ namespace OficinaPitStop.Services.Produtos
 
         public bool Atualiza(Produto produto)
         {
-            if ((_produtoRepository.ObterPorId(produto.Codigo)) != null)
+            try
+            {
+                ObterPorId(produto.Codigo);
                 return _produtoRepository.Atualiza(produto);
-
-            throw new NotFoundExepction("Produto não encontrado para atualizar!");
+            }
+            catch (NotFoundExepction)
+            {
+                throw;
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException(Produto.ErroAoModificarProduto + e);
+            }
         }
 
         public bool Deleta(Produto produto)
         {
-            if ((_produtoRepository.ObterPorId(produto.Codigo)) != null)
+            try
+            {
+                ObterPorId(produto.Codigo);
                 return _produtoRepository.Deleta(produto);
-            
-            throw new NotFoundExepction("Produto não encontrado para deletar!");
+            }
+            catch (NotFoundExepction)
+            {
+                throw;
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException(Produto.ErroAoModificarProduto + e);
+            }
         }
     }
 }

@@ -6,6 +6,8 @@ namespace OficinaPitStop.Entities.Produtos
 {
     public class Produto
     {
+        public const string ProdutoNaoEncontrato = "Produto não encontrado!";
+        public const string ErroAoModificarProduto = "Erro ao modificar produto!";
         [Key] 
         public int Codigo { get; set; }
         public string Descricao { get; set; }

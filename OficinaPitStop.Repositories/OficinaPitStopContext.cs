@@ -12,19 +12,5 @@ namespace OficinaPitStop.Repositories
         
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Marca> Marca { get; set; }
-
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            https://www.entityframeworktutorial.net/efcore/fluent-api-in-entity-framework-core.aspx
-            modelBuilder.Entity<Produto>(
-                entity =>
-                {
-                    entity
-                        .HasKey(e => e.Codigo)
-                        .HasColumn
-                });
-            
-            base.OnModelCreating(modelBuilder);
-        }*/
     }
 }

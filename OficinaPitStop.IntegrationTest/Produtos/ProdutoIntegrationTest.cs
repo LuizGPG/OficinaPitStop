@@ -9,16 +9,6 @@ namespace OficinaPitStop.IntegrationTest.Produtos
 {
     public partial class ProdutoIntegrationTest : IntegrationTest
     {
-        [Fact]
-        public async Task Deve_Retornar_Consulta()
-        {
-            //todo rever teste para cobrir consulta de produto
-            var jObject = await ExecutaComando(QueryObterProdutoPorNome());
-            var listaProdutosObj = jObject["data"]["produto"].ToString();
-            var produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(listaProdutosObj);
-
-            Assert.NotEmpty(produtos);
-        }
 
         [Fact]
         public async Task Deve_Fazer_Crud_De_Produto()
@@ -46,9 +36,9 @@ namespace OficinaPitStop.IntegrationTest.Produtos
             Assert.Equal("True", atualizouProduto);
 
             //consulta
-            jObject = await ExecutaComando(QueryObterTodosProdutos);
-            produtosObj = jObject["data"]["produtos"].ToString();
-            produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(produtosObj);
+            jObject = await ExecutaComando(QueryObterProdutoPorNome(ultimoProduto));
+            var listaProdutosObj = jObject["data"]["produto"].ToString();
+            produtos = JsonConvert.DeserializeObject<IEnumerable<Produto>>(listaProdutosObj);
             Assert.NotEmpty(produtos);
 
             ultimoProduto = produtos.Last();

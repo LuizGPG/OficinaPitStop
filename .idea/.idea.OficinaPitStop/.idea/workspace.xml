@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Marcas/Types/MarcaConsultaType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/Marcas/MarcaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/Marcas/MarcaRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/OficinaPitStop.Entities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/OficinaPitStop.Entities.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,63 +22,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="117">
-                    <caret line="207" column="59" selection-start-line="207" selection-start-column="59" selection-end-line="207" selection-end-column="59" />
-                    <folding>
-                      <marker date="1589461859350" expanded="false" signature="6:469" ph="..." />
-                      <marker date="1589461859350" expanded="true" signature="513:9952" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="584:9950" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="767:884" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="958:1487" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="1560:2140" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="2214:2996" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="3087:3727" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="3816:4659" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="4758:5674" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="5758:6305" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="6362:6892" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="6953:7594" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="7694:8425" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="8484:9121" ph="{...}" />
-                      <marker date="1589461859350" expanded="true" signature="9219:9944" ph="{...}" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="188">
+              <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
               <folding>
-                <marker date="1589512095343" expanded="false" signature="6:534" ph="..." />
-                <marker date="1589512095343" expanded="true" signature="585:5499" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="652:5497" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="772:834" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="908:1329" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="1394:1841" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="1922:2385" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="2440:2864" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="2931:3458" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="3523:4059" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="4157:4779" ph="{...}" />
-                <marker date="1589512095343" expanded="true" signature="4875:5491" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="6:398" ph="..." />
+                <marker date="1589852975506" expanded="true" signature="442:3413" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="494:3411" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="715:829" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="917:1539" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="1014:1244" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="1703:1926" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="2167:2417" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="2564:2963" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="2590:2723" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="2761:2812" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="2844:2953" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="3008:3405" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="3034:3165" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="3203:3254" ph="{...}" />
+                <marker date="1589852975506" expanded="true" signature="3286:3395" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -83,15 +54,90 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="43" column="75" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="75" />
+            <state relative-caret-position="336">
+              <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
               <folding>
-                <marker date="1589508951085" expanded="true" signature="6:287" ph="..." />
-                <marker date="1589508951085" expanded="true" signature="338:1589" ph="{...}" />
-                <marker date="1589508951085" expanded="true" signature="386:1587" ph="{...}" />
-                <marker date="1589508951085" expanded="true" signature="515:583" ph="{...}" />
-                <marker date="1589508951085" expanded="true" signature="1078:1311" ph="{...}" />
-                <marker date="1589508951085" expanded="true" signature="1352:1581" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="6:301" ph="..." />
+                <marker date="1589852109884" expanded="true" signature="352:2103" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="400:2101" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="529:597" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="759:974" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1250:1654" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1276:1408" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1446:1497" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1529:1644" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1695:2095" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1721:1851" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1889:1940" ph="{...}" />
+                <marker date="1589852109884" expanded="true" signature="1972:2085" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="235" selection-start-line="235" selection-end-line="235" />
+              <folding>
+                <marker date="1589854108373" expanded="true" signature="6:483" ph="..." />
+                <marker date="1589854108373" expanded="true" signature="527:11518" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="598:11516" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="781:898" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="972:1501" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="1574:2154" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="2228:3010" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="3101:3741" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="3830:4673" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="4772:5688" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="5772:6319" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="6376:6906" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="6967:7608" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="7708:8427" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="8508:9222" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="9281:9918" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="10016:10731" ph="{...}" />
+                <marker date="1589854108373" expanded="true" signature="10810:11510" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="9" column="50" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="50" />
+              <folding>
+                <marker date="1589852989584" expanded="false" signature="6:143" ph="..." />
+                <marker date="1589852989584" expanded="true" signature="187:677" ph="{...}" />
+                <marker date="1589852989584" expanded="true" signature="214:675" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="189" column="67" lean-forward="true" selection-start-line="189" selection-start-column="67" selection-end-line="189" selection-end-column="67" />
+              <folding>
+                <marker date="1589854559057" expanded="true" signature="6:548" ph="..." />
+                <marker date="1589854559057" expanded="true" signature="599:6839" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="666:6837" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="786:848" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="922:1343" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="1408:1855" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="1936:2399" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="2454:2878" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="2945:3472" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="3537:4073" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="4171:4779" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="4858:5462" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="5550:6154" ph="{...}" />
+                <marker date="1589854559057" expanded="true" signature="6231:6831" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,6 +168,8 @@
       <find>, MarcaRepository</find>
       <find>produt</find>
       <find>produto</find>
+      <find>Produto não encontrado</find>
+      <find>Produto não enco</find>
     </findStrings>
     <replaceStrings>
       <replace>produtoRespository</replace>
@@ -230,8 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Mock/ProdutoFixture.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/ProdutosTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/ProdutoTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Mock/Produtos/Marcas/MarcaFixture.cs" />
@@ -253,33 +299,35 @@
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/OficinaPitStop.IntegrationTest.csproj" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Services/Execptions/NotFoundExepction.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Types/ProdutoType.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/ProdutoIntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/Repository/IProdutoRepository.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/Produtos/IProdutoService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/MutationsType.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/Repository/Produtos/Marcas/IMarcaRepository.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/Produtos/Marcas/IMarcaService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaRepositoryTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoRepositoryTests.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Marcas/Types/MarcaConsultaType.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Filtros/Produtos/FiltrosProduto.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Filtros/Produtos/Marcas/FiltrosMarca.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/ConsultasTypes.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/IntegrationTest.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaIntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/Marcas/MarcaPartialIntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/Marcas/MarcaRepository.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs" />
       </list>
     </option>
@@ -307,6 +355,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -317,60 +366,7 @@
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Api" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Services" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Services" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Produtos" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Services" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Produtos" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Marcas" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
               <item name="test" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="test" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.IntegrationTest" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="test" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.IntegrationTest" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Produtos" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="test" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.IntegrationTest" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Produtos" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Marcas" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
@@ -398,7 +394,6 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -530,12 +525,14 @@
       <workItem from="1588954938985" duration="1742000" />
       <workItem from="1588984641427" duration="32735000" />
       <workItem from="1589374570806" duration="56609000" />
-      <workItem from="1589491697262" duration="14849000" />
+      <workItem from="1589491697262" duration="14889000" />
+      <workItem from="1589766220205" duration="7127000" />
+      <workItem from="1589846375675" duration="8563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330218000" />
+    <option name="totallyTimeSpent" value="345948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,13 +545,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3361793" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33831376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
@@ -563,16 +561,16 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.3179377" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.31696904" />
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5002664" side_tool="true" weight="0.3180363" />
-      <window_info anchor="bottom" id="Build" order="16" weight="0.25080043" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.24866596" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32977587" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.3185935" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.32232285" />
       <window_info anchor="right" id="Errors In Solution" order="1" weight="0.32978156" />
       <window_info anchor="right" id="Database" order="2" />
-      <window_info active="true" anchor="right" id="Unit Tests Coverage" order="3" visible="true" weight="0.33547008" />
+      <window_info active="true" anchor="right" id="Unit Tests Coverage" order="3" visible="true" weight="0.3351092" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
@@ -613,7 +611,7 @@
     <option name="coveragePercentColumnWidth" value="66" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="421" />
+    <option name="symbolColumnWidth" value="470" />
     <coverage-tree-state>
       <expand>
         <path>
@@ -623,7 +621,7 @@
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
           <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="417" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -645,14 +643,8 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs</url>
-          <line>250</line>
-          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoTests.cs" initialLine="236" />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs</url>
-          <line>108</line>
+          <line>109</line>
           <properties documentPath="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaTests.cs" initialLine="103" />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
@@ -670,30 +662,82 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs</url>
-          <line>15</line>
-          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" initialLine="21">
+          <url>file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs</url>
+          <line>81</line>
+          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" initialLine="70">
             <startOffsets>
-              <option value="435" />
+              <option value="2875" />
             </startOffsets>
             <endOffsets>
-              <option value="498" />
+              <option value="2939" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="70" />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" initialLine="43">
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" initialLine="48">
             <startOffsets>
-              <option value="1411" />
+              <option value="1405" />
             </startOffsets>
             <endOffsets>
-              <option value="1456" />
+              <option value="1477" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="90" />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs</url>
+          <line>77</line>
+          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" initialLine="77">
+            <startOffsets>
+              <option value="2792" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2798" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs</url>
+          <line>94</line>
+          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" initialLine="94">
+            <startOffsets>
+              <option value="3234" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3240" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs</url>
+          <line>89</line>
+          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" initialLine="89">
+            <startOffsets>
+              <option value="3065" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3092" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs</url>
+          <line>98</line>
+          <properties documentPath="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" initialLine="98">
+            <startOffsets>
+              <option value="3317" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3381" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -757,61 +801,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/71/6ffd196d/ExecutionTimer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <marker date="1576243567742" expanded="true" signature="0:369" ph="/* Decompiled with JetBrains decompiler ... */" />
-            <marker date="1576243567742" expanded="false" signature="377:440" ph="..." />
-            <marker date="1576243567742" expanded="true" signature="461:1876" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="466:565" ph="/// Measures and aggregates execution time of one or more actions. ... " />
-            <marker date="1576243567742" expanded="true" signature="595:1874" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="633:731" ph="/// Returns the total time aggregated across all the actions. ... " />
-            <marker date="1576243567742" expanded="true" signature="756:844" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="772:838" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="850:1013" ph="/// Executes an action and aggregates its run time into the total. ... " />
-            <marker date="1576243567742" expanded="true" signature="1054:1231" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="1120:1154" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="1168:1225" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="1237:1418" ph="/// Executes an asynchronous action and aggregates its run time into the total. ... " />
-            <marker date="1576243567742" expanded="true" signature="1479:1667" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="1545:1590" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="1604:1661" ph="{...}" />
-            <marker date="1576243567742" expanded="true" signature="1673:1791" ph="///Aggregates a time span into the total time. ... " />
-            <marker date="1576243567742" expanded="true" signature="1832:1870" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/221FA654-76FD-4A6A-A7BE-C2CD9B5A08D9/fe/be60012a/IConfigurationBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F907A11E-CB27-4C1F-AA16-3560296D2502/80/3fe0cc95/ConfigurationBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57139BFC-E1DA-4913-8884-2BBBF31D74D3/b8/68ed0052/RuntimeType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="2171" column="34" lean-forward="true" selection-start-line="2171" selection-start-column="34" selection-end-line="2171" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45B80AE8-5287-4889-B763-035D637BFDDC/ba/a14d2ad4/CallSiteRuntimeResolver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7C9A35B-06A3-4993-8BB6-1C4C3B96BCE0/cf/0ac17b1b/ParallelExecutionStrategy.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -928,20 +917,6 @@
             <marker date="1589420423511" expanded="false" signature="6:103" ph="..." />
             <marker date="1589420423511" expanded="true" signature="166:589" ph="{...}" />
             <marker date="1589420423511" expanded="true" signature="208:587" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <marker date="1589456246508" expanded="true" signature="0:123" ph="..." />
-            <marker date="1589456246508" expanded="true" signature="162:937" ph="{...}" />
-            <marker date="1589456246508" expanded="true" signature="215:935" ph="{...}" />
-            <marker date="1589456246508" expanded="true" signature="323:343" ph="{...}" />
-            <marker date="1589456246508" expanded="true" signature="463:929" ph="/* protected override void OnModelCreating(ModelBuilder modelBuilder) ... */" />
           </folding>
         </state>
       </provider>
@@ -1124,24 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <marker date="1589457522367" expanded="true" signature="6:232" ph="..." />
-            <marker date="1589457522367" expanded="true" signature="291:2149" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="349:2147" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="477:529" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="695:804" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="1238:1364" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="1411:1637" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="1682:1869" ph="{...}" />
-            <marker date="1589457522367" expanded="true" signature="1933:2141" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DB49E-5E34-4072-9DA3-1845C03DDC3A/2b/4beff887/JsonConvert.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1179,40 +1136,6 @@
             <marker date="1589506253014" expanded="true" signature="447:1018" ph="{...}" />
             <marker date="1589506253014" expanded="true" signature="1091:1646" ph="{...}" />
             <marker date="1589506253014" expanded="true" signature="1231:1376" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-          <folding>
-            <marker date="1589506971159" expanded="true" signature="6:67" ph="..." />
-            <marker date="1589506971159" expanded="true" signature="118:2783" ph="{...}" />
-            <marker date="1589506971159" expanded="true" signature="168:2781" ph="{...}" />
-            <marker date="1589506971159" expanded="true" signature="183:609" ph="QueryObterProdutoPorNome" />
-            <marker date="1589506971159" expanded="true" signature="273:589" ph="{...}" />
-            <marker date="1589506971159" expanded="true" signature="619:1011" ph="QueryObterTodosProdutos" />
-            <marker date="1589506971159" expanded="true" signature="1021:1827" ph="MutationAtualizaProduto" />
-            <marker date="1589506971159" expanded="true" signature="1123:1808" ph="{...}" />
-            <marker date="1589506971159" expanded="true" signature="1838:2366" ph="MutationDeletarProduto" />
-            <marker date="1589506971159" expanded="true" signature="1938:2347" ph="{...}" />
-            <marker date="1589506971159" expanded="true" signature="2384:2775" ph="MutationAdicionarProduto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <marker date="1589506971008" expanded="true" signature="6:158" ph="..." />
-            <marker date="1589506971008" expanded="true" signature="209:2515" ph="{...}" />
-            <marker date="1589506971008" expanded="true" signature="277:2513" ph="{...}" />
-            <marker date="1589506971008" expanded="true" signature="349:720" ph="{...}" />
-            <marker date="1589506971008" expanded="true" signature="791:2507" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1300,13 +1223,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Marcas/Types/MarcaConsultaType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Marcas/Types/MarcaConsultaType.cs" />
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/GraphQL/Produtos/Marcas/Types/MarcaUpdateType.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1354,81 +1271,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs">
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+        <state relative-caret-position="176">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
-            <marker date="1589427660950" expanded="false" signature="6:384" ph="..." />
-            <marker date="1589427660950" expanded="true" signature="428:2816" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="480:2814" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="701:815" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="903:1525" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="1000:1230" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="1882:2132" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="2279:2517" ph="{...}" />
-            <marker date="1589427660950" expanded="true" signature="2562:2808" ph="{...}" />
+            <marker date="1589846620419" expanded="false" signature="6:123" ph="..." />
+            <marker date="1589846620419" expanded="true" signature="162:461" ph="{...}" />
+            <marker date="1589846620419" expanded="true" signature="215:459" ph="{...}" />
+            <marker date="1589846620419" expanded="true" signature="323:343" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs">
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="207" column="59" selection-start-line="207" selection-start-column="59" selection-end-line="207" selection-end-column="59" />
+        <state relative-caret-position="-128">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <marker date="1589461859350" expanded="false" signature="6:469" ph="..." />
-            <marker date="1589461859350" expanded="true" signature="513:9952" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="584:9950" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="767:884" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="958:1487" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="1560:2140" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="2214:2996" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="3087:3727" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="3816:4659" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="4758:5674" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="5758:6305" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="6362:6892" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="6953:7594" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="7694:8425" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="8484:9121" ph="{...}" />
-            <marker date="1589461859350" expanded="true" signature="9219:9944" ph="{...}" />
+            <marker date="1589847221702" expanded="true" signature="6:67" ph="..." />
+            <marker date="1589847221702" expanded="true" signature="118:2852" ph="{...}" />
+            <marker date="1589847221702" expanded="true" signature="168:2850" ph="{...}" />
+            <marker date="1589847221702" expanded="true" signature="183:678" ph="QueryObterProdutoPorNome" />
+            <marker date="1589847221702" expanded="true" signature="288:658" ph="{...}" />
+            <marker date="1589847221702" expanded="true" signature="688:1080" ph="QueryObterTodosProdutos" />
+            <marker date="1589847221702" expanded="true" signature="1090:1896" ph="MutationAtualizaProduto" />
+            <marker date="1589847221702" expanded="true" signature="1192:1877" ph="{...}" />
+            <marker date="1589847221702" expanded="true" signature="1907:2435" ph="MutationDeletarProduto" />
+            <marker date="1589847221702" expanded="true" signature="2007:2416" ph="{...}" />
+            <marker date="1589847221702" expanded="true" signature="2453:2844" ph="MutationAdicionarProduto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <marker date="1589847486471" expanded="true" signature="6:158" ph="..." />
+            <marker date="1589847486471" expanded="true" signature="209:2107" ph="{...}" />
+            <marker date="1589847486471" expanded="true" signature="277:2105" ph="{...}" />
+            <marker date="1589847486471" expanded="true" signature="354:2099" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1589848855949" expanded="true" signature="95:313" ph="{...}" />
+            <marker date="1589848855949" expanded="true" signature="120:311" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="104" selection-start-line="2" selection-start-column="104" selection-end-line="2" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <marker date="1589846635519" expanded="true" signature="6:232" ph="..." />
+            <marker date="1589846635519" expanded="true" signature="291:2109" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="349:2107" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="477:529" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="695:804" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="1238:1364" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="1411:1597" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="1642:1829" ph="{...}" />
+            <marker date="1589846635519" expanded="true" signature="1893:2101" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Services/Execptions/NotFoundExepction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1589139001836" expanded="true" signature="59:233" ph="{...}" />
+            <marker date="1589139001836" expanded="true" signature="119:231" ph="{...}" />
+            <marker date="1589139001836" expanded="true" signature="192:225" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <marker date="1589852989584" expanded="false" signature="6:143" ph="..." />
+            <marker date="1589852989584" expanded="true" signature="187:677" ph="{...}" />
+            <marker date="1589852989584" expanded="true" signature="214:675" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="75" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="75" />
+        <state relative-caret-position="336">
+          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
           <folding>
-            <marker date="1589508951085" expanded="true" signature="6:287" ph="..." />
-            <marker date="1589508951085" expanded="true" signature="338:1589" ph="{...}" />
-            <marker date="1589508951085" expanded="true" signature="386:1587" ph="{...}" />
-            <marker date="1589508951085" expanded="true" signature="515:583" ph="{...}" />
-            <marker date="1589508951085" expanded="true" signature="1078:1311" ph="{...}" />
-            <marker date="1589508951085" expanded="true" signature="1352:1581" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="6:301" ph="..." />
+            <marker date="1589852109884" expanded="true" signature="352:2103" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="400:2101" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="529:597" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="759:974" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1250:1654" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1276:1408" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1446:1497" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1529:1644" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1695:2095" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1721:1851" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1889:1940" ph="{...}" />
+            <marker date="1589852109884" expanded="true" signature="1972:2085" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+          <folding>
+            <marker date="1589852975506" expanded="true" signature="6:398" ph="..." />
+            <marker date="1589852975506" expanded="true" signature="442:3413" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="494:3411" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="715:829" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="917:1539" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="1014:1244" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="1703:1926" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="2167:2417" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="2564:2963" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="2590:2723" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="2761:2812" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="2844:2953" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="3008:3405" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="3034:3165" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="3203:3254" ph="{...}" />
+            <marker date="1589852975506" expanded="true" signature="3286:3395" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
+          <folding>
+            <marker date="1589854108373" expanded="true" signature="6:483" ph="..." />
+            <marker date="1589854108373" expanded="true" signature="527:11518" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="598:11516" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="781:898" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="972:1501" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="1574:2154" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="2228:3010" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="3101:3741" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="3830:4673" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="4772:5688" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="5772:6319" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="6376:6906" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="6967:7608" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="7708:8427" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="8508:9222" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="9281:9918" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="10016:10731" ph="{...}" />
+            <marker date="1589854108373" expanded="true" signature="10810:11510" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="288">
+          <caret line="189" column="67" lean-forward="true" selection-start-line="189" selection-start-column="67" selection-end-line="189" selection-end-column="67" />
           <folding>
-            <marker date="1589512095343" expanded="false" signature="6:534" ph="..." />
-            <marker date="1589512095343" expanded="true" signature="585:5499" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="652:5497" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="772:834" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="908:1329" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="1394:1841" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="1922:2385" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="2440:2864" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="2931:3458" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="3523:4059" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="4157:4779" ph="{...}" />
-            <marker date="1589512095343" expanded="true" signature="4875:5491" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="6:548" ph="..." />
+            <marker date="1589854559057" expanded="true" signature="599:6839" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="666:6837" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="786:848" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="922:1343" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="1408:1855" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="1936:2399" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="2454:2878" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="2945:3472" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="3537:4073" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="4171:4779" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="4858:5462" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="5550:6154" ph="{...}" />
+            <marker date="1589854559057" expanded="true" signature="6231:6831" ph="{...}" />
           </folding>
         </state>
       </provider>

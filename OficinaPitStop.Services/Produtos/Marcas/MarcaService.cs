@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using OficinaPitStop.Entities.Produtos.Marcas;
@@ -19,8 +20,14 @@ namespace OficinaPitStop.Services.Produtos.Marcas
         public async Task<IEnumerable<Marca>> ObterTodos() =>
             await _marcaRepository.ObterTodos();
 
-        public Marca ObterPorId(int codigoMarca) =>
-            _marcaRepository.ObterPorId(codigoMarca);
+        public Marca ObterPorId(int codigoMarca)
+        {
+            var marca = _marcaRepository.ObterPorId(codigoMarca);
+            if (marca == null)
+                throw new NotFoundExepction(Marca.MarcaNaoEncontrada);
+
+            return marca;
+        }
 
         public async Task<IEnumerable<Marca>> ObterPorNome(string descricao) =>
             await _marcaRepository.ObterPorNome(descricao);
@@ -30,18 +37,36 @@ namespace OficinaPitStop.Services.Produtos.Marcas
 
         public bool Atualiza(Marca marca)
         {
-            if ((_marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
+            try
+            {
+                ObterPorId(marca.CodigoMarca);
                 return _marcaRepository.Atualiza(marca);
-
-            throw new NotFoundExepction("Marca não encontrada para atualizar!");
+            }
+            catch (NotFoundExepction)
+            {
+                throw;
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException("Não foi possível atualizar marca. " + e);
+            }
         }
 
         public bool Deleta(Marca marca)
         {
-            if ((_marcaRepository.ObterPorId(marca.CodigoMarca)) != null)
+            try
+            {
+                ObterPorId(marca.CodigoMarca);
                 return _marcaRepository.Deleta(marca);
-
-            throw new NotFoundExepction("Marca não encontrada para deletar!");
+            }
+            catch (NotFoundExepction)
+            {
+                throw;
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException("Não foi possível deletar marca. " + e);
+            }
         }
     }
 }

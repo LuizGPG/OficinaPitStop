@@ -7,16 +7,16 @@ namespace OficinaPitStop.IntegrationTest.Produtos
     {
         #region QueryObterProdutoPorNome
 
-        private static string QueryObterProdutoPorNome()
+        private static string QueryObterProdutoPorNome(Produto produto)
         {
             return @"{
-                            produto(nome_produto: ""2"") {
+                            produto(nome_produto: ""@nomeProduto"") {
                               codigo
                               descricao
                               preco
                               quantidade
                             }
-                          }";
+                          }".Replace("@nomeProduto", produto.Descricao);
         }
 
         #endregion

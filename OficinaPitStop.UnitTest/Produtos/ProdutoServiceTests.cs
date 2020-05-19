@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -200,7 +201,7 @@ namespace OficinaPitStop.UnitTest.Produtos
         public void Deve_Dar_Erro_Ao_Atualizar_Produto_E_Nao_Encontrar_ID()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
-            var mensagemErro = "Produto não encontrado para atualizar!";
+            var mensagemErro = Produto.ProdutoNaoEncontrato;
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
@@ -213,6 +214,25 @@ namespace OficinaPitStop.UnitTest.Produtos
                 async () => service.Atualiza(produtosMock.First()));
 
             Assert.Equal(mensagemErro, produtosRetorno.Result.Message);
+        }
+        
+        [Fact]
+        public void Deve_Dar_Erro_Ao_Atualizar_Produto()
+        {
+            var produtoMock = _produtoFixture.ProdutoMock().First();
+            var mensagemErro = Produto.ProdutoNaoEncontrato;
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+            
+            produtoRespository.Setup(x => x.ObterPorId(It.IsAny<int>()))
+                .Returns(produtoMock);
+
+            produtoRespository.Setup(x => x.Atualiza(It.IsAny<Produto>()))
+                .Throws(new Exception(mensagemErro));
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            Assert.ThrowsAsync<Exception>(async () => service.Atualiza(produtoMock));
         }
 
         [Fact]
@@ -239,7 +259,7 @@ namespace OficinaPitStop.UnitTest.Produtos
         public void Deve_Dar_Erro_Ao_Deletar_Produto_E_Nao_Encontrar_ID()
         {
             var produtosMock = _produtoFixture.ProdutoMock();
-            var mensagemErro = "Produto não encontrado para deletar!";
+            var mensagemErro = Produto.ProdutoNaoEncontrato;
 
             var marcaService = new Mock<IMarcaService>();
             var produtoRespository = new Mock<IProdutoRepository>();
@@ -252,6 +272,25 @@ namespace OficinaPitStop.UnitTest.Produtos
                 async () => service.Deleta(produtosMock.First()));
 
             Assert.Equal(mensagemErro, produtosRetorno.Result.Message);
+        }
+        
+        [Fact]
+        public void Deve_Dar_Erro_Ao_Deletar_Produto()
+        {
+            var produtoMock = _produtoFixture.ProdutoMock().First();
+            var mensagemErro = Produto.ErroAoModificarProduto;
+
+            var marcaService = new Mock<IMarcaService>();
+            var produtoRespository = new Mock<IProdutoRepository>();
+
+            produtoRespository.Setup(x => x.ObterPorId(It.IsAny<int>()))
+                .Returns(produtoMock);
+
+            produtoRespository.Setup(x => x.Deleta(It.IsAny<Produto>()))
+                .Throws(new Exception(mensagemErro));
+
+            var service = new ProdutoService(produtoRespository.Object, marcaService.Object);
+            Assert.ThrowsAsync<Exception>(async () => service.Deleta(produtoMock));
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Moq;
@@ -122,7 +123,7 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
         public void Deve_Dar_Erro_Ao_Atualizar_Marca_E_Nao_Encontrar_ID()
         {
             var marcaMock = _marcaFixture.MarcasMock();
-            var mensagemErro = "Marca não encontrada para atualizar!";
+            var mensagemErro = Marca.MarcaNaoEncontrada;
 
             var marcaRepository = new Mock<IMarcaRepository>();
 
@@ -137,10 +138,28 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
         }
         
         [Fact]
+        public void Deve_Dar_Erro_Ao_Atualizar_Marca()
+        {
+            var marcaMock = _marcaFixture.MarcasMock().First();
+            var mensagemErro = Marca.MarcaNaoEncontrada;
+
+            var marcaRepository = new Mock<IMarcaRepository>();
+            
+            marcaRepository.Setup(m => m.ObterPorId(It.IsAny<int>()))
+                .Returns(marcaMock);
+
+            marcaRepository.Setup(x => x.Atualiza(It.IsAny<Marca>()))
+                .Throws(new Exception(mensagemErro));
+
+            var service = new MarcaService(marcaRepository.Object);
+            Assert.ThrowsAsync<Exception>(async () => service.Atualiza(marcaMock));
+        }
+
+        [Fact]
         public void Deve_Dar_Erro_Ao_Deletar_Marca_E_Nao_Encontrar_ID()
         {
             var marcaMock = _marcaFixture.MarcasMock();
-            var mensagemErro = "Marca não encontrada para deletar!";
+            var mensagemErro = Marca.MarcaNaoEncontrada;
 
             var marcaRepository = new Mock<IMarcaRepository>();
 
@@ -152,6 +171,24 @@ namespace OficinaPitStop.UnitTest.Produtos.Marcas
                 async () => service.Deleta(marcaMock.First()));
 
             Assert.Equal(mensagemErro, marcasRetorno.Result.Message);
+        }
+        
+        [Fact]
+        public void Deve_Dar_Erro_Ao_Deletar_Marca()
+        {
+            var marcaMock = _marcaFixture.MarcasMock().First();
+            var mensagemErro = Marca.MarcaNaoEncontrada;
+
+            var marcaRepository = new Mock<IMarcaRepository>();
+            
+            marcaRepository.Setup(m => m.ObterPorId(It.IsAny<int>()))
+                .Returns(marcaMock);
+
+            marcaRepository.Setup(x => x.Deleta(It.IsAny<Marca>()))
+                .Throws(new Exception(mensagemErro));
+
+            var service = new MarcaService(marcaRepository.Object);
+            Assert.ThrowsAsync<Exception>(async () => service.Deleta(marcaMock));
         }
     }
 }

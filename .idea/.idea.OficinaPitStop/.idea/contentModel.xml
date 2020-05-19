@@ -67,8 +67,6 @@
             </e>
           </e>
         </e>
-        <e p="Fornecedores" t="Include" />
-        <e p="Funcionarios" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">

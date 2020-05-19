@@ -42,7 +42,6 @@ namespace OficinaPitStop.Repositories.Repository.Produtos
 
         public bool Atualiza(Produto produto)
         {
-            //todo fazer partial update
             DetachLocal(_ => _.Codigo == produto.Codigo);
             _context.Produtos.Update(produto);
             _context.SaveChanges();
