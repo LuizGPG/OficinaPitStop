@@ -104,6 +104,10 @@
         </e>
       </e>
       <e p="OficinaPitStop.Repositories" t="IncludeRecursive">
+        <e p="Banco de dados" t="Include">
+          <e p="oficinapitstop_marca.sql" t="Include" />
+          <e p="oficinapitstop_produtos.sql" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

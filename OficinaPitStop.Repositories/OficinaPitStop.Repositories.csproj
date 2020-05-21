@@ -15,4 +15,8 @@
       <ProjectReference Include="..\OficinaPitStop.Repositories.Abstractions\OficinaPitStop.Repositories.Abstractions.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Banco de dados" />
+    </ItemGroup>
+
 </Project>
