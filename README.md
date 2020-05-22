@@ -16,7 +16,7 @@ Nessa API os testes de integração foram feitos com acesso a base de dados que 
 Dessa forma garantimos que o mapeamento das tabelas e suas entidades estão sempre corretos, caso a estrutura da base seja alterada de alguma forma os testes de integração não vão obter sucesso.
 
 <br><b>Banco de dados - Instalação</b></br>
-O banco de dados utilizado é o <a href=https://www.mysql.com/downloads/>MySQL</a> e deve ser criado conforme scripts do diretorio X.
+O banco de dados utilizado é o <a href=https://www.mysql.com/downloads/>MySQL</a> e deve ser criado conforme scripts do diretorio de <a href=https://github.com/LuizGPG/OficinaPitStop/tree/master/OficinaPitStop.Repositories/Banco%20de%20dados> repositório</a>.
 
 Conforme mencionado anteriormente os testes de integração são executados na base de dados. Estes foram criados para que utilize apenas a estrutura do banco, sendo assim, não é necessário a criação de registros para que os testes passem.
 Também fiz de uma maneira que a integração seja feita de ponta a ponta com o crud, criando, atualizando, consultando e por fim removendo o registro, dessa forma não fica lixo na base.
