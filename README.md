@@ -7,10 +7,10 @@ A complexidade da API foi reduzida para que seja de fácil entendimento para que
 Também tem como premissa enfatizar a eficiencia de testes unitarios. 
 ![CodeCoverage](https://github.com/LuizGPG/OficinaPitStop/blob/master/CodeCoverage.PNG)
 
-<br>Esses serviços devem ser testados através de <a href=https://docs.microsoft.com/pt-br/dotnet/core/testing/?pivots=xunit>testes unitarios</a>, cada teste deve ser executado com a menor quantidade de responsabilidade possível, 
+<br>Esses serviços devem ser testados através de <a href=https://docs.microsoft.com/pt-br/dotnet/core/testing>testes unitarios</a>, cada teste deve ser executado com a menor quantidade de responsabilidade possível, 
 caso um mesmo metodo tenha diversas situações, todos os possíveis caminhos devem ser testados separadamente.
 
-A camada de repository geralmente é coberta através de <a href=https://docs.microsoft.com/pt-br/aspnet/core/test/integration-tests?view=aspnetcore-3.1>testes de integração</a>. Mas também é possível faze-los isoladamente com testes unitários.
+A camada de repository geralmente é coberta através de <a href=https://docs.microsoft.com/pt-br/aspnet/core/test/integration-tests>testes de integração</a>. Mas também é possível faze-los isoladamente com testes unitários.
 
 Nessa API os testes de integração foram feitos com acesso a base de dados que é utilizada no projeto.
 Dessa forma garantimos que o mapeamento das tabelas e suas entidades estão sempre corretos, caso a estrutura da base seja alterada de alguma forma os testes de integração não vão obter sucesso.
