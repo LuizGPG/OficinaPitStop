@@ -29,4 +29,12 @@ Foi criada uma action para validar a cada commit se o codigo esta buildando e os
 Pode ser visto o na aba <a href=https://github.com/LuizGPG/OficinaPitStop/actions>actions</a>.
 
 <b>Docker</b>
-A imagem da API foi colocada no DOCKER HUB e pode ser 
+
+A imagem da API foi criada pelo dockerfile. Disponibilizei a imagem no docker hub, mas para a criação da mesma é simples.
+
+Apenas executando o comando a baixo no diretorio onde esta o Dockerfile:
+<br><b>docker build -t oficinapitstop:1.0 .</b></br>
+
+Desta forma a imagem já é criada corretamente.
+![imagemDocker](https://github.com/LuizGPG/OficinaPitStop/blob/master/imagemDocker.PNG)
+
