@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStop.Repositories.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStop.Repositories.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.assets.cache" afterDir="false" />
-    </list>
+    <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -240,25 +233,6 @@
               <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
               <item name="src" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Api" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Repositories" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="OficinaPitStop.Repositories" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Banco de dados" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -400,11 +374,12 @@
       <workItem from="1589766220205" duration="7127000" />
       <workItem from="1589846375675" duration="10289000" />
       <workItem from="1590021417490" duration="482000" />
+      <workItem from="1590790284770" duration="1734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348156000" />
+    <option name="totallyTimeSpent" value="349890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -432,13 +407,13 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" visible="true" weight="0.3180363" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" weight="0.3180363" />
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5002664" side_tool="true" weight="0.3180363" />
-      <window_info anchor="bottom" id="Build" order="16" weight="0.24866596" />
+      <window_info anchor="bottom" id="Build" order="16" visible="true" weight="0.24866596" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32977587" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.32232285" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.32605222" />
       <window_info anchor="right" id="Errors In Solution" order="1" weight="0.32978156" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Unit Tests Coverage" order="3" weight="0.33564198" />
@@ -1218,7 +1193,6 @@
           <caret line="168" column="67" selection-start-line="168" selection-start-column="67" selection-end-line="168" selection-end-column="67" />
           <folding>
             <marker date="1589854559057" expanded="true" signature="6:548" ph="..." />
-            <marker date="1589854559057" expanded="true" signature="599:6839" ph="{...}" />
             <marker date="1589854559057" expanded="true" signature="666:6837" ph="{...}" />
             <marker date="1589854559057" expanded="true" signature="786:848" ph="{...}" />
             <marker date="1589854559057" expanded="true" signature="922:1343" ph="{...}" />
@@ -1297,24 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
-          <folding>
-            <marker date="1589852975506" expanded="true" signature="6:398" ph="..." />
-            <marker date="1589852975506" expanded="true" signature="442:3413" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="494:3411" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="715:829" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="917:1539" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="1014:1244" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="1703:1926" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="2167:2417" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="2564:2963" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="2590:2723" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="2761:2812" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="2844:2953" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="3008:3405" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="3034:3165" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="3203:3254" ph="{...}" />
-            <marker date="1589852975506" expanded="true" signature="3286:3395" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
