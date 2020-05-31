@@ -1,5 +1,5 @@
 # OficinaPitStop
-<b>Objetivo</b>
+## <b>Objetivo</b>
 
 API criada para base de estudos de projetos em GraphQL. 
 O objetivo é entender o que é necessário para realizar um crud em GraphQL através de querys e mutations.
@@ -28,5 +28,20 @@ Também fiz de uma maneira que a integração seja feita de ponta a ponta com o 
 Foi criada uma action para validar a cada commit se o codigo esta buildando e os teste estão passando.
 Pode ser visto o na aba <a href=https://github.com/LuizGPG/OficinaPitStop/actions>actions</a>.
 
-<b>Docker</b>
-A imagem da API foi colocada no DOCKER HUB e pode ser 
+## Docker
+
+A imagem da API foi criada pelo dockerfile. Disponibilizei a imagem no docker hub e pode ser feito um pull com o comando:
+```bash
+docker pull luizidocker/oficinapitstop:latest
+```
+
+Caso queira criar uma imagem da api é necessário apenas executar o comando a baixo no diretorio onde esta o Dockerfile:
+```bash
+docker build -t oficinapitstop:1.0 .
+```
+Desta forma a imagem já é criada corretamente.
+![imagemDocker](https://github.com/LuizGPG/OficinaPitStop/blob/master/imagemDocker.PNG)
+
+Para criar um container da aplicação 
+
+
