@@ -17,46 +17,6 @@
     <e p="C:\Users\luiz.guimaraes\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_OficinaPitStop.549691355.00" t="ExcludeRecursive" />
     <e p="C:\Users\luiz.guimaraes\Desktop\Luiz\Projetos\OficinaPitStop" t="IncludeFlat">
       <e p="OficinaPitStop.Api" t="IncludeRecursive">
-        <e p=".dist" t="Include">
-          <e p="runtimes" t="Include">
-            <e p="unix" t="Include">
-              <e p="lib" t="Include">
-                <e p="netcoreapp2.1" t="Include">
-                  <e p="System.Security.Principal.Windows.dll" t="Include" />
-                </e>
-              </e>
-            </e>
-            <e p="win" t="Include">
-              <e p="lib" t="Include">
-                <e p="netcoreapp2.0" t="Include">
-                  <e p="System.Security.AccessControl.dll" t="Include" />
-                  <e p="System.Text.Encoding.CodePages.dll" t="Include" />
-                </e>
-                <e p="netcoreapp2.1" t="Include">
-                  <e p="System.Security.Cryptography.Pkcs.dll" t="Include" />
-                  <e p="System.Security.Principal.Windows.dll" t="Include" />
-                </e>
-                <e p="netstandard2.0" t="Include">
-                  <e p="System.Security.Cryptography.ProtectedData.dll" t="Include" />
-                </e>
-              </e>
-            </e>
-            <e p="win-x64" t="Include">
-              <e p="nativeassets" t="Include">
-                <e p="netcoreapp2.2" t="Include">
-                  <e p="aspnetcorev2_inprocess.dll" t="Include" />
-                </e>
-              </e>
-            </e>
-            <e p="win-x86" t="Include">
-              <e p="nativeassets" t="Include">
-                <e p="netcoreapp2.2" t="Include">
-                  <e p="aspnetcorev2_inprocess.dll" t="Include" />
-                </e>
-              </e>
-            </e>
-          </e>
-        </e>
         <e p=".gitignore" t="Include" />
         <e p="app.config" t="Include" />
         <e p="appsettings.Development.json" t="Include" />

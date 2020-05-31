@@ -1,0 +1,23 @@
+version: "2.0"
+services:
+  oficinapitstop:
+      image: oficinapitstop:1.0
+      container_name: oficinapitstopcontainer
+      environment:
+        - AllowedHosts=*
+        - ConnectionStrings__DefaultConnection=server=mysqlcontaineroficina;port=3306;database=oficinapitstop;uid=root;password=senha
+      ports:
+        - "5000:80"
+      links:
+        - mysql
+  mysql:
+      image: mysql:5.7
+      container_name: mysqlcontaineroficina
+      command: "--skip-grant-tables"
+      restart: always
+      environment:
+        - MYSQL_DATABASE=oficinapitstop
+        - MYSQL_USER=root
+        - MYSQL_PASSWORD=senha
+      volumes:
+        - ./Banco de dados/MySQLContainer:/var/lib/mysql 

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="" />
+    <list default="true" id="dea17fa5-a168-432f-844e-0c70a5919730" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OficinaPitStop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Entities/obj/Debug/netcoreapp2.2/OficinaPitStop.Entities.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.Abstractions.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Repositories/obj/Debug/netcoreapp2.2/OficinaPitStop.Repositories.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OficinaPitStop.Services.Abstractions/obj/Debug/netcoreapp2.2/OficinaPitStop.Services.Abstractions.assets.cache" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +16,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#862#0" expanded="true" />
+                <marker date="1589511608131" expanded="true" signature="949:3303" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="1008:1071" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="1193:2085" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="1760:1832" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="2166:2664" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="2213:2290" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="2307:2417" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="2739:2815" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="2899:3049" ph="{...}" />
+                <marker date="1589511608131" expanded="true" signature="3135:3297" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -188,13 +227,13 @@
         <option value="$PROJECT_DIR$/OficinaPitStop.Repositories/Repository/Produtos/ProdutoRepository.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoPartialIntegrationTest.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.IntegrationTest/Produtos/ProdutoIntegrationTest.cs" />
-        <option value="$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Marcas/Marca.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/Marcas/MarcaService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Entities/Produtos/Produto.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.Services/Produtos/ProdutoService.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/ProdutoServiceTests.cs" />
         <option value="$PROJECT_DIR$/OficinaPitStop.UnitTest/Produtos/Marcas/MarcaServiceTests.cs" />
+        <option value="$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json" />
       </list>
     </option>
   </component>
@@ -221,6 +260,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -233,12 +273,17 @@
               <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
               <item name="src" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="OficinaPitStop" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="OficinaPitStop.Api" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
     </panes>
   </component>
@@ -374,12 +419,13 @@
       <workItem from="1589766220205" duration="7127000" />
       <workItem from="1589846375675" duration="10289000" />
       <workItem from="1590021417490" duration="482000" />
-      <workItem from="1590790284770" duration="1734000" />
+      <workItem from="1590790284770" duration="2965000" />
+      <workItem from="1590888567764" duration="1502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349890000" />
+    <option name="totallyTimeSpent" value="352623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,13 +438,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33831376" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3404941" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
@@ -411,9 +458,9 @@
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5002664" side_tool="true" weight="0.3180363" />
-      <window_info anchor="bottom" id="Build" order="16" visible="true" weight="0.24866596" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.24866596" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32977587" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.32605222" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.18108974" />
       <window_info anchor="right" id="Errors In Solution" order="1" weight="0.32978156" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Unit Tests Coverage" order="3" weight="0.33564198" />
@@ -1077,27 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <marker date="1589511608131" expanded="true" signature="6:862" ph="..." />
-            <marker date="1589511608131" expanded="true" signature="892:3305" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="949:3303" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="1008:1071" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="1193:2085" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="1760:1832" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="2166:2664" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="2213:2290" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="2307:2417" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="2739:2815" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="2899:3049" ph="{...}" />
-            <marker date="1589511608131" expanded="true" signature="3135:3297" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.Repositories/OficinaPitStopContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1287,7 +1313,27 @@
     <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/appsettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="104" selection-start-line="2" selection-start-column="104" selection-end-line="2" selection-end-column="104" />
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OficinaPitStop.Api/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#862#0" expanded="true" />
+            <marker date="1589511608131" expanded="true" signature="949:3303" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="1008:1071" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="1193:2085" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="1760:1832" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="2166:2664" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="2213:2290" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="2307:2417" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="2739:2815" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="2899:3049" ph="{...}" />
+            <marker date="1589511608131" expanded="true" signature="3135:3297" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
