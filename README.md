@@ -30,11 +30,18 @@ Pode ser visto o na aba <a href=https://github.com/LuizGPG/OficinaPitStop/action
 
 ## Docker
 
-A imagem da API foi criada pelo dockerfile. Disponibilizei a imagem no docker hub, mas para a criação da mesma é simples.
+A imagem da API foi criada pelo dockerfile. Disponibilizei a imagem no docker hub e pode ser feito um pull com o comando:
+```bash
+docker pull luizidocker/oficinapitstop:latest
+```
 
-Apenas executando o comando a baixo no diretorio onde esta o Dockerfile:
-<br><b> - docker build -t oficinapitstop:1.0 .</b></br>
-
+Caso queira criar uma imagem da api é necessário apenas executar o comando a baixo no diretorio onde esta o Dockerfile:
+```bash
+docker build -t oficinapitstop:1.0 .
+```
 Desta forma a imagem já é criada corretamente.
 ![imagemDocker](https://github.com/LuizGPG/OficinaPitStop/blob/master/imagemDocker.PNG)
+
+Para criar um container da aplicação 
+
 
