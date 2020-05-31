@@ -1,1 +1,3 @@
-Banco de dados/** linguist-vendored
+Banco de dados/MySQLContainer/performance_schema linguist-vendored
+Banco de dados/MySQLContainer/sys linguist-vendored
+Banco de dados/MySQLContainer/mysql linguist-vendored
