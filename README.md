@@ -3,6 +3,8 @@
 Consiste em uma API capaz de realizar crud em GraphQL de duas entidades. 
 Pode ser util como base de diversos projetos de um software para uma farmácia a uma oficina, que foi o objetivo inicial.
 
+<i>Don't write code that guesses the future. Arrange code, so you can adapt to the future when it arrives.</i>
+
 ## Objetivo
 API criada para base de estudos de projetos em GraphQL. 
 O objetivo é entender o que é necessário para realizar um crud em GraphQL através de querys e mutations.
@@ -36,7 +38,7 @@ Após a api rodando seja ela sendo executada através de containers ou no ambien
 Os exemplos sitados a baixo são executados através do playground disponível na biblioteca do <a href=https://https://graphql.org/> graphql</a>.
 Nesta aplicação é possível acessar com o caminho: <b>http://localhost:5000/ui/playground</b>
 
-### Criando - Produto
+<br><b> Criando - Produto </b></br>
 ```graphql
 mutation{
   create_produto(create:{
@@ -46,7 +48,7 @@ mutation{
   })
 }
 ```
-### Listando - Produto
+<br><b> Listando - Produto </b></br>
 ```graphql
 {
   produtos {
@@ -57,7 +59,7 @@ mutation{
   }
 }
 ```
-### Atualizando - Produto
+<br><b> Atualizando - Produto </b></br>
 ```graphql
 mutation {
   update_produto(
@@ -71,7 +73,7 @@ mutation {
 }
 ```
 
-### Deletando - Produto
+<br><b> Deletando - Produto </b></br>
 ```graphql
 mutation {
   delete_produto(delete: { codigo: 1 })
