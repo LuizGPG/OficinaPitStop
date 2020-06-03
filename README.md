@@ -1,6 +1,9 @@
 # OficinaPitStop
-## <b>Objetivo</b>
+## Descrição
+Consiste em uma API capaz de realizar crud em GraphQL de duas entidades. 
+Pode ser util como base de diversos projetos de um software para uma farmácia a uma oficina, que foi o objetivo inicial.
 
+## Objetivo
 API criada para base de estudos de projetos em GraphQL. 
 O objetivo é entender o que é necessário para realizar um crud em GraphQL através de querys e mutations.
 A complexidade da API foi reduzida para que seja de fácil entendimento para quem deseja aprender sobre o uso de microsserviços.
@@ -21,27 +24,12 @@ Dessa forma garantimos que o mapeamento das tabelas e suas entidades estão semp
 Foi criada uma action para validar a cada commit se o codigo esta buildando e os testes estão passando.
 Pode ser visto o na aba <a href=https://github.com/LuizGPG/OficinaPitStop/actions>actions</a>.
 
+## Banco de dados - Instalação
 
-## Docker
+O banco de dados utilizado é o <a href=https://www.mysql.com/downloads/>MySQL</a> e deve ser criado conforme scripts do diretorio de <a href=https://github.com/LuizGPG/OficinaPitStop/tree/master/OficinaPitStop.Repositories/Banco%20de%20dados> repositório</a>.
 
-Disponibilizei a imagem no docker hub e pode ser feito um pull com o comando:
-```bash
-docker pull luizidocker/oficinapitstop:latest
-```
-Ou fazendo clone do projeto e executando o <a href=https://github.com/LuizGPG/OficinaPitStop/blob/master/docker-compose.yml> compose </a>.
-```bash
-docker-compose up -d
-```
-Dessa forma o container da aplicação e do banco de dados já é criado corretamente.
-
-### Criar imagem
-Para criar a imagem da api precisei apenas executar o comando a baixo no diretorio onde esta o Dockerfile:
-```bash
-docker build -t oficinapitstop:1.0 .
-```
-Desta forma a imagem já foi criada corretamente. Não sendo necessário realizar essa ação se não houver alteração de código.
-![imagemDocker](https://github.com/LuizGPG/OficinaPitStop/blob/master/imagemDocker.PNG)
-
+Conforme mencionado anteriormente os testes de integração são executados na base de dados. Estes foram criados para que utilize apenas a estrutura do banco, sendo assim, não é necessário a criação de registros para que os testes passem.
+Também fiz de uma maneira que a integração seja feita de ponta a ponta com o crud, criando, atualizando, consultando e por fim removendo o registro, dessa forma não fica lixo na base.
 
 ## Utilizando a API 
 Após a api rodando seja ela sendo executada através de containers ou no ambiente de desenvolvimento, é possível realizar os cruds de duas entidades criadas. 
@@ -92,9 +80,21 @@ mutation {
 
 Essas mesmas ações também se aplicam para a entidade de Marca.
 
-<b>Banco de dados - Instalação</b>
+## Docker
 
-O banco de dados utilizado é o <a href=https://www.mysql.com/downloads/>MySQL</a> e deve ser criado conforme scripts do diretorio de <a href=https://github.com/LuizGPG/OficinaPitStop/tree/master/OficinaPitStop.Repositories/Banco%20de%20dados> repositório</a>.
+Disponibilizei a imagem no docker hub e pode ser feito um pull com o comando:
+```bash
+docker pull luizidocker/oficinapitstop:latest
+```
+Ou fazendo clone do projeto e executando o <a href=https://github.com/LuizGPG/OficinaPitStop/blob/master/docker-compose.yml> compose </a>.
+```bash
+docker-compose up -d
+```
+Dessa forma o container da aplicação e do banco de dados já é criado corretamente.
 
-Conforme mencionado anteriormente os testes de integração são executados na base de dados. Estes foram criados para que utilize apenas a estrutura do banco, sendo assim, não é necessário a criação de registros para que os testes passem.
-Também fiz de uma maneira que a integração seja feita de ponta a ponta com o crud, criando, atualizando, consultando e por fim removendo o registro, dessa forma não fica lixo na base.
+Para criar a imagem da api precisei apenas executar o comando a baixo no diretorio onde esta o Dockerfile:
+```bash
+docker build -t oficinapitstop:1.0 .
+```
+Desta forma a imagem já foi criada corretamente. Não sendo necessário realizar essa ação se não houver alteração de código.
+![imagemDocker](https://github.com/LuizGPG/OficinaPitStop/blob/master/imagemDocker.PNG)
